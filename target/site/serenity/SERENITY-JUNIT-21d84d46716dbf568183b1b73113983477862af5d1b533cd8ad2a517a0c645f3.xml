@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Funtionalities the page phptravels" skipped="0" tests="1" time="0.07" timestamp="2019-12-28 09:42:46"><testcase name="I want to validate the hotel reservation"><error message="Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 76&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-11JMSVPJ', ip: '192.168.1.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'&#10;Driver info: driver.version: ProvideNewDriver&#10;remote stacktrace: Backtrace:&#10;&#9;Ordinal0 [0x00BB7723+1472291]&#10;&#9;Ordinal0 [0x00B3A881+960641]&#10;&#9;Ordinal0 [0x00AC3DB3+474547]&#10;&#9;Ordinal0 [0x00A5F365+62309]&#10;&#9;Ordinal0 [0x00A5BC77+48247]&#10;&#9;Ordinal0 [0x00A78C23+166947]&#10;&#9;Ordinal0 [0x00A786DD+165597]&#10;&#9;Ordinal0 [0x00A76F0B+159499]&#10;&#9;Ordinal0 [0x00A60AC6+68294]&#10;&#9;Ordinal0 [0x00A61A70+72304]&#10;&#9;Ordinal0 [0x00A61A09+72201]&#10;&#9;Ordinal0 [0x00B54647+1066567]&#10;&#9;GetHandleVerifier [0x00C56305+506677]&#10;&#9;GetHandleVerifier [0x00C560A0+506064]&#10;&#9;GetHandleVerifier [0x00C5CC48+533624]&#10;&#9;GetHandleVerifier [0x00C56ADA+508682]&#10;&#9;Ordinal0 [0x00B4BD36+1031478]&#10;&#9;Ordinal0 [0x00B4BBAF+1031087]&#10;&#9;Ordinal0 [0x00B5655B+1074523]&#10;&#9;Ordinal0 [0x00B566C3+1074883]&#10;&#9;Ordinal0 [0x00B55675+1070709]&#10;&#9;BaseThreadInitThunk [0x76278494+36]&#10;&#9;RtlAreBitsSet [0x77C341C8+136]&#10;&#9;RtlAreBitsSet [0x77C34198+88]&#10;). See below for more details." type="net.thucydides.core.webdriver.DriverConfigurationError">Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-11JMSVPJ', ip: '192.168.1.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00BB7723+1472291]
+	Ordinal0 [0x00B3A881+960641]
+	Ordinal0 [0x00AC3DB3+474547]
+	Ordinal0 [0x00A5F365+62309]
+	Ordinal0 [0x00A5BC77+48247]
+	Ordinal0 [0x00A78C23+166947]
+	Ordinal0 [0x00A786DD+165597]
+	Ordinal0 [0x00A76F0B+159499]
+	Ordinal0 [0x00A60AC6+68294]
+	Ordinal0 [0x00A61A70+72304]
+	Ordinal0 [0x00A61A09+72201]
+	Ordinal0 [0x00B54647+1066567]
+	GetHandleVerifier [0x00C56305+506677]
+	GetHandleVerifier [0x00C560A0+506064]
+	GetHandleVerifier [0x00C5CC48+533624]
+	GetHandleVerifier [0x00C56ADA+508682]
+	Ordinal0 [0x00B4BD36+1031478]
+	Ordinal0 [0x00B4BBAF+1031087]
+	Ordinal0 [0x00B5655B+1074523]
+	Ordinal0 [0x00B566C3+1074883]
+	Ordinal0 [0x00B55675+1070709]
+	BaseThreadInitThunk [0x76278494+36]
+	RtlAreBitsSet [0x77C341C8+136]
+	RtlAreBitsSet [0x77C34198+88]
+). See below for more details.</error><system-err>Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-11JMSVPJ', ip: '192.168.1.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00BB7723+1472291]
+	Ordinal0 [0x00B3A881+960641]
+	Ordinal0 [0x00AC3DB3+474547]
+	Ordinal0 [0x00A5F365+62309]
+	Ordinal0 [0x00A5BC77+48247]
+	Ordinal0 [0x00A78C23+166947]
+	Ordinal0 [0x00A786DD+165597]
+	Ordinal0 [0x00A76F0B+159499]
+	Ordinal0 [0x00A60AC6+68294]
+	Ordinal0 [0x00A61A70+72304]
+	Ordinal0 [0x00A61A09+72201]
+	Ordinal0 [0x00B54647+1066567]
+	GetHandleVerifier [0x00C56305+506677]
+	GetHandleVerifier [0x00C560A0+506064]
+	GetHandleVerifier [0x00C5CC48+533624]
+	GetHandleVerifier [0x00C56ADA+508682]
+	Ordinal0 [0x00B4BD36+1031478]
+	Ordinal0 [0x00B4BBAF+1031087]
+	Ordinal0 [0x00B5655B+1074523]
+	Ordinal0 [0x00B566C3+1074883]
+	Ordinal0 [0x00B55675+1070709]
+	BaseThreadInitThunk [0x76278494+36]
+	RtlAreBitsSet [0x77C341C8+136]
+	RtlAreBitsSet [0x77C34198+88]
+). See below for more details.&#13;
+net.phptravels.stepdefinitions.net_Phptravels_StepDefinition.SetUp(net_Phptravels_StepDefinition.java:39)&#13;
+cucumber.runner.UnskipableStep.executeStep(UnskipableStep.java:22)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>

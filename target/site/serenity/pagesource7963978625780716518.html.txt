@@ -1,0 +1,2800 @@
+<html><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="php travels is complete booking and reservation system provides complete solution for travel agency">
+<meta name="keywords" content="php travels script, php hotels booking script, php reservation system">
+<meta name="author" content="PHPTRAVELS">
+<title>PHPTRAVELS | Travel Technology Partner</title>
+<link rel="shortcut icon" href="https://www.phptravels.net/uploads/global/favicon.png">
+<link href="https://www.phptravels.net/themes/default/assets/css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="https://www.phptravels.net/themes/default/style.css" rel="stylesheet">
+<link href="https://www.phptravels.net/themes/default/assets/css/navigation.css" rel="stylesheet">
+<link href="https://www.phptravels.net/themes/default/assets/css/mobile.css" rel="stylesheet" media="screen">
+<!-- Child Theme -->
+<style> @import "https://www.phptravels.net/themes/default/assets/css/childstyle.css"; </style>
+
+<!-- facebook -->
+<meta property="og:title" content="PHPTRAVELS | Travel Technology Partner">
+<meta property="og:site_name" content="PHPTRAVELS">
+<meta property="og:description" content="php travels is complete booking and reservation system provides complete solution for travel agency">
+<meta property="og:image" content="https://www.phptravels.net/uploads/global/favicon.png">
+<meta property="og:url" content="https://www.phptravels.net/">
+<meta property="og:publisher" content="https://www.facebook.com/PHPTRAVELS">
+<script type="application/ld+json">{"@context":"http://schema.org/","@type":"Organization","name":"PHPTRAVELS","url":"https://www.phptravels.net/","logo":"https://www.phptravels.net/uploads/global/favicon.png","sameAs":"https://www.facebook.com/PHPTRAVELS","sameAs":"https://twitter.com/PHPTRAVELS","sameAs":"https://www.pinterest.com/PHPTRAVELS/","sameAs":"https://plus.google.com/u/0/PHPTRAVELS/posts","contactPoint":{"@type":"ContactPoint","telephone":"+1-234-56789","contactType":"Customer Service"}}{"@context":"http://schema.org","@type":"WebSite","name":"PHPTRAVELS","url":"https://www.phptravels.net"}  </script>
+
+<!-- Google Maps --> 
+<!-- jQuery --> <script src="https://www.phptravels.net/themes/default/assets/js/jquery-2.2.4.min.js"></script>
+<!-- RTL CSS --> <!-- Mobile Redirect --> <!--[if lt IE 7] > <link rel="stylesheet" type="text/css" href="https://www.phptravels.net/themes/default/assets/css/font-awesome-ie7.css" media="screen" /> <![endif]-->
+<!-- Autocomplete files-->
+<link href="https://www.phptravels.net/themes/default/assets/js/autocomplete/easy-autocomplete.min.css" rel="stylesheet" type="text/css">
+<script src="https://www.phptravels.net/themes/default/assets/js/autocomplete/jquery.easy-autocomplete.min.js" type="text/javascript"></script>
+<script src="https://www.phptravels.net/assets/include/datepicker/datepicker.js"></script>
+<script src="https://www.phptravels.net/themes/default/assets/js/bootstrap.min.js"></script>
+<!-- Autocomplete files-->
+<script>var base_url = 'https://www.phptravels.net/';</script>
+</head>
+<body style="overflow: visible;">
+<div id="preloader" class="loader-wrapper" style="display: none;">
+    <div class="progress">
+     <div class="indeterminate"></div>
+    </div>
+</div>
+<div class="tbar-top hidden-sm hidden-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-4 col-xs-7 go-right">
+                <div class="contact-box">
+                    <ul class="hidden-sm hidden-xs">
+                                                <li class="go-right">
+                            <i class="icon_set_1_icon-55 go-right align-M mrg5-R f-grey66 fs13"></i>
+                            <span class="contact-no align-M">Call Now: <a href="#tel:+1-234-56789" class="number">+1-234-56789</a></span>
+                        </li>
+                                                                        <li class="go-right">
+                            <span class="sep go-right">|</span>
+                            <i class="fa fa-envelope-o go-right align-M mrg5-R f-grey66 fs13"></i>
+                            <span class="tp-mail"><a title="Mail" href="mailto:info@travelagency.com">info@travelagency.com</a></span>
+                        </li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal  left  fade" id="sidebar_left" tabindex="1" role="dialog" aria-labelledby="sidebar_left">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close go-left" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="close icon-angle-left"></i></span></button>
+                <h4 class="modal-title go-text-right" id="sidebar_left"><i class="icon_set_1_icon-65 go-right"></i> Settings</h4>
+            </div>
+            <ul class="nav navbar-nav navbar-side navbar-right sidebar go-left user_menu">
+        <li id="li_myaccount">
+        <a href="javascript:void(0);" data-toggle="dropdown" class="dropdown-toggle go-text-right"><i class="icon_set_1_icon-70 go-right"></i> My Account <b class="lightcaret mt-2 go-left"></b></a>
+        <ul class="dropdown-menu">
+            <li><a class="go-text-right" href="https://www.phptravels.net/login"> Login</a></li>
+            <li><a class="go-text-right" href="https://www.phptravels.net/register">  Sign Up</a></li>
+        </ul>
+    </li>
+        <div class="header-brdr pull-left hidden-xs hidden-md go-left"></div>
+            <li class="dropdown">
+            <a class="dropdown-toggle go-text-right" data-toggle="dropdown" href="#">
+                <strong><i class="icon-money-2 go-right"></i> 
+                    USD                </strong>
+            </a>
+            <ul class="dropdown-menu wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                                <li>
+                    <a class="go-text-right" data-code="1" href="#" onclick="change_currency(this)">
+                        USD                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="3" href="#" onclick="change_currency(this)">
+                        GBP                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="9" href="#" onclick="change_currency(this)">
+                        SAR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="11" href="#" onclick="change_currency(this)">
+                        EUR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="12" href="#" onclick="change_currency(this)">
+                        PKR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="13" href="#" onclick="change_currency(this)">
+                        KWD                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="17" href="#" onclick="change_currency(this)">
+                        JPY                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="18" href="#" onclick="change_currency(this)">
+                        INR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="19" href="#" onclick="change_currency(this)">
+                        CNY                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="20" href="#" onclick="change_currency(this)">
+                        TRY                    </a>
+                </li>
+                            </ul>
+        </li>
+            <ul class="nav navbar-nav">
+        <li class="dropdown" style="margin-top:-9px">
+            <a href="javascript:void(0);" data-toggle="dropdown" class="go-text-right dropdown-toggle" aria-expanded="true"> <img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/en.png" width="21" height="14" alt="English"> English </a>
+            <ul class="dropdown-menu wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                                <li><a href="https://www.phptravels.net/ru" data-langname="Russian" id="ru" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/ru.png" width="21" height="14" alt="">  Russian</a></li>
+                                <li><a href="https://www.phptravels.net/fa" data-langname="Farsi" id="fa" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/fa.png" width="21" height="14" alt="">  Farsi</a></li>
+                                <li><a href="https://www.phptravels.net/de" data-langname="German" id="de" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/de.png" width="21" height="14" alt="">  German</a></li>
+                                <li><a href="https://www.phptravels.net/fr" data-langname="French" id="fr" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/fr.png" width="21" height="14" alt="">  French</a></li>
+                                <li><a href="https://www.phptravels.net/tr" data-langname="Turkish" id="tr" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/tr.png" width="21" height="14" alt="">  Turkish</a></li>
+                                <li><a href="https://www.phptravels.net/ar" data-langname="Arabic" id="ar" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/ar.png" width="21" height="14" alt="">  Arabic</a></li>
+                                <li><a href="https://www.phptravels.net/es" data-langname="Spanish" id="es" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/es.png" width="21" height="14" alt="">  Spanish</a></li>
+                                <li><a href="https://www.phptravels.net/en" data-langname="English" id="en" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/en.png" width="21" height="14" alt="">  English</a></li>
+                            </ul>
+        </li>
+    </ul>
+            <li class="visible-xs mob-menu go-text-right"><i class="go-right icon_set_1_icon-87"></i> Services</li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/About-Us"><i class="icon_set_1_icon-93 go-right "></i> About us  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Contact-Us"><i class="icon_set_1_icon-84 go-right "></i> Contact Us  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Terms-of-Use"><i class="icon_set_1_icon-92 go-right "></i> Terms and Conditions  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Privacy-Policy"><i class="icon_set_1_icon-17 go-right "></i> Privacy Policy  <i class="angle right icon pull-right"></i></a></li>
+</ul>        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+   <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header go-right">
+                <button data-toggle="modal" data-target="#sidebar_left" class="navbar-toggle go-left" type="button" style="margin-right: 10px;">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a href="https://www.phptravels.net/" class="navbar-brand go-right" target="">
+                 <img class="" src="https://www.phptravels.net/uploads/global/logo.png" alt="PHPTRAVELS | Travel Technology Partner">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav go-right">
+              <!--<li class="text-center go-right"><a href="https://www.phptravels.net/">Home</a></li>-->
+                                          <li class="text-center go-right"><a href="https://www.phptravels.net/blog">Blog      </a></li>
+                                          <li class="text-center go-right"><a href="https://www.phptravels.net/offers">Offers    </a></li>
+                          </ul>
+            <ul class="nav navbar-nav navbar-right hidden-sm go-left">
+              <ul class="nav navbar-nav navbar-side navbar-right sidebar go-left user_menu">
+        <li id="li_myaccount">
+        <a href="javascript:void(0);" data-toggle="dropdown" class="dropdown-toggle go-text-right"><i class="icon_set_1_icon-70 go-right"></i> My Account <b class="lightcaret mt-2 go-left"></b></a>
+        <ul class="dropdown-menu">
+            <li><a class="go-text-right" href="https://www.phptravels.net/login"> Login</a></li>
+            <li><a class="go-text-right" href="https://www.phptravels.net/register">  Sign Up</a></li>
+        </ul>
+    </li>
+        <div class="header-brdr pull-left hidden-xs hidden-md go-left"></div>
+            <li class="dropdown">
+            <a class="dropdown-toggle go-text-right" data-toggle="dropdown" href="#">
+                <strong><i class="icon-money-2 go-right"></i> 
+                    USD                </strong>
+            </a>
+            <ul class="dropdown-menu wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                                <li>
+                    <a class="go-text-right" data-code="1" href="#" onclick="change_currency(this)">
+                        USD                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="3" href="#" onclick="change_currency(this)">
+                        GBP                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="9" href="#" onclick="change_currency(this)">
+                        SAR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="11" href="#" onclick="change_currency(this)">
+                        EUR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="12" href="#" onclick="change_currency(this)">
+                        PKR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="13" href="#" onclick="change_currency(this)">
+                        KWD                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="17" href="#" onclick="change_currency(this)">
+                        JPY                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="18" href="#" onclick="change_currency(this)">
+                        INR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="19" href="#" onclick="change_currency(this)">
+                        CNY                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="20" href="#" onclick="change_currency(this)">
+                        TRY                    </a>
+                </li>
+                            </ul>
+        </li>
+            <ul class="nav navbar-nav">
+        <li class="dropdown" style="margin-top:-9px">
+            <a href="javascript:void(0);" data-toggle="dropdown" class="go-text-right dropdown-toggle" aria-expanded="true"> <img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/en.png" width="21" height="14" alt="English"> English </a>
+            <ul class="dropdown-menu wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                                <li><a href="https://www.phptravels.net/ru" data-langname="Russian" id="ru" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/ru.png" width="21" height="14" alt="">  Russian</a></li>
+                                <li><a href="https://www.phptravels.net/fa" data-langname="Farsi" id="fa" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/fa.png" width="21" height="14" alt="">  Farsi</a></li>
+                                <li><a href="https://www.phptravels.net/de" data-langname="German" id="de" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/de.png" width="21" height="14" alt="">  German</a></li>
+                                <li><a href="https://www.phptravels.net/fr" data-langname="French" id="fr" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/fr.png" width="21" height="14" alt="">  French</a></li>
+                                <li><a href="https://www.phptravels.net/tr" data-langname="Turkish" id="tr" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/tr.png" width="21" height="14" alt="">  Turkish</a></li>
+                                <li><a href="https://www.phptravels.net/ar" data-langname="Arabic" id="ar" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/ar.png" width="21" height="14" alt="">  Arabic</a></li>
+                                <li><a href="https://www.phptravels.net/es" data-langname="Spanish" id="es" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/es.png" width="21" height="14" alt="">  Spanish</a></li>
+                                <li><a href="https://www.phptravels.net/en" data-langname="English" id="en" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/en.png" width="21" height="14" alt="">  English</a></li>
+                            </ul>
+        </li>
+    </ul>
+            <li class="visible-xs mob-menu go-text-right"><i class="go-right icon_set_1_icon-87"></i> Services</li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/About-Us"><i class="icon_set_1_icon-93 go-right "></i> About us  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Contact-Us"><i class="icon_set_1_icon-84 go-right "></i> Contact Us  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Terms-of-Use"><i class="icon_set_1_icon-92 go-right "></i> Terms and Conditions  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Privacy-Policy"><i class="icon_set_1_icon-17 go-right "></i> Privacy Policy  <i class="angle right icon pull-right"></i></a></li>
+</ul>            </ul>
+            </div>
+        </div>
+    </nav>
+<div id="body-section"><section class="promo-section jumbotron hero-section" style="background: #000000 url(https://www.phptravels.net/themes/default/assets/img/footbg.jpg) no-repeat center 100%;">
+    <div class="hidden-xs hidden-sm go-left">
+        <div class="row">
+            <div style="background:black" id="Carousel" class="carousel slide carousel-fade">
+                <div class="carousel-inner fadeIn animated">
+                                        <div class="item active home-slider hero hidden-xs hidden-sm">
+                        <img src="https://www.phptravels.net/uploads/images/slider/e41yislk0084kkg.jpg" alt="">
+                        <div class="clearfix"></div>
+                        <div class="container hidden-xs hidden-sm">
+                            <div class="carousel-caption">
+                                <h5 data-wow-duration="1s" data-wow-delay="0.1s" class="fadeInUp wow text-left ttu animated" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">Your journey begins here</h5>
+                                <div class="clearfix"></div>
+                                <p data-wow-duration="2s" data-wow-delay="0.1s" class="flash wow text-left text-center animated" style="visibility: visible; animation-duration: 2s; animation-delay: 0.1s; animation-name: flash;">Search over 450 airlines and more than 320,000 hotels around the world.</p>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="item  home-slider hero hidden-xs hidden-sm">
+                        <img src="https://www.phptravels.net/uploads/images/slider/76ejktjn6y88ckk.jpg" alt="">
+                        <div class="clearfix"></div>
+                        <div class="container hidden-xs hidden-sm">
+                            <div class="carousel-caption">
+                                <h5 data-wow-duration="1s" data-wow-delay="0.1s" class="fadeInUp wow text-left ttu animated" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">Vacation Packages</h5>
+                                <div class="clearfix"></div>
+                                <p data-wow-duration="2s" data-wow-delay="0.1s" class="flash wow text-left text-center animated" style="visibility: visible; animation-duration: 2s; animation-delay: 0.1s; animation-name: flash;">Find out the best deals and book yours today</p>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="item  home-slider hero hidden-xs hidden-sm">
+                        <img src="https://www.phptravels.net/uploads/images/slider/f4n79teyk0g8kg8.jpg" alt="">
+                        <div class="clearfix"></div>
+                        <div class="container hidden-xs hidden-sm">
+                            <div class="carousel-caption">
+                                <h5 data-wow-duration="1s" data-wow-delay="0.1s" class="fadeInUp wow text-left ttu animated" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">Travel to the World</h5>
+                                <div class="clearfix"></div>
+                                <p data-wow-duration="2s" data-wow-delay="0.1s" class="flash wow text-left text-center animated" style="visibility: visible; animation-duration: 2s; animation-delay: 0.1s; animation-name: flash;">Discover the hidden beauty from top to bottom</p>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                                    </div>
+                                <a class="left carousel-control visible-lg visible-md" href="#Carousel" data-slide="prev">
+                <span class="glyphicon-chevron-left fa fa-angle-left"></span>
+                </a>
+                <a class="right carousel-control visible-lg visible-md" href="#Carousel" data-slide="next">
+                <span class="glyphicon-chevron-right fa fa-angle-right"></span>
+                </a>
+                            </div>
+        </div>
+    </div>
+    <div class="cell">
+        <div class="container">
+        <div class="row">
+          <div class="hidden-xs">
+            <div style="margin-top:165px"></div>
+            </div>
+            <div class="col-md-12" style="background: hsla(0,0%,100%,.25); padding: 20px 20px 0; border: 0 solid hsla(0,0%,100%,.2); border-radius: 10px 10px 10px 10px; box-shadow: 0 20px 80px rgba(0,0,0,.1);">
+                <ul class="nav nav-tabs RTL nav-justified">
+                      <li role="presentation" class="active text-center" data-title="thhotels">
+                                                <a class="text-center" href="#thhotels" data-toggle="tab" aria-controls="home" aria-expanded="true" title="Hotels">
+                    <i class="fa fa-hotel"></i>
+                    <div class="visible-xs visible-md clearfix"></div>
+                    <span class="hidden-xs">Hotels    </span>
+                </a>
+                        </li>
+    <li role="presentation" class=" text-center" data-title="thflight">
+                                                <a class="text-center" href="#thflight" data-toggle="tab" aria-controls="home" aria-expanded="true" title="Flights">
+                    <i class="fa fa-plane"></i>
+                    <div class="visible-xs visible-md clearfix"></div>
+                    <span class="hidden-xs">Flights   </span>
+                </a>
+                        </li>
+    <li role="presentation" class=" text-center" data-title="tours">
+                                                <a class="text-center" href="#tours" data-toggle="tab" aria-controls="home" aria-expanded="true" title="Tours">
+                    <i class="fa fa-suitcase"></i>
+                    <div class="visible-xs visible-md clearfix"></div>
+                    <span class="hidden-xs">Tours     </span>
+                </a>
+                        </li>
+    <li role="presentation" class=" text-center" data-title="cars">
+                                                <a class="text-center" href="#cars" data-toggle="tab" aria-controls="home" aria-expanded="true" title="Cars">
+                    <i class="fa fa-car"></i>
+                    <div class="visible-xs visible-md clearfix"></div>
+                    <span class="hidden-xs">Cars      </span>
+                </a>
+                        </li>
+                </ul>
+                <div class="tab-content shad RTL_shad search-form" style="border-radius: 0px 25px 25px 0">
+                                                                                                                        <!--  -->
+                                                                                <!-- Tours  -->
+                    <div role="tabpanel" class="tab-pane fade " id="tours" aria-labelledby="home-tab">
+                        <form autocomplete="off" action="https://www.phptravels.net/tours/search" method="GET" role="search">
+    <div class="go-text-right">
+        <div class="col-md-4 form-group go-right col-xs-12">
+            <div class="row">
+<!--                <input type="text" id="myInputEle"/>-->
+<!--                <script>-->
+<!--                $(document).ready(function() {-->
+<!--                $('#myInputEle').select2({-->
+<!--                width: '100%',-->
+<!--                allowClear: true,-->
+<!--                multiple: true,-->
+<!--                maximumSelectionSize: 1,-->
+<!--                placeholder: "Start typing",-->
+<!--                data: [-->
+<!--                { id: 1, text: "Nikhilesh"},-->
+<!--                { id: 2, text: "Raju"    }-->
+<!--                ]-->
+<!--                });-->
+<!--                });-->
+<!--                </script>-->
+                <div class="clearfix"></div>
+                <i class="iconspane-lg icon_set_1_icon-41"></i>
+                <div class="select2-container hotelsearch locationlisttours" id="s2id_autogen3" style="width: 100%;"><a href="javascript:void(0)" onclick="return false;" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen">Search by Listing or City Name</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow"><b></b></span></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen4"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input">   </div>   <ul class="select2-results">   </ul></div></div><input type="text" data-module="tours" class="hotelsearch locationlisttours select2-offscreen" placeholder="Search by Listing or City Name" value="" tabindex="-1">
+                <input type="hidden" id="txtsearch" name="txtSearch" value="">
+            </div>
+        </div>
+    </div>
+    <div id="tchkin" class="col-md-2 form-group go-right col-xs-12 focusDateInput">
+        <div class="row">
+            <div class="clearfix"></div>
+            <i class="iconspane-lg icon_set_1_icon-53"></i>
+            <input type="text" placeholder="Check in" name="date" class="form input-lg tchkin" value="16/09/2019" required="">
+        </div>
+    </div>
+    <div class="col-md-2 form-group go-right col-xs-12">
+        <div class="row">
+            <div class="clearfix"></div>
+            <select name="adults" id="adults" class="input-lg form selectx">
+                <option value="1">1 Guests</option>
+                <option value="2" selected="">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-md-2 form-group go-right col-xs-12">
+        <div class="row">
+            <!--<label class="hidden-xs go-right">Tour Type </label>-->
+            <div class="clearfix"></div>
+            <i class="iconspane-lg icon_set_1_icon-8"></i>
+            <select class="input-lg form selectx" name="type" id="tourtype">
+                <option value="" selected="">
+                    Select                </option>
+                                    <option value="187">
+                        Private                    </option>
+                                    <option value="193">
+                        Couples                    </option>
+                                    <option value="199">
+                        Holidays                    </option>
+                            </select>
+        </div>
+    </div>
+    <div class="col-md-2 form-group go-right col-xs-12 search-button">
+        <div class="clearfix"></div>
+        <button type="submit" class="btn-primary btn btn-lg btn-block pfb0 loader"><i class="icon_set_1_icon-66"></i>
+            Search </button>
+    </div>
+    <input type="hidden" name="searching" class="searching" value="">
+    <input type="hidden" class="modType" name="modType" value="">
+    <script>
+        $(function () {
+            $(".locationlisttours").select2({
+                width: '100%',
+                allowClear: true,
+                maximumSelectionSize: 1,
+                placeholder: "Start typing",
+                data: JSON.parse('[{"text":"Tours","children":[{"id":"24","text":"Sheraton Trip","module":"tour","disabled":"false"},{"id":"26","text":"Big Bus Tour of Dubai","module":"tour","disabled":"false"},{"id":"28","text":"Day Visit of Petra from Oman","module":"tour","disabled":"false"},{"id":"29","text":"Hurghada Sunset Desert Safari","module":"tour","disabled":"false"},{"id":"30","text":"Legoland Malaysia Day Pass","module":"tour","disabled":"false"},{"id":"32","text":"Sydney and Bondi Beach Explorer","module":"tour","disabled":"false"},{"id":"33","text":"Old and New Delhi City Tour","module":"tour","disabled":"false"},{"id":"34","text":"Hong Kong Island Tour","module":"tour","disabled":"false"},{"id":"35","text":"6 Days Around Thailand","module":"tour","disabled":"false"},{"id":"36","text":"Spectaculars Of The Nile 3 Nights","module":"tour","disabled":"false"}]},{"text":"Locations","children":[{"id":"11","text":"Egypt, Nile Egypt","module":"location","disabled":"false"},{"id":"13","text":"Hong Kong, Hong Kong","module":"location","disabled":"false"},{"id":"17","text":"Egypt, Hurghada","module":"location","disabled":"false"},{"id":"18","text":"Oman, Petra","module":"location","disabled":"false"},{"id":"19","text":"Egypt, Alexandria","module":"location","disabled":"false"},{"id":"20","text":"Egypt, Cairo","module":"location","disabled":"false"},{"id":"21","text":"Egypt, Tanta","module":"location","disabled":"false"},{"id":"22","text":"Egypt, Baltim","module":"location","disabled":"false"},{"id":"23","text":"Thailand, Bangkok","module":"location","disabled":"false"},{"id":"24","text":"Thailand, Krong Samraong","module":"location","disabled":"false"},{"id":"25","text":"Thailand, Udon Thani","module":"location","disabled":"false"},{"id":"26","text":"Thailand, Phayom Phra","module":"location","disabled":"false"},{"id":"27","text":"India, Kirti Nagar","module":"location","disabled":"false"},{"id":"28","text":"India, Red For","module":"location","disabled":"false"},{"id":"29","text":"India, Paharganj","module":"location","disabled":"false"},{"id":"30","text":"India, Connaught Place","module":"location","disabled":"false"},{"id":"31","text":"India, Pusa","module":"location","disabled":"false"},{"id":"32","text":"Australia, Tamarama","module":"location","disabled":"false"},{"id":"33","text":"Australia, Bondi Surf Pavilion","module":"location","disabled":"false"},{"id":"34","text":"Australia, North Bondi","module":"location","disabled":"false"},{"id":"35","text":"Malasia, Legoland","module":"location","disabled":"false"},{"id":"36","text":"Malasia, Gelang Patah","module":"location","disabled":"false"},{"id":"37","text":"Egypt, Ras Gharib","module":"location","disabled":"false"},{"id":"38","text":"Oman, Muscat","module":"location","disabled":"false"},{"id":"40","text":"United Arab Emirates, Sharjah ","module":"location","disabled":"false"},{"id":"41","text":"United Arab Emirates, Ajman","module":"location","disabled":"false"},{"id":"392","text":"AE, Abu Dhabi","module":"location","disabled":"false"},{"id":"8470","text":"United Arab Emirates, Dubai","module":"location","disabled":"false"}]}]')
+            }).select2("val", );
+
+            $(".locationlisttours").on("select2-open",
+                function (e) {
+                    $(".select2-drop-mask");
+                    $(".formSection").trigger("click")
+                });
+            $(".locationlisttours").on("select2-selecting", function (e) {
+                $(".modType").val(e.object.module);
+                $(".searching").val(e.object.id);
+                $("#txtsearch").val(e.object.text);
+            })
+        })
+    </script>
+</form>
+<!------------------------------------------------------------------->
+<!-- ********************    TOURS MODULE    ********************  -->
+<!------------------------------------------------------------------->                    </div>
+                    <!-- Tours  -->
+                                                                                <!-- Cars  -->
+                    <div role="tabpanel" class="tab-pane fade " id="cars" aria-labelledby="home-tab">
+                        <form autocomplete="off" action="https://www.phptravels.net/cars/search" method="GET" role="search">
+        <div class="col-md-2 form-group go-right col-xs-12 xxl">
+         <div class="row">
+            <div class="clearfix"></div>
+            <i class="iconspane-lg icon_set_1_icon-21"></i>
+            <div class="select2-container carsearch chosen-select RTL" id="s2id_carlocations" style="width: 100%;"><a href="javascript:void(0)" onclick="return false;" class="select2-choice" tabindex="-1">   <span class="select2-chosen">
+                Pick up                Location                </span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow"><b></b></span></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen1"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input">   </div>   <ul class="select2-results">   </ul></div></div><select name="pickupLocation" class="carsearch chosen-select RTL select2-offscreen" id="carlocations" required="" tabindex="-1">
+                <option value="">
+                Pick up                Location                </option>
+                                <option value="7">
+                    Manchester                </option>
+                                <option value="11">
+                    Nile Egypt                </option>
+                                <option value="16">
+                    Malaysia                </option>
+                                <option value="18">
+                    Petra                </option>
+                                <option value="20">
+                    Cairo                </option>
+                                <option value="21">
+                    Tanta                </option>
+                                <option value="28">
+                    Red For                </option>
+                                <option value="35">
+                    Legoland                </option>
+                                <option value="38">
+                    Muscat                </option>
+                                <option value="40">
+                    Sharjah                 </option>
+                                <option value="41">
+                    Ajman                </option>
+                                <option value="42">
+                    Hoonani                </option>
+                                <option value="44">
+                    Kauai                </option>
+                            </select>
+        </div>
+      </div>
+
+        <div class="col-md-2 form-group go-right col-xs-12 xxl">
+    <div class="row">
+            <div class="clearfix"></div>
+            <i class="iconspane-lg icon_set_1_icon-21"></i>
+            <div class="select2-container carsearch chosen-select RTL" id="s2id_carlocations2" style="width: 100%;"><a href="javascript:void(0)" onclick="return false;" class="select2-choice" tabindex="-1">   <span class="select2-chosen">
+                    Drop off                    Location                </span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow"><b></b></span></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen2"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input">   </div>   <ul class="select2-results">   </ul></div></div><select name="dropoffLocation" class="carsearch chosen-select RTL select2-offscreen" id="carlocations2" required="" tabindex="-1">
+                <option value="">
+                    Drop off                    Location                </option>
+                                <option value="7">
+                    Manchester                </option>
+                                <option value="11">
+                    Nile Egypt                </option>
+                                <option value="16">
+                    Malaysia                </option>
+                                <option value="18">
+                    Petra                </option>
+                                <option value="19">
+                    Alexandria                </option>
+                                <option value="26">
+                    Phayom Phra                </option>
+                                <option value="27">
+                    Kirti Nagar                </option>
+                                <option value="31">
+                    Pusa                </option>
+                                <option value="32">
+                    Tamarama                </option>
+                                <option value="40">
+                    Sharjah                 </option>
+                                <option value="43">
+                    Kapaa                </option>
+                                <option value="44">
+                    Kauai                </option>
+                                <option value="392">
+                    Abu Dhabi                </option>
+                            </select>
+        </div>
+        </div>
+
+        <div class="col-md-2 form-group go-right col-xs-6 chkin chkin">
+    <div class="row">
+            <div class="clearfix"></div>
+            <i class="iconspane-lg iconspane-lg icon_set_1_icon-53"></i>
+            <input type="text" class="form input-lg RTL" id="departcar" name="pickupDate" placeholder="Pick up Date" value="16/09/2019" required="">
+        </div>
+        </div>
+        <div class="col-md-1 form-group go-right col-xs-6 chkin">
+          <div class="row">
+            <div class="clearfix"></div>
+            <select class="text-center input-lg form-control car_tab form" name="pickupTime">
+                <option value="Time">Time</option>
+                                <option value="00:00">
+                    00:00                </option>
+                                <option value="00:30">
+                    00:30                </option>
+                                <option value="01:00">
+                    01:00                </option>
+                                <option value="01:30">
+                    01:30                </option>
+                                <option value="02:00">
+                    02:00                </option>
+                                <option value="02:30">
+                    02:30                </option>
+                                <option value="03:00">
+                    03:00                </option>
+                                <option value="03:30">
+                    03:30                </option>
+                                <option value="04:00">
+                    04:00                </option>
+                                <option value="04:30">
+                    04:30                </option>
+                                <option value="05:00">
+                    05:00                </option>
+                                <option value="05:30">
+                    05:30                </option>
+                                <option value="06:00">
+                    06:00                </option>
+                                <option value="06:30">
+                    06:30                </option>
+                                <option value="07:00">
+                    07:00                </option>
+                                <option value="07:30">
+                    07:30                </option>
+                                <option value="08:00">
+                    08:00                </option>
+                                <option value="08:30">
+                    08:30                </option>
+                                <option value="09:00">
+                    09:00                </option>
+                                <option value="09:30">
+                    09:30                </option>
+                                <option value="10:00">
+                    10:00                </option>
+                                <option value="10:30">
+                    10:30                </option>
+                                <option value="11:00">
+                    11:00                </option>
+                                <option value="11:30">
+                    11:30                </option>
+                                <option value="12:00">
+                    12:00                </option>
+                                <option value="12:30">
+                    12:30                </option>
+                                <option value="13:00">
+                    13:00                </option>
+                                <option value="13:30">
+                    13:30                </option>
+                                <option value="14:00">
+                    14:00                </option>
+                                <option value="14:30">
+                    14:30                </option>
+                                <option value="15:00">
+                    15:00                </option>
+                                <option value="15:30">
+                    15:30                </option>
+                                <option value="16:00">
+                    16:00                </option>
+                                <option value="16:30">
+                    16:30                </option>
+                                <option value="17:00">
+                    17:00                </option>
+                                <option value="17:30">
+                    17:30                </option>
+                                <option value="18:00">
+                    18:00                </option>
+                                <option value="18:30">
+                    18:30                </option>
+                                <option value="19:00">
+                    19:00                </option>
+                                <option value="19:30">
+                    19:30                </option>
+                                <option value="20:00">
+                    20:00                </option>
+                                <option value="20:30">
+                    20:30                </option>
+                                <option value="21:00">
+                    21:00                </option>
+                                <option value="21:30">
+                    21:30                </option>
+                                <option value="22:00">
+                    22:00                </option>
+                                <option value="22:30">
+                    22:30                </option>
+                                <option value="23:00">
+                    23:00                </option>
+                                <option value="23:30">
+                    23:30                </option>
+                            </select>
+        </div>
+        </div>
+        <div class="col-md-2 form-group go-right col-xs-6 chkin chkout">
+            <div class="row">
+            <div class="clearfix"></div>
+            <i class="iconspane-lg iconspane-lg icon_set_1_icon-53"></i>
+            <input type="text" class="form input-lg RTL" id="returncar" name="dropoffDate" placeholder="Drop off Date" value="17/09/2019" required="">
+        </div>
+        </div>
+        <div class="col-md-1 form-group go-right col-xs-6 chkin">
+        <div class="row">
+            <div class="clearfix"></div>
+            <select class="text-center input-lg form-control car_tab form" name="dropoffTime">
+                <option>Time</option>
+                                <option value="00:00">
+                    00:00                </option>
+                                <option value="00:30">
+                    00:30                </option>
+                                <option value="01:00">
+                    01:00                </option>
+                                <option value="01:30">
+                    01:30                </option>
+                                <option value="02:00">
+                    02:00                </option>
+                                <option value="02:30">
+                    02:30                </option>
+                                <option value="03:00">
+                    03:00                </option>
+                                <option value="03:30">
+                    03:30                </option>
+                                <option value="04:00">
+                    04:00                </option>
+                                <option value="04:30">
+                    04:30                </option>
+                                <option value="05:00">
+                    05:00                </option>
+                                <option value="05:30">
+                    05:30                </option>
+                                <option value="06:00">
+                    06:00                </option>
+                                <option value="06:30">
+                    06:30                </option>
+                                <option value="07:00">
+                    07:00                </option>
+                                <option value="07:30">
+                    07:30                </option>
+                                <option value="08:00">
+                    08:00                </option>
+                                <option value="08:30">
+                    08:30                </option>
+                                <option value="09:00">
+                    09:00                </option>
+                                <option value="09:30">
+                    09:30                </option>
+                                <option value="10:00">
+                    10:00                </option>
+                                <option value="10:30">
+                    10:30                </option>
+                                <option value="11:00">
+                    11:00                </option>
+                                <option value="11:30">
+                    11:30                </option>
+                                <option value="12:00">
+                    12:00                </option>
+                                <option value="12:30">
+                    12:30                </option>
+                                <option value="13:00">
+                    13:00                </option>
+                                <option value="13:30">
+                    13:30                </option>
+                                <option value="14:00">
+                    14:00                </option>
+                                <option value="14:30">
+                    14:30                </option>
+                                <option value="15:00">
+                    15:00                </option>
+                                <option value="15:30">
+                    15:30                </option>
+                                <option value="16:00">
+                    16:00                </option>
+                                <option value="16:30">
+                    16:30                </option>
+                                <option value="17:00">
+                    17:00                </option>
+                                <option value="17:30">
+                    17:30                </option>
+                                <option value="18:00">
+                    18:00                </option>
+                                <option value="18:30">
+                    18:30                </option>
+                                <option value="19:00">
+                    19:00                </option>
+                                <option value="19:30">
+                    19:30                </option>
+                                <option value="20:00">
+                    20:00                </option>
+                                <option value="20:30">
+                    20:30                </option>
+                                <option value="21:00">
+                    21:00                </option>
+                                <option value="21:30">
+                    21:30                </option>
+                                <option value="22:00">
+                    22:00                </option>
+                                <option value="22:30">
+                    22:30                </option>
+                                <option value="23:00">
+                    23:00                </option>
+                                <option value="23:30">
+                    23:30                </option>
+                            </select>
+        </div>
+        </div>
+    <div class="bgfade col-md-2 form-group go-right col-xs-12 search-button">
+            <div class="clearfix"></div>
+            <button type="submit" class="btn-primary btn btn-lg btn-block pfb0 loader"><i class="icon_set_1_icon-66"></i>
+            Search </button>
+     </div>
+</form>                    </div>
+                    <!-- Cars  -->
+                                                            <!-- Cartrawler  -->
+                    <!-- travelport flight form -->
+                                        <!-- travelport flight form -->
+                                        <!--/ .travelport flight form body -->
+                    <!-- hotelbeds form -->
+                                        <!--/ .hotelbeds flight form body -->
+                    <!-- iati flights -->
+                                        <!-- end iati -->
+                    <!-- Travelport Hotels form -->
+                                        <!--/ .Travelport Hotels flight form body -->
+                    
+                    
+                    
+                    
+                                            <div role="tabpanel" class="tab-pane fade " id="thflight" aria-labelledby="home-tab">
+                            
+<form autocomplete="off" id="thflights" action="https://www.phptravels.net/thflights/search" method="GET" role="search">
+    <div class="col-md-2 form-group go-right col-xs-12">
+        <div class="row">
+            <div class="clearfix"></div>
+            <i class="iconspane-lg icon_set_1_icon-41"></i>
+            <div class="select2-container widget-select2" id="s2id_origin" style="width: 100%;"><a href="javascript:void(0)" onclick="return false;" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen">Enter Location</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow"><b></b></span></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen6"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input">   </div>   <ul class="select2-results">   </ul></div></div><input type="text" name="origin" value="" class="widget-select2 select2-offscreen" id="origin" required="required" tabindex="-1">
+        </div>
+    </div>
+    <div class="col-md-2 form-group go-right col-xs-12">
+        <div class="row">
+            <div class="clearfix"></div>
+            <i class="iconspane-lg icon_set_1_icon-41"></i>
+            <div class="select2-container widget-select2" id="s2id_destination" style="width: 100%;"><a href="javascript:void(0)" onclick="return false;" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen">Enter Location</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow"><b></b></span></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen7"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input">   </div>   <ul class="select2-results">   </ul></div></div><input type="text" name="destination" value="" id="destination" class="widget-select2 select2-offscreen" required="required" tabindex="-1">
+        </div>
+    </div>
+    <div class="bgfade col-md-2 form-group go-right col-xs-6 focusDateInput">
+        <div class="row">
+            <div class="clearfix"></div>
+            <i class="iconspane-lg icon_set_1_icon-53"></i>
+            <input autocomplete="false" type="text" id="departure" placeholder="Depart" name="departure" value="01/01/1970" class="form form-control input-lg departureTime" required="">
+        </div>
+    </div>
+    <div class="bgfade col-md-2 form-group go-right col-xs-6 focusDateInput">
+        <div class="row">
+            <div class="clearfix"></div>
+            <i class="iconspane-lg icon_set_1_icon-53"></i>
+            <input autocomplete="false" type="text" id="arrival" placeholder="Return" name="arrival" value="" class="form form-control input-lg arrivalTime" disabled="disabled" style="background: rgb(217, 217, 217);">
+        </div>
+    </div>
+    <div class="col-md-1 form-group go-right col-xs-12">
+        <div class="row">
+            <div class="clearfix"></div>
+            <i class="iconspane-lg icon_set_1_icon-70"></i>
+            <input type="text" name="totalManualPassenger" value="0" placeholder="0" class="form form-control input-lg" data-toggle="modal" data-target="#manual_flightTravelers" required="">
+        </div>
+    </div>
+    <div class="bgfade col-md-3 col-xs-12 search-button">
+        <div class="clearfix"></div>
+        <button type="submit" class="btn-primary btn btn-lg btn-block pfb0">
+        Search        </button>
+    </div>
+    <!--/ .row -->
+    <div class="modal fade" id="manual_flightTravelers" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm wow flipInY animated" role="document" style="visibility: visible; animation-name: flipInY;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Guests</h4>
+                </div>
+                <div class="modal-body">
+                    <section>
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label for="form-input" class="col-sm-3 col-xs-3 control-label">Adults</label>
+                                <div class="col-sm-5 col-xs-5">
+                                    <select class="travellercount form-control" id="madult" name="madult" value="">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4 col-xs-4">
+                                    <label class="help-block">(12+yrs)</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-input" class="col-sm-3 col-xs-3 control-label">Child</label>
+                                <div class="col-sm-5 col-xs-5">
+                                    <select class="travellercount form-control" id="mchildren" name="mchildren" value="">
+                                        <option value="0" selected="">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4 col-xs-4">
+                                    <label class="help-block">(4+yrs)</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-input" class="col-sm-3 col-xs-3 control-label">infant</label>
+                                <div class="col-sm-5 col-xs-5">
+                                    <select class="travellercount form-control" id="minfant" name="minfant" value="">
+                                        <option value="0" selected="">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4 col-xs-4">
+                                    <label class="help-block">(2+yrs)</label>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-block btn-lg bb" data-dismiss="modal" id="sumManualPassenger">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ .modal -->
+    <div class="clearfix"></div>
+    <div class="trip-check">
+        <div class="col-md-2 col-xs-6 w120">
+            <div class="pure-checkbox">
+                <div class="iradio_square-grey" style="position: relative;"><input id="oneway" name="triptype" type="radio" class="checkbox triptype" value="oneway" data-type="oneway" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                <label for="oneway" data-type="oneway">&nbsp;One Way</label>
+            </div>
+        </div>
+        <div class="col-md-2 col-xs-6 w120">
+            <div class="pure-checkbox">
+                <div class="iradio_square-grey" style="position: relative;"><input id="round" name="triptype" type="radio" class="checkbox triptype" value="return" data-type="round" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                <label for="round" data-type="round">&nbsp;Round Trip </label>
+            </div>
+        </div>
+    </div>
+</form>
+<script type="text/javascript">
+    function objectifyForm(formArray) {
+        var returnArray = {};
+        for (var i = 0; i < formArray.length; i++){
+            returnArray[formArray[i]['name']] = formArray[i]['value'];
+        }
+        return returnArray;
+    }
+    $("#thflights").submit(function(e){
+        e.preventDefault();
+        var formData = objectifyForm($(this).serializeArray());
+        var origin_airlines = $("#origin").val();
+        var destination_airlines = $("#destination").val();
+        var departure_date_airlines = $("#departure").val();
+        var return_date_airlines = $("#arrival").val();
+        var madult_airlines = $("#madult").val();
+        var mchildren_airlines = $("#mchildren").val();
+        var minfant_airlines = $("#minfant").val();
+        var triptype_airlines = formData.triptype;
+        var endpoint = $(this).attr('action')+'/';
+        if (triptype_airlines == "return") {
+            var new_url = endpoint+origin_airlines+"/"+destination_airlines+"/"+triptype_airlines+"/"+departure_date_airlines+'/'+return_date_airlines+"/"+madult_airlines+"/"+mchildren_airlines+"/"+minfant_airlines;
+        } else {
+            var new_url = endpoint+origin_airlines+"/"+destination_airlines+"/"+triptype_airlines+"/"+departure_date_airlines+"/"+madult_airlines+"/"+mchildren_airlines+"/"+minfant_airlines;
+        }
+        document.getElementById("overlay").style.display = "block";
+        window.location.replace(new_url);
+    });
+</script>
+<script type="text/javascript">
+    function total_passengers() {
+        var madult = parseInt(document.getElementById('madult').value);
+        var mchildren = parseInt(document.getElementById('mchildren').value);
+        var minfant = parseInt(document.getElementById('minfant').value);
+        var total_passenger = madult + mchildren + minfant;
+        $("#totalManualPassenger").val(total_passenger);
+    }
+    function change_date_departure(departure){
+        document.getElementById('departure_date').value = departure;
+        $("#sabre_search").submit();
+    }
+</script>
+<div id="overlay">
+    <div id="text">
+        <img src="https://www.phptravels.net/uploads/images/flights/airlines/flight.gif" alt="Searching flight"><br>
+        Please Wait ...
+    </div>
+</div>
+<style type="text/css">
+    #overlay {
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 99999;
+        cursor: pointer;
+    }
+
+    #text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 50px;
+        color: black;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+    }
+</style>                        </div>
+                    
+                                            <div role="tabpanel" class="tab-pane fade active in" id="thhotels" aria-labelledby="home-tab">
+                            <form name="fthhotelsSearch" autocomplete="off" action="https://www.phptravels.net/thhotels/search" method="GET" role="search">
+    <div class="col-md-4 col-xs-12 go-text-right go-right form-group">
+        <div class="row">
+            <div class="clearfix"></div>
+            <i class="iconspane-lg icon_set_1_icon-41"></i>
+            <div class="select2-container hotelsearch locationlistthhotels" id="s2id_location" style="width: 100%;"><a href="javascript:void(0)" onclick="return false;" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen">Search by Hotel or City Name</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow"><b></b></span></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen5"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input">   </div>   <ul class="select2-results">   </ul></div></div><input type="text" id="location" name="destination" value="" class="hotelsearch locationlistthhotels select2-offscreen" placeholder="Search by Hotel or City Name" tabindex="-1">
+        </div>
+    </div>
+    <div class="bgfade col-md-2 form-group go-right col-xs-6 focusDateInput" id="dpd1">
+        <div class="row">
+            <div class="clearfix"></div>
+            <i class="iconspane-lg icon_set_1_icon-53"></i>
+            <input type="text" placeholder="Check in" value="" name="checkin" class="form form-control input-lg hcheckin" required="">
+        </div>
+    </div>
+    <div id="dpd2" class="bgfade col-md-2 form-group go-right col-xs-6 focusDateInput">
+        <div class="row">
+            <div class="clearfix"></div>
+            <i class="iconspane-lg icon_set_1_icon-53"></i>
+            <input type="text" placeholder="Check out" value="" name="checkout" class="form form-control input-lg hcheckout" required="">
+        </div>
+    </div>
+    <div class="bgfade col-md-2 form-group go-right col-xs-12">
+        <div class="row">
+            <div class="clearfix"></div>
+            <i class="iconspane-lg icon_set_1_icon-70"></i>
+            <input data-toggle="collapse" data-target="#hoptions" aria-expanded="false" aria-controls="hoptions" type="text" value="2 Adult 0 Child" id="htravellersInput" name="travellers" class="form form-control input-lg">
+        </div>
+        <div class="collapse wow fadeIn animated" id="hoptions" style="visibility: visible; animation-name: fadeIn;">
+            <div class="row">
+                <div class="col-md-12 col-xs-6">
+                    <div class="row hoptions form-horizontal">
+                        <div class="col-md-5">
+                            <div class="row text-center pt5">
+                                <strong>Adults</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-secondary btn-sm" type="button" id="hadultMinusBtn"><i class="fa fa-minus"></i></button>
+                                    </span>
+                                    <input name="adults" id="hadultInput" type="text" class="form-control input-sm text-center" value="2" placeholder="2">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-secondary btn-sm" type="button" id="hadultPlusBtn"><i class="fa fa-plus"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-6">
+                    <div class="row hoptions form-horizontal">
+                        <div class="col-md-5">
+                            <div class="row text-center pt5">
+                                <strong>Child</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-secondary btn-sm" type="button" id="hchildMinusBtn"><i class="fa fa-minus"></i></button>
+                                    </span>
+                                    <input type="text" name="child" id="hchildInput" class="form-control input-sm text-center" value="0" placeholder="0">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-secondary btn-sm" type="button" id="hchildPlusBtn"><i class="fa fa-plus"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="col-md-2 form-group go-right col-xs-12 search-button">
+        <button type="submit" class="btn btn-lg btn-block btn-primary pfb0 loader"><i class="icon_set_1_icon-66"></i> Search</button>
+    </div>
+</form>
+<script>
+    $(document).ready(function(){
+        var nowTemp6 = new Date();
+        var now6 = new Date(nowTemp6.getFullYear(),nowTemp6.getMonth(),nowTemp6.getDate(),0,0,0,0);
+        var checkin6 = $(".hcheckin").datepicker({
+            format:"dd/mm/yyyy",
+            onRender:function(e){
+                return e.valueOf()<now6.valueOf()?"disabled":"";
+            }
+        }).on("changeDate",function(e){
+            var a = new Date(e.date);
+            a.setDate(a.getDate() + 0);
+            checkout6.setValue(a)
+            checkin6.hide();
+            $(".hcheckout")[0].focus()
+        }).data("datepicker");
+        var checkout6 = $(".hcheckout").datepicker({
+            format:"dd/mm/yyyy",
+            onRender:function(e){
+                return e.valueOf()<checkin6.date.valueOf()?"disabled":"";
+            }}).on("changeDate",function(ev){
+            var cnDate = new Date(ev.date);
+            checkout6.hide();
+        }).data("datepicker");
+
+        var hadultPlusBtn = document.getElementById('hadultPlusBtn');
+        var hadultMinusBtn = document.getElementById('hadultMinusBtn');
+        var hchildPlusBtn = document.getElementById('hchildPlusBtn');
+        var hchildMinusBtn = document.getElementById('hchildMinusBtn');
+        var hadultInput = document.getElementById('hadultInput');
+        var hchildInput = document.getElementById('hchildInput');
+        var htravellersInput = document.getElementById('htravellersInput'); // Input label field
+        var select2_default_text = "" || "Search by Hotel or City Name";
+
+        var updateGuestsInput = function ($adult, $child) {
+            var value = $adult+' Adult '+$child+' Child';
+            htravellersInput.value = value;
+        }
+        hadultPlusBtn.onclick = function() {
+            hadultInput.value = parseInt(hadultInput.value) + 1;
+            updateGuestsInput(hadultInput.value, hchildInput.value);
+        };
+        hadultMinusBtn.onclick = function() {
+            var value = parseInt(hadultInput.value) - 1;
+            hadultInput.value = (value < 1) ? 0 : value;
+            updateGuestsInput(hadultInput.value, hchildInput.value);
+        };
+        hchildPlusBtn.onclick = function() {
+            hchildInput.value = parseInt(hchildInput.value) + 1;
+            updateGuestsInput(hadultInput.value, hchildInput.value);
+        };
+        hchildMinusBtn.onclick = function() {
+            var value = parseInt(hchildInput.value) - 1;
+            hchildInput.value = (value < 1) ? 0 : value;
+            updateGuestsInput(hadultInput.value, hchildInput.value);
+        };
+
+        $(".locationlistthhotels").select2({
+            minimumInputLength: 3,
+            width: '100%',
+            maximumSelectionSize: 1,
+            ajax:{
+                url: "https://www.phptravels.net/home/suggestions_v2/hotels",
+                dataType: 'json',
+                data: function(term) {
+                    return { q:term }
+                },
+                results:function(data) {
+                    return { results: data }
+                }
+            }
+        });
+        $("form[name=fthhotelsSearch] .select2-choice .select2-chosen").text(select2_default_text);
+        $(".locationlistthhotels").on("select2-selecting",function(e){
+            $("[name=hotel_s2_text]").val(e.object.text);
+        });
+        function create_slug(data) {
+            var p_1 = data['destination'];   p_1 = (p_1) ? p_1 : "null";
+            var p_2 = data['checkin'];       p_2 = (p_2) ? p_2 : "null";
+            var p_3 = data['checkout'];      p_3 = (p_3) ? p_3 : "null";
+            var p_4 = data['adults'];        p_4 = (p_4) ? p_4 : 0;
+            var p_5 = data['child'];         p_5 = (p_5) ? p_5 : 0;
+            var url = "";
+            if(p_1 != "null") {
+                url += "/"+p_1.replace(/-\/-|-{2,}/g, '-');
+            }
+            return url+"/"+p_2.replace(/\/+/g, '-')+"/"+p_3.replace(/\/+/g, '-')+"/"+p_4+"/"+p_5;
+        }
+        $("form[name=fthhotelsSearch]").on("submit", function(e) {
+            e.preventDefault();
+            var values = {};
+            $.each($(this).serializeArray(), function(i, field) {
+                values[field.name] = field.value;
+            });
+            window.location.href = $(this).attr('action')+create_slug(values);
+        });
+    });
+</script>                        </div>
+                    
+                    
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+</section>
+<style>.home_hidden { display:none !important}</style>
+<!--<div class="features hidden-sm hidden-xs">
+    <div class="row slidericons">
+            <div class="container hidden-xs hidden-sm">
+                    <div data-wow-duration="0.1s" data-wow-delay="0.9s" class="wow fadeInUp col-md-3">
+                            <div class="row">
+                                    <div class="col-md-4 row"> <i data-wow-duration="1s" data-wow-delay="1s" class="homeicons wow fadeInUp icon_set_1_icon-23"></i> </div>
+                                    <div class="col-md-8">
+                                            <h4>Easy & Fast Booking</h4>
+                                    </div>
+                            </div>
+                    </div>
+                    <div data-wow-duration="0.5s" data-wow-delay="0.9s" class="wow fadeInUp col-md-3">
+                            <div class="row">
+                                    <div class="col-md-4"> <i data-wow-duration="1.2s" data-wow-delay="1.2s" class="homeicons wow fadeInUp icon_set_1_icon-94"></i> </div>
+                                    <div class="col-md-8 row">
+                                            <h4>Need Help?</h4>
+                                    </div>
+                            </div>
+                    </div>
+                    <div data-wow-duration="0.9s" data-wow-delay="0.9s" class="wow fadeInUp col-md-3">
+                            <div class="row">
+                                    <div class="col-md-4"> <i data-wow-duration="1.3s" data-wow-delay="1.3s" class="homeicons wow fadeInUp icon_set_1_icon-100"></i> </div>
+                                    <div class="col-md-8 row">
+                                            <h4>24/7 Customer Support</h4>
+                                    </div>
+                            </div>
+                    </div>
+                    <div data-wow-duration="0.9s" data-wow-delay="0.9s" class="wow fadeInUp col-md-3">
+                            <div class="row">
+                                    <div class="col-md-4"> <i data-wow-duration="1.4s" data-wow-delay="1.4s" class="homeicons wow fadeInUp icon_set_1_icon-35"></i> </div>
+                                    <div class="col-md-8 row">
+                                            <h4>100% Secure payments</h4>
+                                    </div>
+                            </div>
+                    </div>
+            </div>
+    </div>
+    </div>-->
+
+<div class="container mt35 promotions hidden-xs">
+        <a href="https://www.phptravels.net/blog/Virgin-Gorda-beaches-and-lobste">
+        <div class="col-md-4">
+            <div class="probox">
+                <img src="https://www.phptravels.net/uploads/images/blog/780975_1.jpg" class="img-responsive" alt="">
+                <div class="panel-body">
+                    <h4><strong>Virgin Gorda beaches and…</strong></h4>
+                    <h4 class="text-muted">Read More</h4>
+                    <p>This is the second leg of a truly fun week. There are adventures…</p>
+                </div>
+            </div>
+        </div>
+    </a>
+        <a href="https://www.phptravels.net/blog/Fiercely-Independent-Cultures">
+        <div class="col-md-4">
+            <div class="probox">
+                <img src="https://www.phptravels.net/uploads/images/blog/696228_2.jpg" class="img-responsive" alt="">
+                <div class="panel-body">
+                    <h4><strong>Fiercely Independent Cultures</strong></h4>
+                    <h4 class="text-muted">Read More</h4>
+                    <p>In a world that is increasingly homogenous, fiercely independent…</p>
+                </div>
+            </div>
+        </div>
+    </a>
+        <a href="https://www.phptravels.net/blog/Peace-Train-A-Long-Time-Coming">
+        <div class="col-md-4">
+            <div class="probox">
+                <img src="https://www.phptravels.net/uploads/images/blog/120331_3.jpg" class="img-responsive" alt="">
+                <div class="panel-body">
+                    <h4><strong>Peace Train A Long Time Coming</strong></h4>
+                    <h4 class="text-muted">Read More</h4>
+                    <p>&nbsp;mainland Europe and North America, Iceland has always…</p>
+                </div>
+            </div>
+        </div>
+    </a>
+    </div>
+<div class="clearfix"></div>
+<link rel="stylesheet" href="https://www.phptravels.net/themes/default/assets/css/featuredtours.css">
+<div class="container">
+<div class="title text-center">
+<h2 class="destination-title go-text-right ttu text-center">
+<i class="icon_set_1_icon-30"></i> Featured Tours</h2>
+</div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid vc_column-gap-30 RTL">
+<div class="container">
+<div class="row hotel-list image-box hotel listing-style1 add-clearfix featured_tours">
+  <div class="col-md-3">
+    <article class="box" id="tour-36" style="height: 488px;">
+      <figure>
+        <a href="https://www.phptravels.net/tours/egypt/alexandria/Spectaculars-Of-The-Nile-3-Nights" class="hover-effect popup-gallery">
+        <img width="" height="" alt="" src="https://www.phptravels.net/uploads/images/tours/slider/thumbs/294159_nile.jpg">
+        </a>
+      </figure>
+      <div class="details">
+        <h4 class="box-title go-text-right">
+          <span>Spectaculars Of The Nile…</span>
+          <small>
+          <i class="fa fa-map-marker"></i> Alexandria          </small>
+        </h4>
+        <div class="feedback">
+          <div class="five-stars-container" title="Spectaculars Of The Nile…">
+            <span class="stars"><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star star fa fa-star-o"></i></span>
+          </div>
+          <span class="review">
+          6 Reviews          </span>
+        </div>
+        <div class="go-text-right">
+        2 Days / 1 Nights        </div>
+        <div class="row discover_more">
+          <div class="col-md-7 price_container go-right" style="position: absolute;">
+            <div class="row">
+              <div class="col-md-12">
+                              <div class="price">
+                  <div class="amount"><span class="amo">150</span></div>
+                  <div class="currency">
+                    USD                  </div>
+                </div>
+                              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 ">
+                <div class="hint">
+                  Avg / Person                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 action_container go-left" style="position: absolute;">
+            <a class="button btn-small" href="https://www.phptravels.net/tours/egypt/alexandria/Spectaculars-Of-The-Nile-3-Nights" style="display:table;">
+            Book Now            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+    <div class="col-md-3">
+    <article class="box" id="tour-36" style="height: 488px;">
+      <figure>
+        <a href="https://www.phptravels.net/tours/thailand/bangkok/6-Days-Around-Thailand" class="hover-effect popup-gallery">
+        <img width="" height="" alt="" src="https://www.phptravels.net/uploads/images/tours/slider/thumbs/thailand.jpg">
+        </a>
+      </figure>
+      <div class="details">
+        <h4 class="box-title go-text-right">
+          <span>6 Days Around Thailand</span>
+          <small>
+          <i class="fa fa-map-marker"></i> Bangkok          </small>
+        </h4>
+        <div class="feedback">
+          <div class="five-stars-container" title="6 Days Around Thailand">
+            <span class="stars"><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star star fa fa-star-o"></i><i class="star star fa fa-star-o"></i></span>
+          </div>
+          <span class="review">
+          2 Reviews          </span>
+        </div>
+        <div class="go-text-right">
+        5 Days / 4 Nights        </div>
+        <div class="row discover_more">
+          <div class="col-md-7 price_container go-right" style="position: absolute;">
+            <div class="row">
+              <div class="col-md-12">
+                              <div class="price">
+                  <div class="amount"><span class="amo">88</span></div>
+                  <div class="currency">
+                    USD                  </div>
+                </div>
+                              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 ">
+                <div class="hint">
+                  Avg / Person                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 action_container go-left" style="position: absolute;">
+            <a class="button btn-small" href="https://www.phptravels.net/tours/thailand/bangkok/6-Days-Around-Thailand" style="display:table;">
+            Book Now            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+    <div class="col-md-3">
+    <article class="box" id="tour-36" style="height: 488px;">
+      <figure>
+        <a href="https://www.phptravels.net/tours/hong-kong/hong-kong/Hong-Kong-Island-Tour" class="hover-effect popup-gallery">
+        <img width="" height="" alt="" src="https://www.phptravels.net/uploads/images/tours/slider/thumbs/hongkong.jpg">
+        </a>
+      </figure>
+      <div class="details">
+        <h4 class="box-title go-text-right">
+          <span>Hong Kong Island Tour</span>
+          <small>
+          <i class="fa fa-map-marker"></i> Hong Kong          </small>
+        </h4>
+        <div class="feedback">
+          <div class="five-stars-container" title="Hong Kong Island Tour">
+            <span class="stars"><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star star fa fa-star-o"></i></span>
+          </div>
+          <span class="review">
+          0 Reviews          </span>
+        </div>
+        <div class="go-text-right">
+        2 Days / 3 Nights        </div>
+        <div class="row discover_more">
+          <div class="col-md-7 price_container go-right" style="position: absolute;">
+            <div class="row">
+              <div class="col-md-12">
+                              <div class="price">
+                  <div class="amount"><span class="amo">75</span></div>
+                  <div class="currency">
+                    USD                  </div>
+                </div>
+                              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 ">
+                <div class="hint">
+                  Avg / Person                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 action_container go-left" style="position: absolute;">
+            <a class="button btn-small" href="https://www.phptravels.net/tours/hong-kong/hong-kong/Hong-Kong-Island-Tour" style="display:table;">
+            Book Now            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+    <div class="col-md-3">
+    <article class="box" id="tour-36" style="height: 488px;">
+      <figure>
+        <a href="https://www.phptravels.net/tours/india/kirti-nagar/Old-and-New-Delhi-City-Tour" class="hover-effect popup-gallery">
+        <img width="" height="" alt="" src="https://www.phptravels.net/uploads/images/tours/slider/thumbs/211701_delhi.jpg">
+        </a>
+      </figure>
+      <div class="details">
+        <h4 class="box-title go-text-right">
+          <span>Old and New Delhi City Tour</span>
+          <small>
+          <i class="fa fa-map-marker"></i> Kirti Nagar          </small>
+        </h4>
+        <div class="feedback">
+          <div class="five-stars-container" title="Old and New Delhi City Tour">
+            <span class="stars"><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i></span>
+          </div>
+          <span class="review">
+          0 Reviews          </span>
+        </div>
+        <div class="go-text-right">
+        8 Days / 6 Nights        </div>
+        <div class="row discover_more">
+          <div class="col-md-7 price_container go-right" style="position: absolute;">
+            <div class="row">
+              <div class="col-md-12">
+                              <div class="price">
+                  <div class="amount"><span class="amo">100</span></div>
+                  <div class="currency">
+                    USD                  </div>
+                </div>
+                              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 ">
+                <div class="hint">
+                  Avg / Person                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 action_container go-left" style="position: absolute;">
+            <a class="button btn-small" href="https://www.phptravels.net/tours/india/kirti-nagar/Old-and-New-Delhi-City-Tour" style="display:table;">
+            Book Now            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+    <div class="col-md-3">
+    <article class="box" id="tour-36" style="height: 488px;">
+      <figure>
+        <a href="https://www.phptravels.net/tours/australia/tamarama/Sydney-and-Bondi-Beach-Explorer" class="hover-effect popup-gallery">
+        <img width="" height="" alt="" src="https://www.phptravels.net/uploads/images/tours/slider/thumbs/sydney.jpg">
+        </a>
+      </figure>
+      <div class="details">
+        <h4 class="box-title go-text-right">
+          <span>Sydney and Bondi Beach Explorer</span>
+          <small>
+          <i class="fa fa-map-marker"></i> Tamarama          </small>
+        </h4>
+        <div class="feedback">
+          <div class="five-stars-container" title="Sydney and Bondi Beach Explorer">
+            <span class="stars"><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star star fa fa-star-o"></i><i class="star star fa fa-star-o"></i></span>
+          </div>
+          <span class="review">
+          0 Reviews          </span>
+        </div>
+        <div class="go-text-right">
+        5 Days / 4 Nights        </div>
+        <div class="row discover_more">
+          <div class="col-md-7 price_container go-right" style="position: absolute;">
+            <div class="row">
+              <div class="col-md-12">
+                              <div class="price">
+                  <div class="amount"><span class="amo">125</span></div>
+                  <div class="currency">
+                    USD                  </div>
+                </div>
+                              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 ">
+                <div class="hint">
+                  Avg / Person                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 action_container go-left" style="position: absolute;">
+            <a class="button btn-small" href="https://www.phptravels.net/tours/australia/tamarama/Sydney-and-Bondi-Beach-Explorer" style="display:table;">
+            Book Now            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+    <div class="col-md-3">
+    <article class="box" id="tour-36" style="height: 488px;">
+      <figure>
+        <a href="https://www.phptravels.net/tours/malasia/legoland/Legoland-Malaysia-Day-Pass" class="hover-effect popup-gallery">
+        <img width="" height="" alt="" src="https://www.phptravels.net/uploads/images/tours/slider/thumbs/malaysia.jpg">
+        </a>
+      </figure>
+      <div class="details">
+        <h4 class="box-title go-text-right">
+          <span>Legoland Malaysia Day Pass</span>
+          <small>
+          <i class="fa fa-map-marker"></i> Legoland          </small>
+        </h4>
+        <div class="feedback">
+          <div class="five-stars-container" title="Legoland Malaysia Day Pass">
+            <span class="stars"><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star star fa fa-star-o"></i><i class="star star fa fa-star-o"></i><i class="star star fa fa-star-o"></i></span>
+          </div>
+          <span class="review">
+          0 Reviews          </span>
+        </div>
+        <div class="go-text-right">
+        1 Days / 1 Nights        </div>
+        <div class="row discover_more">
+          <div class="col-md-7 price_container go-right" style="position: absolute;">
+            <div class="row">
+              <div class="col-md-12">
+                              <div class="price">
+                  <div class="amount"><span class="amo">45</span></div>
+                  <div class="currency">
+                    USD                  </div>
+                </div>
+                              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 ">
+                <div class="hint">
+                  Avg / Person                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 action_container go-left" style="position: absolute;">
+            <a class="button btn-small" href="https://www.phptravels.net/tours/malasia/legoland/Legoland-Malaysia-Day-Pass" style="display:table;">
+            Book Now            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+    <div class="col-md-3">
+    <article class="box" id="tour-36" style="height: 488px;">
+      <figure>
+        <a href="https://www.phptravels.net/tours/egypt/hurghada/Hurghada-Sunset-Desert-Safari" class="hover-effect popup-gallery">
+        <img width="" height="" alt="" src="https://www.phptravels.net/uploads/images/tours/slider/thumbs/hurghada.jpg">
+        </a>
+      </figure>
+      <div class="details">
+        <h4 class="box-title go-text-right">
+          <span>Hurghada Sunset Desert Safari</span>
+          <small>
+          <i class="fa fa-map-marker"></i> Hurghada          </small>
+        </h4>
+        <div class="feedback">
+          <div class="five-stars-container" title="Hurghada Sunset Desert Safari">
+            <span class="stars"><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i></span>
+          </div>
+          <span class="review">
+          0 Reviews          </span>
+        </div>
+        <div class="go-text-right">
+        4 Days / 5 Nights        </div>
+        <div class="row discover_more">
+          <div class="col-md-7 price_container go-right" style="position: absolute;">
+            <div class="row">
+              <div class="col-md-12">
+                              <div class="price">
+                  <div class="amount"><span class="amo">50</span></div>
+                  <div class="currency">
+                    USD                  </div>
+                </div>
+                              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 ">
+                <div class="hint">
+                  Avg / Person                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 action_container go-left" style="position: absolute;">
+            <a class="button btn-small" href="https://www.phptravels.net/tours/egypt/hurghada/Hurghada-Sunset-Desert-Safari" style="display:table;">
+            Book Now            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+    <div class="col-md-3">
+    <article class="box" id="tour-36" style="height: 488px;">
+      <figure>
+        <a href="https://www.phptravels.net/tours/oman/petra/Day-Visit-of-Petra-from-Oman" class="hover-effect popup-gallery">
+        <img width="" height="" alt="" src="https://www.phptravels.net/uploads/images/tours/slider/thumbs/petra.jpg">
+        </a>
+      </figure>
+      <div class="details">
+        <h4 class="box-title go-text-right">
+          <span>Day Visit of Petra from Oman</span>
+          <small>
+          <i class="fa fa-map-marker"></i> Petra          </small>
+        </h4>
+        <div class="feedback">
+          <div class="five-stars-container" title="Day Visit of Petra from Oman">
+            <span class="stars"><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i></span>
+          </div>
+          <span class="review">
+          0 Reviews          </span>
+        </div>
+        <div class="go-text-right">
+        1 Days / 1 Nights        </div>
+        <div class="row discover_more">
+          <div class="col-md-7 price_container go-right" style="position: absolute;">
+            <div class="row">
+              <div class="col-md-12">
+                              <div class="price">
+                  <div class="amount"><span class="amo">66</span></div>
+                  <div class="currency">
+                    USD                  </div>
+                </div>
+                              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 ">
+                <div class="hint">
+                  Avg / Person                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 action_container go-left" style="position: absolute;">
+            <a class="button btn-small" href="https://www.phptravels.net/tours/oman/petra/Day-Visit-of-Petra-from-Oman" style="display:table;">
+            Book Now            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="more hidden-xs hidden-sm">
+    <div class="container">
+                                    <div class="col-md-7">
+                 <span class="wow bounce ttu" style="visibility: hidden; animation-name: none;">BIG <b>Save</b> <small>USD</small> $2,250</span>
+                                <div class="imgLodBg">
+                    <div class="load"></div>
+                    <a href="https://www.phptravels.net/offers">
+                    <img data-wow-duration="0.2s" data-wow-delay="1s" class="wow fadeIn" src="https://www.phptravels.net/uploads/images/offers/976745_save.jpg" style="visibility: hidden; animation-duration: 0.2s; animation-delay: 1s; animation-name: none;">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h3 style="margin-top: 6px;"><strong class="ttu">Dubai Special Packages</strong></h3>
+                <p> Rate is subject to the prevailing tax and service charge. An additional Tourism Dirham of&nbsp;AED 20&nbsp;will be applied per bedroom, per night to your bill. For Apartments, the Tourism Dirham charges are:&nbsp;AED 10&nbsp;per day for Studio…</p>
+                <a href="https://www.phptravels.net/offers" class="loader btn btn-primary btn-block p16">
+                View More Offers                </a>
+                                        </div>
+    </div>
+</div>
+    <div style="padding:25px 0 80px 0">
+    <div class="container">
+        <div class="destination-title-container row">
+             <h2 class="destination-title go-text-right ttu text-center">
+                <i class="icon_set_1_icon-21"></i> Featured Cars            </h2>
+        </div>
+                    <div class="col-md-3 col-sm-6 owl-item mt25 cars">
+                <div class="probox">
+                    <div class="imgLodBg">
+                        <div class="load"></div>
+                        <img data-wow-duration="0.2s" data-wow-delay="1s" class="wow fadeIn" src="https://www.phptravels.net/uploads/images/cars/slider/thumbs/732422_1.jpg" style="visibility: hidden; animation-duration: 0.2s; animation-delay: 1s; animation-name: none;">
+                        <div class="overlay">
+                            <div class="textCenter">
+                                <div class="textMiddle">
+                                    <a class="loader" href="https://www.phptravels.net/cars/oman/muscat/Toyota-Camry-2015-full-option">
+                                        Book Now                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="additional-info additional-info-cars">
+                        <div class="pull-left rating-passive"><span class="stars"><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star star fa fa-star-o"></i></span>
+                        </div>
+                        <div class="pull-right"><i data-toggle="tooltip" title="" class="icon-tag-6" data-original-title="Price"></i>
+                                                        <span class="text-center">
+                            <small>USD</small> $50                            </span>
+                                                    </div>
+                        <div class="clearfix"></div>
+                        <div class="wow fadeIn" style="border-top: 2px dashed rgb(206, 206, 206); margin-top: 10px; visibility: hidden; animation-name: none;">
+                            <h4 class="ellipsis go-text-right">Toyota Camry 2015 full option</h4>
+                            <p class="go-text-right"><i class="icon-location-6 go-text-right go-right"></i>
+                                Muscat &nbsp;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-md-3 col-sm-6 owl-item mt25 cars">
+                <div class="probox">
+                    <div class="imgLodBg">
+                        <div class="load"></div>
+                        <img data-wow-duration="0.2s" data-wow-delay="1s" class="wow fadeIn" src="https://www.phptravels.net/uploads/images/cars/slider/thumbs/208374_2.jpg" style="visibility: hidden; animation-duration: 0.2s; animation-delay: 1s; animation-name: none;">
+                        <div class="overlay">
+                            <div class="textCenter">
+                                <div class="textMiddle">
+                                    <a class="loader" href="https://www.phptravels.net/cars/united-kingdom/hoonani/Opel-Astra-2014">
+                                        Book Now                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="additional-info additional-info-cars">
+                        <div class="pull-left rating-passive"><span class="stars"><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star star fa fa-star-o"></i></span>
+                        </div>
+                        <div class="pull-right"><i data-toggle="tooltip" title="" class="icon-tag-6" data-original-title="Price"></i>
+                                                        <span class="text-center">
+                            <small>USD</small> $99                            </span>
+                                                    </div>
+                        <div class="clearfix"></div>
+                        <div class="wow fadeIn" style="border-top: 2px dashed rgb(206, 206, 206); margin-top: 10px; visibility: hidden; animation-name: none;">
+                            <h4 class="ellipsis go-text-right">Opel Astra 2014</h4>
+                            <p class="go-text-right"><i class="icon-location-6 go-text-right go-right"></i>
+                                Hoonani &nbsp;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-md-3 col-sm-6 owl-item mt25 cars">
+                <div class="probox">
+                    <div class="imgLodBg">
+                        <div class="load"></div>
+                        <img data-wow-duration="0.2s" data-wow-delay="1s" class="wow fadeIn" src="https://www.phptravels.net/uploads/images/cars/slider/thumbs/65339_3.jpg" style="visibility: hidden; animation-duration: 0.2s; animation-delay: 1s; animation-name: none;">
+                        <div class="overlay">
+                            <div class="textCenter">
+                                <div class="textMiddle">
+                                    <a class="loader" href="https://www.phptravels.net/cars/malasia/legoland/Ford-Mondeo-2012">
+                                        Book Now                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="additional-info additional-info-cars">
+                        <div class="pull-left rating-passive"><span class="stars"><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i></span>
+                        </div>
+                        <div class="pull-right"><i data-toggle="tooltip" title="" class="icon-tag-6" data-original-title="Price"></i>
+                                                        <span class="text-center">
+                            <small>USD</small> $75                            </span>
+                                                    </div>
+                        <div class="clearfix"></div>
+                        <div class="wow fadeIn" style="border-top: 2px dashed rgb(206, 206, 206); margin-top: 10px; visibility: hidden; animation-name: none;">
+                            <h4 class="ellipsis go-text-right">Ford Mondeo 2012</h4>
+                            <p class="go-text-right"><i class="icon-location-6 go-text-right go-right"></i>
+                                Legoland &nbsp;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-md-3 col-sm-6 owl-item mt25 cars">
+                <div class="probox">
+                    <div class="imgLodBg">
+                        <div class="load"></div>
+                        <img data-wow-duration="0.2s" data-wow-delay="1s" class="wow fadeIn" src="https://www.phptravels.net/uploads/images/cars/slider/thumbs/604584_7.jpg" style="visibility: hidden; animation-duration: 0.2s; animation-delay: 1s; animation-name: none;">
+                        <div class="overlay">
+                            <div class="textCenter">
+                                <div class="textMiddle">
+                                    <a class="loader" href="https://www.phptravels.net/cars/united-kingdom/kauai/Ford-Focus-2014">
+                                        Book Now                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="additional-info additional-info-cars">
+                        <div class="pull-left rating-passive"><span class="stars"><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i><i class="star fa fa-star"></i></span>
+                        </div>
+                        <div class="pull-right"><i data-toggle="tooltip" title="" class="icon-tag-6" data-original-title="Price"></i>
+                                                        <span class="text-center">
+                            <small>USD</small> $50                            </span>
+                                                    </div>
+                        <div class="clearfix"></div>
+                        <div class="wow fadeIn" style="border-top: 2px dashed rgb(206, 206, 206); margin-top: 10px; visibility: hidden; animation-name: none;">
+                            <h4 class="ellipsis go-text-right">Ford Focus 2014</h4>
+                            <p class="go-text-right"><i class="icon-location-6 go-text-right go-right"></i>
+                                Kauai &nbsp;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+</div> <!--/ .body-section -->
+ <footer id="footer" class="">
+
+   <div class="sc-6z3jy0-0 fVcoLU">
+    <div class="sc-6z3jy0-1 hvpYIF">
+        <div class="sc-fjdhpX ehqOdj container">
+            <div class="sc-kTUwUJ ljwnSF row">
+                <div class="sc-VigVT fIhGog col-lg-3 col-sm-4 col-xs-12">
+                    <div class="sc-6z3jy0-4 htcuoB">
+                        <div class="sc-6z3jy0-6 hZsjPq">
+                            <!--<p class="sc-6z3jy0-7 chKsbs">Available now</p> -->
+                        </div>
+                        <div class="alm-f-phone-img sc-6z3jy0-5 hVfXnf">
+                            <img class="img-responsive" src="https://www.phptravels.net/themes/default/assets/img/mobile.png" width="230" alt="mobile apps">
+                        </div>
+                    </div>
+                </div>
+                <div class="sc-VigVT fIhGog col-lg-9 col-sm-8">
+                    <h3 class="sc-6z3jy0-2 gkbDIH">Get the mobile app!</h3>
+                    <p class="sc-6z3jy0-3 fGcVuz">Our app has all your booking needs covered: Secure payment channels, easy 4-step booking process, and sleek user designs. What more could you ask for?</p>
+                    <ul class="theme-mobile-app-btn-list">
+                                                <li>
+                            <a target="blank" class="btn btn-dark theme-mobile-app-btn" href="https://itunes.apple.com/us/app/phptravels/id1018217005?mt=8">
+                            <i class="theme-mobile-app-logo">
+                            <img src="https://www.phptravels.net/themes/default/assets/img/apple.png" alt="Image Alternative text" title="Image Title">
+                            </i>
+                            <span>Download on
+                            <br>
+                            <span>App Store</span>
+                            </span>
+                            </a>
+                        </li>
+                                                                        <li>
+                            <a target="blank" class="btn btn-dark theme-mobile-app-btn" href="https://play.google.com/store/apps/details?id=com.phptravelsnative">
+                            <i class="theme-mobile-app-logo">
+                            <img src="https://www.phptravels.net/themes/default/assets/img/android.png" alt="Image Alternative text" title="Image Title">
+                            </i>
+                            <span>Download on
+                            <br>
+                            <span>Play Market</span>
+                            </span>
+                            </a>
+                        </li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="sc-97mfds-0 xrttw">
+<div class="sc-97mfds-1 cynRGe sc-fjdhpX ehqOdj container">
+<div class="sc-97mfds-2 haPKPH sc-kTUwUJ ljwnSF row">
+  <div class="sc-97mfds-3 col-xs-12 sc-97mfds-5 lnfyst sc-VigVT fIhGog col">
+    <img src="https://www.phptravels.net/themes/default/assets/img/call.png" class="sc-97mfds-6 dxKlUD">
+    <div class="sc-97mfds-7 ePuuND">
+        <div class="sc-97mfds-8 bLWkbc">Need Help? Call Now :</div>
+        <div class="sc-97mfds-9 dpdHAC">+1-234-56789</div>
+    </div>
+</div>
+<div class="sc-97mfds-3 sc-97mfds-4 bYdCGD sc-VigVT fIhGog col hidden-xs hidden-sm">
+    <img src="https://www.phptravels.net/themes/default/assets/img/mail.png" class="sc-97mfds-6 dxKlUD">
+    <div class="sc-97mfds-7 ePuuND">
+        <div class="sc-97mfds-8 bLWkbc">24/7 Customer Support:</div>
+        <div class="sc-97mfds-9 dpdHAC"><a href="mailto:info@travelagency.com">info@travelagency.com</a></div>
+    </div>
+</div>
+<div class="sc-97mfds-3 col-xs-12 jApvwl sc-VigVT fIhGog col">
+    <div class="sc-97mfds-7 ePuuND">
+        <div class="sc-97mfds-8 hqiKow">Find us on our social media channels</div>
+        <div class="sc-97mfds-10 jpNgQd">
+                <a href="https://www.facebook.com/travelbusiness" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Facebook"><img src="https://www.phptravels.net/uploads/images/social/slufm6otpasooc.png" class="social-icons-footer sc-97mfds-11 hccXzw"></a>
+                <a href="https://twitter.com/phptravels" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Twitter"><img src="https://www.phptravels.net/uploads/images/social/9ztbr148kh4o8c8.png" class="social-icons-footer sc-97mfds-11 hccXzw"></a>
+                <a href="http:///www.youtube.com/phptravels" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Youtube"><img src="https://www.phptravels.net/uploads/images/social/946746yt.png.png" class="social-icons-footer sc-97mfds-11 hccXzw"></a>
+                <a href="https://plus.google.com/+Phptravels/" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Google+"><img src="https://www.phptravels.net/uploads/images/social/2wz814aq9mgw04k.png" class="social-icons-footer sc-97mfds-11 hccXzw"></a>
+                <a href="http://phptravels.net/sitemap.xml" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="RSS"><img src="https://www.phptravels.net/uploads/images/social/729370rs.png.png" class="social-icons-footer sc-97mfds-11 hccXzw"></a>
+                </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+</footer>
+
+
+
+<div class="theme-hero-area mobside visible-lg">
+    <div class="theme-hero-area-bg-wrap">
+        <div class="theme-hero-area-bg-pattern theme-hero-area-bg-pattern-ultra-light" style="background-image:url(img/patterns/travel/1.png);"></div>
+        <div class="theme-hero-area-grad-mask theme-hero-area-grad-mask-i"></div>
+        <div class="theme-hero-area-inner-shadow theme-hero-area-inner-shadow-light"></div>
+    </div>
+    <div class="theme-hero-area-body">
+        <div class="container">
+            <div class="col-md-12">
+
+                            <div class="sc-1t1b6dh-2 joxZVq sc-VigVT fIhGog col-md-2 go-right">
+              <h2 class="sc-1t1b6dh-5 imcuxF go-text-right"><strong>Company</strong></h2>
+              <ul class="sc-1t1b6dh-6 jjJkOp go-right go-text-right">
+                                <li><a href="https://www.phptravels.net/contact-us" target="" title="">Contact</a></li>
+                                <li><a href="https://www.phptravels.net/About-Us" target="" title="">About Us</a></li>
+                                <li><a href="https://www.phptravels.net/How-to-Book" target="" title="">How to Book</a></li>
+                                <li><a href="https://www.phptravels.net/Booking-Tips" target="" title="">Booking Tips</a></li>
+                              </ul>
+            </div>
+                            <div class="sc-1t1b6dh-2 joxZVq sc-VigVT fIhGog col-md-2 go-right">
+              <h2 class="sc-1t1b6dh-5 imcuxF go-text-right"><strong>Support</strong></h2>
+              <ul class="sc-1t1b6dh-6 jjJkOp go-right go-text-right">
+                                <li><a href="https://www.phptravels.net/Our-Partners" target="" title="">Our Partners</a></li>
+                                <li><a href="https://www.phptravels.net/Privacy-Policy" target="" title="">Privacy Policy</a></li>
+                                <li><a href="https://www.phptravels.net/Terms-of-Use" target="" title="">Terms of Use</a></li>
+                              </ul>
+            </div>
+                            <div class="sc-1t1b6dh-2 joxZVq sc-VigVT fIhGog col-md-2 go-right">
+              <h2 class="sc-1t1b6dh-5 imcuxF go-text-right"><strong>Business</strong></h2>
+              <ul class="sc-1t1b6dh-6 jjJkOp go-right go-text-right">
+                                <li><a href="https://www.phptravels.net/FAQ" target="" title="">FAQ</a></li>
+                                <li><a href="https://www.phptravels.net/themes/default/../../supplier" target="_blank" title="">Supplier Login</a></li>
+                              </ul>
+            </div>
+                <div class="sc-1t1b6dh-2 joxZVq sc-VigVT fIhGog col-md-2 go-right">
+                 <h3 class="sc-1t1b6dh-5 imcuxF go-text-right"><strong class="title">Supplier</strong></h3>
+                <ul class="sc-1t1b6dh-6 jjJkOp go-right go-text-right">
+                                       <li><a target="_blank" href="https://www.phptravels.net/supplier-register/">Supplier Sign Up</a></li>
+                                        <li><a target="_blank" href="https://www.phptravels.net/supplier/">Extranet Login</a></li>
+                </ul>
+                </div>
+
+                                        <div class="sc-1t1b6dh-2 joxZVq sc-VigVT fIhGog col-md-4 go-left">
+                    <h3 class="sc-1t1b6dh-5 imcuxF go-text-right"><strong class="title">Newsletter</strong></h3>
+                    <div class="col-md-12">
+                        <div id="message-newsletter_2"></div>
+                        <form role="search" onsubmit="return false;">
+                        </form>
+                        <div class="row">
+                            <input type="email" class="form-control input-lg fccustom2 sub_email form-group" id="exampleInputEmail1" placeholder="Newsletter Enter your email" required="">
+                            <div class="clearfix"></div>
+                            <button type="submit" class="btn btn-danger btn-block sub_newsletter ttu"> Subscribe</button>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a class="newstext" href="javascript:void(0);">
+                                    <div class="wow fadeIn subscriberesponse" style="visibility: hidden; animation-name: none;"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                            </div>
+
+            <!-- ********************   Removing powered by linkback will result to cancellation of your support service.    ********************  -->
+            <div class="hidden-xs hidden-sm" style="padding:10px;color:#ffffff">
+            <div class="container">
+            <div class="text-center">Powered by <a href="http://www.phptravels.com" target="_blank"> <img src="https://www.phptravels.net/uploads/global/phptravels.png" style="height:22px;color:#ffffff" height="22" alt="PHPTRAVELS"> <strong style="color:#ffffff">PHPTRAVELS</strong></a></div>
+            </div>
+            </div>
+            <!-- ********************   Removing powered by linkback will result to cancellation of your support service.    ********************  -->
+
+
+        </div>
+    </div>
+
+<div class="rightsdiv">
+<!-- tripadvisors block -->
+<!-- tripadvisors block -->
+</div>
+
+<div class="hidden-xs hidden-sm gotopDiv">
+ <center>
+  <a href="javascript:void" class="gotop scroll wow fadeInUp btn btn-default" style="visibility: hidden; animation-name: none;"><i class="icon-up-open-big"></i></a>
+ </center>
+</div>
+
+<h5 style="padding:10px" class="text-center">All Rights Reserved by PHPTRAVELS</h5>
+
+<style>
+.cc-window{opacity:1;transition:opacity 1s ease;}
+.cc-link{text-decoration:underline;}
+.cc-window{left:0;right:0;bottom:0px;position:fixed;overflow:hidden;box-sizing:border-box;font-size:16px;line-height:1.5em;display:-ms-flexbox;display:flex;-ms-flex-wrap:nowrap;flex-wrap:nowrap;z-index:9999;}
+.cc-window.cc-banner{padding:1em 1.8em;width:100%;-ms-flex-direction:row;flex-direction:row;}
+.cc-btn,.cc-link{cursor:pointer;}
+.cc-link{opacity:.8;padding:.2em;}
+.cc-link:hover{opacity:1;} .cc-link:active,.cc-link:visited{color:initial;}
+.cc-btn{display:block;padding:.4em .8em;font-size:.9em;font-weight:700;border-width:2px;border-style:solid;text-align:center;white-space:nowrap;}
+.cc-window.cc-banner{-ms-flex-align:center;align-items:center;}
+.cc-banner .cc-message{display:block;-ms-flex:1 1 auto;flex:1 1 auto;max-width:100%;margin-right:1em;}
+.cc-compliance{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-line-pack:justify;align-content:space-between;}
+@media print{
+.cc-window{display:none;} } @media screen and (max-width:900px){
+.cc-btn{white-space:normal;} } @media screen and (max-width:414px) and (orientation:portrait),screen and (max-width:736px) and (orientation:landscape){
+.cc-window.cc-top{top:0;}
+.cc-window.cc-banner{left:0;right:0;}
+.cc-window.cc-banner{-ms-flex-direction:column;flex-direction:column;}
+.cc-window.cc-banner .cc-compliance{-ms-flex:1 1 auto;flex:1 1 auto;}
+.cc-window .cc-message{margin-bottom:1em;}
+.cc-window.cc-banner{-ms-flex-align:unset;align-items:unset;}
+.cc-window.cc-banner .cc-message{margin-right:0;} }
+.cc-color-override--1961008818.cc-window{color:rgb(255, 255, 255);background-color:rgb(0, 0, 0);}
+.cc-color-override--1961008818 .cc-link,.cc-color-override--1961008818
+.cc-link:active,.cc-color-override--1961008818 .cc-link:visited{color:rgb(255, 255, 255);}
+.cc-color-override--1961008818 .cc-btn{color:rgb(0, 0, 0);border-color:transparent;background-color:rgb(241, 214, 0);padding:5px 25px;}
+.cc-color-override--1961008818 .cc-btn:hover,.cc-color-override--1961008818
+.cc-btn:focus{background-color:rgb(255, 252, 38);}
+
+footer .row { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-right: -15px; margin-left: -15px; }
+.col { -ms-flex-preferred-size: 0; flex-basis: 0; -ms-flex-positive: 1; flex-grow: 1; max-width: 100%; }
+.ehqOdj{max-width:1200px}
+.QtkYb{user-select:none;pointer-events:none;flex:0 0 auto}
+.lhtPeR{user-select:none;pointer-events:none;flex:0 0 auto;width:24px;height:24px}
+.hvpYIF{background:linear-gradient(#ffffff 81%,#e0e0e0 100%)}
+.gkbDIH{margin-top:70px;margin-bottom:10px;color:#333;font-weight:700;font-size:22px;text-transform:uppercase;width:280px;line-height:1}
+.fGcVuz{color:#777;font-size:14px;line-height:20px}
+.htcuoB{display:flex;-webkit-box-pack:justify;justify-content:space-between}
+.hVfXnf{margin-right:25px}
+.hZsjPq{display:flex;flex-direction:column;margin-top:110px}
+@media(max-width:768px){.hZsjPq{margin-top:36px}
+}.hZsjPq{display:flex;flex-direction:column;margin-top:110px}
+@media(max-width:768px){.hZsjPq{margin-top:36px}
+}.chKsbs{font-size:18px;font-weight:600;line-height:1.4}
+.bxPLvS{display:flex}
+@media(max-width:768px){.bxPLvS{display:inline-block}
+}.bxPLvS{display:flex}
+@media(max-width:768px){.bxPLvS{display:inline-block}
+}
+.bQVrqA{display:flex;-webkit-box-pack:center;justify-content:center}
+.bQVrqA svg{height:35px;width:40px;margin:0 4px}
+.ktkPch{display:flex;flex:1 1 auto;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;flex-direction:column;margin-top:10px}
+.ktkPch,.ktkPch:hover{text-decoration:none}
+.ktkPch img{max-height:40px}
+.cjXiuZ{margin-bottom:0;padding-bottom:10px;font-size:12px;margin-top:5px;font-stretch:normal;color:#fff}
+.jVXChf{display:block;margin-bottom:10px;margin-right:10px}
+.cnVTPK{padding-top:15px;background:linear-gradient(280deg,#23a5b9,#003143)}
+.joxZVq{padding:0 8px}
+@media(max-width:768px){.joxZVq{width:49%}
+.joxZVq:first-of-type{width:100%}
+}.joxZVq{padding:0 8px}
+@media(max-width:768px){.joxZVq{width:49%}
+.joxZVq:first-of-type{width:100%}
+}.bLvlOX{text-align:center;margin-top:20px}
+@media(max-width:768px){.bLvlOX{margin-top:0}
+}.bLvlOX{text-align:center;margin-top:20px}
+@media(max-width:768px){.bLvlOX{margin-top:0}
+}.duQxgw{margin-bottom:10px}
+@media(max-width:768px){.duQxgw{float:left;width:41px}
+}.duQxgw{margin-bottom:10px}
+@media(max-width:768px){.duQxgw{float:left;width:41px}
+}
+.imcuxF{position:relative;margin-top:17px;margin-bottom:8.5px;padding-bottom:15px;text-align:left;color:white;font-size:20px;font-weight:600}
+.imcuxF::after{content:"";position:absolute;display:block;height:1px;width:20px;background-color:white;top:40px}
+.jjJkOp{padding:0;margin:0 0 8.5px;font-size:14px;text-align:left;color:white}
+.fZfcDq{list-style:none;display:block}
+.gaOUoF{padding:10px 0;display:flex;-webkit-box-pack:center;justify-content:center}
+.cUNzUo{padding:10px 0;color:white;font-size:13px;font-weight:400;text-decoration:none;line-height:18px;display:flex;-webkit-box-align:center;align-items:center}
+.cUNzUo:hover{color:white;text-decoration:none}
+.ctZSxi{width:22px;height:20px;margin-right:8px}
+.btJsFD{width:22px;height:20px;margin-right:8px}
+.hMmmeK{width:22px;height:20px;margin-right:8px}
+.zGvrg{width:22px;height:20px;margin-right:8px}
+.ejjCuB{width:22px;height:20px;margin-right:8px}
+.eyDSQc{width:22px;height:20px;margin-right:8px}
+.bJHwoi{text-align:center;margin-top:10px;padding-bottom:10px;color:white;font-size:14px}
+.iexggQ{display:inline-block}
+.gsJDya{margin-left:5px;margin-right:5px;margin-top:5px}
+.gsJDya{margin-left:5px;margin-right:5px;margin-top:5px}
+.jzxXqV{display:table;width:100%;text-align:center;max-width:65px;margin-left:auto;margin-right:auto;margin-top:10px}
+@media(max-width:768px){.jzxXqV{display:none}
+}.jzxXqV{display:table;width:100%;text-align:center;max-width:65px;margin-left:auto;margin-right:auto;margin-top:10px}
+@media(max-width:768px){.jzxXqV{display:none}
+}.gshHXn{width:100%;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;display:flex}
+.gshHXn>img{margin-left:5px;margin-right:5px;max-width:51px;float:left;width:100%}
+@media(min-width:768px){.gshHXn>img{display:none}
+}.gshHXn{width:100%;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;display:flex}
+.gshHXn>img{margin-left:5px;margin-right:5px;max-width:51px;float:left;width:100%}
+@media(min-width:768px){.gshHXn>img{display:none}
+}
+.xrttw{min-height:100px;padding:20px 0}
+.cynRGe{height:100%}
+.haPKPH{height:100%}
+.jApvwl{border-right:2px solid #bdbdbd;display:flex;flex-direction:row;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}
+.jApvwl:last-child{border-right:0}
+.bYdCGD{border-right:2px solid #bdbdbd;display:flex;flex-direction:row;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}
+@media(max-width:768px){.bYdCGD{visibility:hidden;height:10px;border-top:1px solid red}
+}.bYdCGD{border-right:2px solid #bdbdbd;display:flex;flex-direction:row;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}
+@media(max-width:768px){.bYdCGD{visibility:hidden;height:10px;border-top:1px solid red}
+}.lnfyst{border-right:2px solid #bdbdbd;display:flex;flex-direction:row;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}
+@media(max-width:768px){.lnfyst{border-bottom:1px solid #e0e0e0;padding-bottom:5px}
+}.lnfyst{border-right:2px solid #bdbdbd;display:flex;flex-direction:row;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}
+@media(max-width:768px){.lnfyst{border-bottom:1px solid #e0e0e0;padding-bottom:5px}
+}
+.dxKlUD{margin-right:20px;max-width:40px}
+.bLWkbc{font-size:14px;color:#333}
+.hqiKow{font-size:14px;color:#333;margin-bottom:7px}
+.dpdHAC{font-size:24px;font-weight:700;color:#333}
+.dpdHAC a,.dpdHAC a:hover{text-decoration:none;color:#333}
+.hccXzw{margin-right:15px}
+.hccXzw,.hccXzw:hover{color:#23a5b9}
+.jjJkOp li {padding: 5px 0px;}
+.jjJkOp a {color:#ffffff}
+.jjJkOp a:hover {color:#eee}
+</style>
+
+<div id="cookyGotItBtnBox" style="display: flex; visibility: visible; animation-duration: 0.5s; animation-delay: 5s; animation-name: fadeIn;" data-wow-duration="0.5s" data-wow-delay="5s" role="dialog" class="wow fadeIn cc-window cc-banner cc-type-info cc-theme-block cc-color-override--1961008818  animated">
+<span id="cookieconsent:desc" class="cc-message">This website uses cookies to ensure you get the best experience on our website. <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://www.phptravels.net/cookies-policy" rel="noopener noreferrer nofollow" target="_blank">Learn more</a></span>
+<div class="cc-compliance">
+<button aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss" id="cookyGotItBtn">Got it!</button></div></div>
+
+<script src="https://www.phptravels.net/themes/default/assets/js/scripts.js"></script>
+<script>
+    const cookyDisablePeriodInDays = 100;
+    function createCookie(cookieName,cookieValue,daysToExpire)
+    {
+        var date = new Date();
+        date.setTime(date.getTime()+(daysToExpire*24*60*60*1000));
+        document.cookie = cookieName + "=" + cookieValue + "; expires=" + date.toGMTString();
+    }
+    function accessCookie(cookieName)
+    {
+        var name = cookieName + "=";
+        var allCookieArray = document.cookie.split(';');
+        for(var i=0; i<allCookieArray.length; i++)
+        {
+            var temp = allCookieArray[i].trim();
+            if (temp.indexOf(name)==0)
+                return temp.substring(name.length,temp.length);
+        }
+        return "";
+    }
+    // If user accept cooky policy by clicking `Got It` button then do not show the button to the user.
+    const cookyGotItStatus = accessCookie("cookyGotItButton");
+    if (cookyGotItStatus != "" && cookyGotItStatus == "hide") {
+        $("#cookyGotItBtnBox").css("display", "none");
+    } else {
+        setTimeout(function () {
+            console.log('show');
+            $("#cookyGotItBtnBox").css("display", "flex");
+        }, 1000);
+    }
+    $("#cookyGotItBtn").click(function () {
+        createCookie("cookyGotItButton", "hide", cookyDisablePeriodInDays);
+        $("#cookyGotItBtnBox").css("display", "none");
+    });
+
+    // Travelport flight: start
+    // First, checks if it isn't implemented yet.
+    if (!String.prototype.format) {
+     String.prototype.format = function() {
+       var args = arguments;
+       return this.replace(/{(\d+)}/g, function(match, number) {
+         return typeof args[number] != 'undefined'
+         ? args[number]
+         : match
+         ;
+       });
+     };
+   }
+   $(function(){
+           var adult = parseInt($("[name='tadult']").val()); // Should be 1
+           var children = parseInt($("[name='tchildren']").val());
+           var infant = parseInt($("[name='tinfant']").val());
+           var totalPassenger = (adult + children + infant);
+           var triptype = 'oneway';
+           var arrivalDatetimePicker = $("[name='arrival']");
+           arrivalDatetimePicker.attr('disabled', 'disabled').css('background', '#d9d9d9');
+           $(".trip-check label, .iCheck-helper").on('click', function() {
+             triptype = $(this).parent().find("input").val();
+             if (triptype == 'oneway') {
+               arrivalDatetimePicker.attr('disabled', 'disabled').css('background', '#d9d9d9');
+               arrivalDatetimePicker.removeAttr('required');
+             } else {
+               arrivalDatetimePicker.removeAttr('disabled').css('background', '#F9F9F9');
+               arrivalDatetimePicker.attr('required', 'required');
+             }
+             arrivalDatetimePicker.val('');
+           });
+           
+           $(".widget-select2").select2({
+             placeholder: "Enter Location",
+             minimumInputLength: 3,
+             width: '100%',
+             maximumSelectionSize: 1,
+             ajax:{
+               url: 'https://www.phptravels.net/Suggestions/airports/tport',
+               dataType: 'json',
+               data: function(term, page) {
+                 return {
+                   q: term
+                 }
+               },
+               results: function(data, page) {
+                 return {
+                   results: data
+                 }
+               }
+             },
+             initSelection : function (element, callback) {
+               var elementText = $(element).val();
+               callback({"text": elementText, "id": elementText});
+             }
+           });
+
+           var nowTemp = new Date();
+           var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+           // Depature time
+           var departureTime = $('.departureTime').datepicker({
+             format: 'yyyy-mm-dd',
+             onRender: function(date) {
+               return date.valueOf() < now.valueOf() ? 'disabled' : '';
+             }
+           }).on('changeDate', function(e){
+             $(this).datepicker('hide');
+             if (triptype == 'round' || triptype == 'return') {
+               var newDate = new Date(e.date);
+               arrivalTime.setValue(newDate.setDate(newDate.getDate() + 1));
+               $('.arrivalTime').focus();
+             }
+           }).data('datepicker');
+
+         //  Arrival time
+         var arrivalTime = $('.arrivalTime').datepicker({
+           format: 'yyyy-mm-dd',
+           onRender: function(date) {
+             return date.valueOf() <= departureTime.date.valueOf() ? 'disabled' : '';
+           }
+         }).on('changeDate', function(){
+           $(this).datepicker('hide');
+         }).data('datepicker');
+
+           // Default fill up date
+           if($('.departureTime').length > 0){
+            if(departureTime.element.val()) {
+             departureTime.setValue(departureTime.element.val());
+           }
+         }
+         if($('.arrivalTime').length > 0) {
+           if(arrivalTime.element.val()) {
+             arrivalTime.setValue(arrivalTime.element.val());
+           }
+         }
+
+         $("[name='tadult']").on('change', function() { adult = parseInt($("[name='tadult']").val()); });
+         $("[name='tchildren']").on('change', function() { children = parseInt($("[name='tchildren']").val()); });
+         $("[name='tinfant']").on('change', function() { infant = parseInt($("[name='tinfant']").val()); });
+         $("#tsumPassenger").on('click', function() {
+           totalPassenger = (adult + children + infant);
+           $("[name='ttotalPassenger']").val(totalPassenger);
+         });
+
+         $("form[name='flightSearch']").on('submit', function(e) {
+           e.preventDefault();
+           var payload = {
+             triptype: triptype,
+             cabinclass: $('[name="cabinclass"]').val(),
+             passenger: {
+               total: totalPassenger,
+               adult: adult,
+               children: children,
+               infant: infant
+             },
+             origin: $(this).find("[name='origin']").val(),
+             destination: $(this).find("[name='destination']").val(),
+             departure: $(this).find("[name='departure']").val(),
+             arrival: $(this).find("[name='arrival']").val(),
+           };
+
+           $('.loader-wrapper').show();
+           $.post(base_url + 'flight/getLowFareFlights', payload, function(response) {
+             $('.loader-wrapper').hide();
+             $('#body-section').html(response.body);
+             window.history.pushState("", "", get_path('flight/search', payload));
+           });
+         });
+       });
+
+function get_path(req, payload)
+{
+ var return_hash = "{0}/{1}/{2}/{3}".format(req, payload.origin, payload.destination, payload.departure);
+
+ if (payload.arrival) {
+   return_hash = "{0}/{1}".format(return_hash, payload.arrival)
+ }
+ if (payload.cabinclass) {
+   return_hash = "{0}/{1}".format(return_hash, payload.cabinclass)
+ }
+ if (payload.passenger.adult) {
+   return_hash = "{0}/{1}Adult".format(return_hash, payload.passenger.adult)
+ }
+ if (payload.passenger.children) {
+   return_hash = "{0}/{1}Children".format(return_hash, payload.passenger.children)
+ }
+ if (payload.passenger.infant) {
+   return_hash = "{0}/{1}Infant".format(return_hash, payload.passenger.infant)
+ }
+
+ return base_url + return_hash;
+}
+   // Travelport flight: end
+
+   if (!String.prototype.format) {
+    String.prototype.format = function() {
+      var args = arguments;
+      return this.replace(/{(\d+)}/g, function(match, number) {
+        return typeof args[number] != 'undefined'
+        ? args[number]
+        : match
+        ;
+      });
+    };
+  }
+
+  $(function(){
+
+    var triptype = 'oneway';
+    var manualtriptype = $('input[name=triptype]:checked').val();
+
+    var arrivalDatetimePicker = $("[name='arrival']");
+    arrivalDatetimePicker.attr('disabled', 'disabled').css('background', '#d9d9d9');
+    $(".trip-check label, .iCheck-helper").on('click', function() {
+      manualtriptype = $(this).parent().find("input").val();
+      if (manualtriptype == 'oneway') {
+        arrivalDatetimePicker.attr('disabled', 'disabled').css('background', '#d9d9d9');
+        arrivalDatetimePicker.removeAttr('required');
+      } else {
+        arrivalDatetimePicker.removeAttr('disabled').css('background', '#F9F9F9');
+        arrivalDatetimePicker.attr('required', 'required');
+      }
+      arrivalDatetimePicker.val('');
+    });
+
+    var nowTemp = new Date();
+    var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+        // Depature time
+        var departureTime = $('.departureTime').datepicker({
+          format: 'yyyy-mm-dd',
+          onRender: function(date) {
+            return date.valueOf() < now.valueOf() ? 'disabled' : '';
+          }
+        }).on('changeDate', function(e){
+          $(this).datepicker('hide');
+          if (manualtriptype == 'round') {
+            var newDate = new Date(e.date);
+            arrivalTime.setValue(newDate.setDate(newDate.getDate() + 1));
+            $('.arrivalTime').focus();
+          }
+        }).data('datepicker');
+
+        // Arrival time
+        var arrivalTime = $('.arrivalTime').datepicker({
+          format: 'yyyy-mm-dd',
+          onRender: function(date) {
+            return date.valueOf() <= departureTime.date.valueOf() ? 'disabled' : '';
+          }
+        }).on('changeDate', function(){
+          $(this).datepicker('hide');
+        }).data('datepicker');
+
+        // Default fill up date
+        if(departureTime != undefined) {
+          if(departureTime.element.val()) {
+            departureTime.setValue(departureTime.element.val());
+          }
+        }
+        if(departureTime != undefined) {
+          if(arrivalTime.element.val()) {
+            arrivalTime.setValue(arrivalTime.element.val());
+          }
+        }
+        var madult = parseInt($("[name='madult']").val()); // Should be 1
+        var mchildren = parseInt($("[name='mchildren']").val());
+        var minfant = parseInt($("[name='minfant']").val());
+        var totalManualPassenger = (madult + mchildren + minfant);
+        $("[name='madult']").on('change', function() { madult = parseInt($(this).val()); });
+        $("[name='mchildren']").on('change', function() { mchildren = parseInt($(this).val()); });
+        $("[name='minfant']").on('change', function() { minfant = parseInt($(this).val()); });
+        $("#sumManualPassenger").on('click', function() {
+          totalManualPassenger = (madult + mchildren + minfant);
+          $("[name='totalManualPassenger']").val(totalManualPassenger);
+        });
+
+
+
+        // // iati origin
+        // $('input[name="iorigin"]').select2('val', 'HEHEHE');
+        // $('input[name="idestination"]').select2('val', 'HUHUHUHU');
+        var adult = parseInt($("[name='iadult']").val()); // Should be 1
+        var children = parseInt($("[name='ichildren']").val());
+        var infant = parseInt($("[name='iinfant']").val());
+        var xtotalManualPassenger = (adult + children + infant);
+        $("[name='iadult']").on('change', function() { adult = parseInt($(this).val()); });
+        $("[name='ichildren']").on('change', function() { children = parseInt($(this).val()); });
+        $("[name='iinfant']").on('change', function() { infant = parseInt($(this).val()); });
+        $("#isumPassenger").on('click', function() { 
+          var xtotalManualPassenger = (adult + children + infant);
+          $("[name='totalPassenger']").val(xtotalManualPassenger);
+            // console.log(xtotalManualPassenger);
+          });
+
+
+
+        
+        $('#location_from_code').val('{"code":null,"location":""}');
+        $('#location_to_code').val('{"code":null,"location":""}');
+        $('#location_from').select2(
+        {
+          placeholder: "Enter City Or Airport",
+          minimumInputLength: 3,
+          width:'100%', maximumSelectionSize: 1,
+          initSelection: function (element, callback) {
+            var data = {id: "1", text: ""};
+            callback(data);
+          },
+          ajax: {
+            url: "https://www.phptravels.net/admin/ajaxcalls/flightAjex",
+            dataType: 'json',
+            data: function (term, page) {
+              return {
+                        query: term, // search term
+
+                      };
+                    },
+                    results: function (data, page) {
+
+                      return {results: data};
+                    }
+                  }
+                }
+                );
+
+        $('#location_from').on("select2-selecting", function(e) {
+          $("#location_from_code").val(e.val);
+          console.log(e.val);
+        });
+
+
+
+
+        $('#location_to').select2(
+        {
+          placeholder: "Enter City Or Airport",
+          minimumInputLength: 3,
+          width:'100%', maximumSelectionSize: 1,
+          initSelection: function (element, callback) {
+            var data = {id: "1", text: ""};
+            callback(data);
+          },
+          ajax: {
+            url: "https://www.phptravels.net/admin/ajaxcalls/flightAjex",
+            dataType: 'json',
+            data: function (term, page) {
+              return {
+                        query: term, // search term
+
+                      };
+                    },
+                    results: function (data, page) {
+
+                      return {results: data};
+                    }
+                  }
+                }
+                );
+
+        $('#location_to').on("select2-selecting", function(e) {
+         $("#location_to_code").val(e.val);
+         console.log(e.val);
+       });
+
+
+        $("form[name='flightmanualSearch']").on('submit', function(e) {
+          e.preventDefault();
+          var payload = {
+            triptype: manualtriptype,
+            cabinclass: $('[name="cabinclass"]').val(),
+            passenger: {
+              total: totalManualPassenger,
+              adult: madult,
+              children: mchildren,
+              infant: minfant
+            },
+            origin: jQuery.parseJSON($(this).find("[name='origin']").val()).code,
+            destination: jQuery.parseJSON($(this).find("[name='destination']").val()).code,
+            departure: $(this).find("[name='departure']").val(),
+            arrival: $(this).find("[name='arrival']").val(),
+          };
+          $('.loader-wrapper').show();
+          window.location.href = get_manual_path('flights', payload);
+        });
+        function get_manual_path(req, payload)
+        {
+          var return_hash = "{0}/{1}/{2}/{3}".format(req, payload.origin, payload.destination, payload.departure);
+
+          if (payload.arrival) {
+            return_hash = "{0}/{1}".format(return_hash, payload.arrival)
+          }else{
+            return_hash = "{0}/{1}".format(return_hash, 0)
+
+          }
+          if (payload.triptype) {
+            return_hash = "{0}/{1}".format(return_hash, payload.triptype)
+          }
+          if (payload.cabinclass) {
+            return_hash = "{0}/{1}".format(return_hash, payload.cabinclass)
+          }
+          if (payload.passenger.adult) {
+            return_hash = "{0}/{1}".format(return_hash, payload.passenger.adult)
+          }
+          return_hash = "{0}/{1}".format(return_hash, payload.passenger.children);
+          return_hash = "{0}/{1}".format(return_hash, payload.passenger.infant);
+          return_hash = "{0}/{1}".format(return_hash, 0);
+          return_hash = "{0}/{1}".format(return_hash, 0);
+          return_hash = "{0}/{1}".format(return_hash, 0);
+
+            // alert(JSON.stringify(payload.passenger));
+        // alert(payload.passenger.children);
+        return base_url + return_hash;
+      }
+
+    });
+
+$(document).ready(function(){
+        // Safari 3.0+ "[object HTMLElementConstructor]"
+        var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0 || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
+        if(isSafari == true){
+          $(".bg-warning").css("padding-bottom", "82px !important");
+        }
+      });
+
+$(".car-startlocation").select2({
+  placeholder: "Search for an Item",
+  minimumInputLength: 3,
+  width: '100%',
+  maximumSelectionSize: 1,
+  ajax: {
+    url: 'https://www.phptravels.net/cartrawler/getLocations',
+    dataType: 'json',
+    type: "GET",
+    quietMillis: 50,
+    data: function (term) {
+      return {
+        term: term
+      };
+    },
+    results: function (data) {
+      return {
+        results: $.map(data.locations, function (item) {
+          return {
+            text: item.locationName,
+            code: item.locationCode,
+            id: item.locationName
+          }
+        })
+      };
+    }
+  }
+});
+$(".car-endlocation").select2({
+  placeholder: "Search for an Item",
+  minimumInputLength: 3,
+  width: '100%',
+  maximumSelectionSize: 1,
+  ajax: {
+    url: 'https://www.phptravels.net/cartrawler/getLocations',
+    dataType: 'json',
+    type: "GET",
+    quietMillis: 50,
+    data: function (term) {
+      return {
+        term: term
+      };
+    },
+    results: function (data) {
+      return {
+        results: $.map(data.locations, function (item) {
+          return {
+            text: item.locationName,
+            code: item.locationCode,
+            id: item.locationName
+          }
+        })
+      };
+    }
+  }
+});
+
+$(".car-startlocation").on("select2-selecting",function(e){
+  $("input[name='pickupLocationId']").val(e.object.code);
+  $("input[name='returnLocationId']").val(e.object.code);
+  $('.car-endlocation').select2('data', {
+    text: e.object.text,
+    id: e.object.text
+  });
+});
+
+var options = {
+  url: function(phrase) {
+   return "https://yasen.hotellook.com/autocomplete?lang=en-US&limit=10&term="+phrase;
+ },
+ categories:[{
+  listLocation: "cities"
+}],
+list: {
+  match: {
+    enabled: false
+  },
+  maxNumberOfElements: 10
+},
+getValue: "fullname",
+};
+$("#citiesInput").easyAutocomplete(options);
+
+var fmt = "dd/mm/yyyy";
+var baseURL = "https://www.phptravels.net/";
+
+// $(document).ready(function() {
+
+  /* Wish list global function */
+  $(".wishlistcheck").on("click",function(){
+    var id = $(this).prop('id');
+    var module = $(this).data('module');
+    var userid = "";
+    var action = "add";
+    var thisdiv = $(this);
+    if($(this).hasClass('fav')){
+      action = "remove";
+    }
+
+
+    $.post(baseURL+'account/wishlist/'+action,{module: module, itemid: id, loggedin: userid},function(resp){
+      var response = $.parseJSON(resp);
+      if(response.isloggedIn){
+
+        if(action == "remove"){
+          $("."+module+"wishsign"+id).html("+");
+        //$("."+module+"wishtext"+id).html("Add to Wishlist");
+        $("."+module+"wishtext"+id).tooltip('hide').attr('data-original-title', "Add to wishlist").tooltip('fixTitle').tooltip('show');
+        $("."+module+"wishsign"+id).removeClass("fav");
+        thisdiv.removeClass('fav');
+
+      }else{
+
+        thisdiv.addClass('fav');
+        $("."+module+"wishsign"+id).addClass("fav");
+        $("."+module+"wishsign"+id).html("-");
+        //$("."+module+"wishtext"+id).html("Remove From Wishlist");
+        $("."+module+"wishtext"+id).tooltip('hide').attr('data-original-title', "Remove from wishlist").tooltip('fixTitle').tooltip('show');
+
+      }
+
+    }else{
+      alert("Please Login to add to wishlist.");
+    }
+
+  });
+
+  });
+  /* End Wish list global function */
+
+
+  /* tours ajax categories loader */
+      $('#location').on('change',function(){ var location = $(this).val(); $.post(baseURL+'tours/tourajaxcalls/onChangeLocation',{location: location},function(resp){ var response = $.parseJSON(resp); console.log(response); if(response.hasResult){ $("#tourtype").html(response.optionsList); }else{ $("#tourtype").html(response.optionsList); } mySelectUpdate(); }) });
+  
+  /* cars ajax types loader */
+      var totalsVal=$("#cartotals").val();if(totalsVal=="1"){$(".showTotal").show()}else{$(".showTotal").hide()}
+    var pickupLocation=$('#pickuplocation').val();var dropoffLocation=$('#droplocation').val();$('#carlocations').on('change',function(){var location=$(this).val();$.post(baseURL+'cars/carajaxcalls/onChangeLocation',{location:location},function(resp){var response=$.parseJSON(resp);if(response.hasResult){$("#carlocations2").html(response.optionsList).select2({width:'100%',maximumSelectionSize:1})}})});$('#pickuplocation').on('change',function(){var location=$('#pickuplocation').val();var carid=$("#itemid").val();var pickupDate=$("#departcar").val();var dropoffDate=$("#returncar").val();$.post(baseURL+'cars/carajaxcalls/getDropoffLocations',{location:location,carid:carid,pickupDate:pickupDate,dropoffDate:dropoffDate},function(resp){var response=$.parseJSON(resp);console.log(response);if(response.hasResult){$(".showTotal").show();$(".totaldeposit").html(response.priceInfo.depositAmount);$(".totalTax").html(response.priceInfo.taxAmount);$(".grandTotal").html(response.priceInfo.grandTotal);$("#droplocation").html(response.optionsList).select2({width:'100%',maximumSelectionSize:1})}})});$('.carDates').blur(function(){setTimeout(function(){getCarPrice()},500)});$('#droplocation').on("change",(function(){getCarPrice()}));function getCarPrice(){var pickupLocation=$('#pickuplocation').val();var dropoffLocation=$('#droplocation').val();var carid=$("#itemid").val();var pickupDate=$("#departcar").val();var dropoffDate=$("#returncar").val();$.post(baseURL+'cars/carajaxcalls/getCarPriceAjax',{pickupLocation:pickupLocation,dropoffLocation:dropoffLocation,carid:carid,pickupDate:pickupDate,dropoffDate:dropoffDate},function(resp){var response=$.parseJSON(resp);console.log(response);$(".showTotal").show();$(".totaldeposit").html(response.depositAmount);$(".totalTax").html(response.taxAmount);$(".grandTotal").html(response.grandTotal)})}
+  
+  /* Datepicker */
+  /* disabling dates */
+  var nowTemp = new Date();
+  var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+  var checkin = $('.dpd1').datepicker({
+    format: fmt,
+    onRender: function(date) {
+      return date.valueOf() < now.valueOf() ? 'disabled' : '';
+    }
+  }).on('changeDate', function(ev) {
+    // if (ev.date.valueOf() > checkout.date.valueOf()) {
+      var newDate = new Date(ev.date);
+      newDate.setDate(newDate.getDate() + 1);
+      checkout.setValue(newDate);
+    // }
+    checkin.hide();
+    $('.dpd2')[0].focus();
+  }).data('datepicker');
+  var checkout = $('.dpd2').datepicker({
+    format: fmt,
+    onRender: function(date) {
+      return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+    }
+  }).on('changeDate', function(ev) {
+    var newDate = new Date(ev.date);
+    checkout.hide();
+
+  }).data('datepicker');
+
+  /* disabling dates for rooms search */
+  var nowTemprooms = new Date();
+  var nowrooms = new Date(nowTemprooms.getFullYear(), nowTemprooms.getMonth(), nowTemprooms.getDate(), 0, 0, 0, 0);
+  var checkinrooms = $('.dpd1rooms').datepicker({
+    format: fmt,
+    onRender: function(date) {
+      return date.valueOf() < now.valueOf() ? 'disabled' : '';
+    }
+  }).on('changeDate', function(ev) {
+    // if (ev.date.valueOf() > checkout.date.valueOf()) {
+      var newDaterooms = new Date(ev.date);
+      newDaterooms.setDate(newDaterooms.getDate() + 1);
+      checkoutrooms.setValue(newDaterooms);
+    // }
+    checkinrooms.hide();
+    $('.dpd2rooms')[0].focus();
+  }).data('datepicker');
+  var checkoutrooms = $('.dpd2rooms').datepicker({
+    format: fmt,
+    onRender: function(date) {
+      return date.valueOf() <= checkinrooms.date.valueOf() ? 'disabled' : '';
+    }
+  }).on('changeDate', function(ev) {
+    var newDaterooms = new Date(ev.date);
+    checkoutrooms.hide();
+
+  }).data('datepicker');
+
+  /* Expedia datepicker */
+    /* End Expedia Datepicker*/
+
+  /* Dohop datepicker */
+    /* End Dohop Datepicker*/
+
+      // Tours checkin - disabling Single date
+    var nowTemp4 = new Date();
+    var now4 = new Date(nowTemp4.getFullYear(), nowTemp4.getMonth(), nowTemp4.getDate(), 0, 0, 0, 0);
+    var checkin4 = $('.tchkin').datepicker({format: fmt, onRender: function(date) {
+      return date.valueOf() < now4.valueOf() ? 'disabled' : ''; } }).on('changeDate', function(ev) {
+        var tdate =new Date(ev.date);
+        $('.tchkin').datepicker('hide');
+      });
+              var nowTemp5 = new Date();
+      var now5 = new Date(nowTemp5.getFullYear(), nowTemp5.getMonth(), nowTemp5.getDate(), 0, 0, 0, 0);
+      var departcar = $('#departcar').datepicker({
+        format: fmt,
+        onRender: function(date) {
+          return date.valueOf() < now5.valueOf() ? 'disabled' : '';
+        }
+      }).on('changeDate', function(ev) {
+    //   if (ev.date.valueOf() > returncar.date.valueOf()) {
+      var newDate5 = new Date(ev.date)
+
+      newDate5.setDate(newDate5.getDate() + 0);
+
+      returncar.setValue(newDate5);
+    //  }
+    departcar.hide();
+    $('#returncar')[0].focus();
+  }).data('datepicker');
+      var returncar = $('#returncar').datepicker({
+        format: fmt,
+        onRender: function(date) {
+          return date.valueOf() <= departcar.date.valueOf() ? 'disabled' : '';
+        }
+      }).on('changeDate', function(ev) {
+        var cnewDate = new Date(ev.date);
+        returncar.hide();
+
+      }).data('datepicker');
+
+      var nowTemp52 = new Date();
+      var now52 = new Date(nowTemp52.getFullYear(), nowTemp52.getMonth(), nowTemp52.getDate(), 0, 0, 0, 0);
+      var departcar2 = $('#departcar2').datepicker({
+        format: fmt,
+        onRender: function(date) {
+          return date.valueOf() < now52.valueOf() ? 'disabled' : '';
+        }
+      }).on('changeDate', function(ev) {
+    //   if (ev.date.valueOf() > returncar.date.valueOf()) {
+      var newDate52 = new Date(ev.date)
+
+      newDate52.setDate(newDate52.getDate() + 0);
+
+      returncar2.setValue(newDate52);
+    //  }
+    departcar2.hide();
+    $('#returncar2')[0].focus();
+  }).data('datepicker');
+      var returncar2 = $('#returncar2').datepicker({
+        format: fmt,
+        onRender: function(date) {
+          return date.valueOf() <= departcar2.date.valueOf() ? 'disabled' : '';
+        }
+      }).on('changeDate', function(ev) {
+        var cnewDate2 = new Date(ev.date);
+        returncar2.hide();
+
+      }).data('datepicker');
+
+    
+
+
+
+    /* Newsletter subscription */
+    $(".sub_newsletter").on("click",function(){var e=$(".sub_email").val();$.post("https://www.phptravels.net/home/subscribe",{email:e},function(e){$(".subscriberesponse").html(e).fadeIn("slow"),setTimeout(function(){$(".subscriberesponse").fadeOut("slow")},2000)})});
+
+    /* dropdown on hover */
+    $("ul.nav li.dropdown").hover(function(){$(this).find(".dropdown-menu").stop(!0,!0).delay(200).fadeIn(200)},function(){$(this).find(".dropdown-menu").stop(!0,!0).delay(200).fadeOut(200)});
+
+// }); end: $(function(){});
+
+/* start change currency functionality */
+function change_currency(element){
+  var currency_id = $(element).data('code');
+  $("#loadingbg").css("display","block"),
+  $.post("https://www.phptravels.net/admin/ajaxcalls/changeCurrency",{ id: currency_id}, function() {
+    location.reload();
+  }
+  )};
+
+  /* map iframe modal */
+  function showMap(a,o){"modal"==o?($("#mapModal").modal("show"),$("#mapModal").on("shown.bs.modal",function(){$("#mapModal .mapContent").html('<iframe src="'+a+'" width="100%" height="450" frameborder="0" style="border:0"></iframe>')})):$("#"+o).html('<iframe src="'+a+'" width="100%" height="450" frameborder="0" style="border:0"></iframe>')}
+</script><div class="datepicker dropdown-menu"><div class="datepicker-days" style="display: block;"><table class=" table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">September 2019</th><th class="next"></th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day disabled old">25</td><td class="day disabled old">26</td><td class="day disabled old">27</td><td class="day disabled old">28</td><td class="day disabled old">29</td><td class="day disabled old">30</td><td class="day disabled old">31</td></tr><tr><td class="day disabled">1</td><td class="day disabled">2</td><td class="day disabled">3</td><td class="day disabled">4</td><td class="day disabled">5</td><td class="day disabled">6</td><td class="day disabled">7</td></tr><tr><td class="day disabled">8</td><td class="day disabled">9</td><td class="day disabled">10</td><td class="day disabled">11</td><td class="day disabled">12</td><td class="day disabled">13</td><td class="day disabled">14</td></tr><tr><td class="day disabled">15</td><td class="day  active">16</td><td class="day ">17</td><td class="day ">18</td><td class="day ">19</td><td class="day ">20</td><td class="day ">21</td></tr><tr><td class="day ">22</td><td class="day ">23</td><td class="day ">24</td><td class="day ">25</td><td class="day ">26</td><td class="day ">27</td><td class="day ">28</td></tr><tr><td class="day ">29</td><td class="day ">30</td><td class="day  new">1</td><td class="day  new">2</td><td class="day  new">3</td><td class="day  new">4</td><td class="day  new">5</td></tr></tbody></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">2019</th><th class="next"></th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month active">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">2010-2019</th><th class="next"></th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year active">2019</span><span class="year old">2020</span></td></tr></tbody></table></div></div><div class="datepicker dropdown-menu"><div class="datepicker-days" style="display: block;"><table class=" table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">September 2019</th><th class="next"></th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day disabled old">25</td><td class="day disabled old">26</td><td class="day disabled old">27</td><td class="day disabled old">28</td><td class="day disabled old">29</td><td class="day disabled old">30</td><td class="day disabled old">31</td></tr><tr><td class="day disabled">1</td><td class="day disabled">2</td><td class="day disabled">3</td><td class="day disabled">4</td><td class="day disabled">5</td><td class="day disabled">6</td><td class="day disabled">7</td></tr><tr><td class="day disabled">8</td><td class="day disabled">9</td><td class="day disabled">10</td><td class="day disabled">11</td><td class="day disabled">12</td><td class="day disabled">13</td><td class="day disabled">14</td></tr><tr><td class="day disabled">15</td><td class="day  active">16</td><td class="day ">17</td><td class="day ">18</td><td class="day ">19</td><td class="day ">20</td><td class="day ">21</td></tr><tr><td class="day ">22</td><td class="day ">23</td><td class="day ">24</td><td class="day ">25</td><td class="day ">26</td><td class="day ">27</td><td class="day ">28</td></tr><tr><td class="day ">29</td><td class="day ">30</td><td class="day  new">1</td><td class="day  new">2</td><td class="day  new">3</td><td class="day  new">4</td><td class="day  new">5</td></tr></tbody></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">2019</th><th class="next"></th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month active">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">2010-2019</th><th class="next"></th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year active">2019</span><span class="year old">2020</span></td></tr></tbody></table></div></div><div class="datepicker dropdown-menu"><div class="datepicker-days" style="display: block;"><table class=" table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">September 2019</th><th class="next"></th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day disabled old">25</td><td class="day disabled old">26</td><td class="day disabled old">27</td><td class="day disabled old">28</td><td class="day disabled old">29</td><td class="day disabled old">30</td><td class="day disabled old">31</td></tr><tr><td class="day disabled">1</td><td class="day disabled">2</td><td class="day disabled">3</td><td class="day disabled">4</td><td class="day disabled">5</td><td class="day disabled">6</td><td class="day disabled">7</td></tr><tr><td class="day disabled">8</td><td class="day disabled">9</td><td class="day disabled">10</td><td class="day disabled">11</td><td class="day disabled">12</td><td class="day disabled">13</td><td class="day disabled">14</td></tr><tr><td class="day disabled">15</td><td class="day disabled">16</td><td class="day  active">17</td><td class="day ">18</td><td class="day ">19</td><td class="day ">20</td><td class="day ">21</td></tr><tr><td class="day ">22</td><td class="day ">23</td><td class="day ">24</td><td class="day ">25</td><td class="day ">26</td><td class="day ">27</td><td class="day ">28</td></tr><tr><td class="day ">29</td><td class="day ">30</td><td class="day  new">1</td><td class="day  new">2</td><td class="day  new">3</td><td class="day  new">4</td><td class="day  new">5</td></tr></tbody></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">2019</th><th class="next"></th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month active">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">2010-2019</th><th class="next"></th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year active">2019</span><span class="year old">2020</span></td></tr></tbody></table></div></div>
+
+
+
+<div class="datepicker dropdown-menu"><div class="datepicker-days" style="display: block;"><table class=" table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">September 2019</th><th class="next"></th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day disabled old">25</td><td class="day disabled old">26</td><td class="day disabled old">27</td><td class="day disabled old">28</td><td class="day disabled old">29</td><td class="day disabled old">30</td><td class="day disabled old">31</td></tr><tr><td class="day disabled">1</td><td class="day disabled">2</td><td class="day disabled">3</td><td class="day disabled">4</td><td class="day disabled">5</td><td class="day disabled">6</td><td class="day disabled">7</td></tr><tr><td class="day disabled">8</td><td class="day disabled">9</td><td class="day disabled">10</td><td class="day disabled">11</td><td class="day disabled">12</td><td class="day disabled">13</td><td class="day disabled">14</td></tr><tr><td class="day disabled">15</td><td class="day  active">16</td><td class="day ">17</td><td class="day ">18</td><td class="day ">19</td><td class="day ">20</td><td class="day ">21</td></tr><tr><td class="day ">22</td><td class="day ">23</td><td class="day ">24</td><td class="day ">25</td><td class="day ">26</td><td class="day ">27</td><td class="day ">28</td></tr><tr><td class="day ">29</td><td class="day ">30</td><td class="day  new">1</td><td class="day  new">2</td><td class="day  new">3</td><td class="day  new">4</td><td class="day  new">5</td></tr></tbody></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">2019</th><th class="next"></th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month active">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">2010-2019</th><th class="next"></th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year active">2019</span><span class="year old">2020</span></td></tr></tbody></table></div></div><div class="datepicker dropdown-menu"><div class="datepicker-days" style="display: block;"><table class=" table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">September 2019</th><th class="next"></th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day disabled old">25</td><td class="day disabled old">26</td><td class="day disabled old">27</td><td class="day disabled old">28</td><td class="day disabled old">29</td><td class="day disabled old">30</td><td class="day disabled old">31</td></tr><tr><td class="day disabled">1</td><td class="day disabled">2</td><td class="day disabled">3</td><td class="day disabled">4</td><td class="day disabled">5</td><td class="day disabled">6</td><td class="day disabled">7</td></tr><tr><td class="day disabled">8</td><td class="day disabled">9</td><td class="day disabled">10</td><td class="day disabled">11</td><td class="day disabled">12</td><td class="day disabled">13</td><td class="day disabled">14</td></tr><tr><td class="day disabled">15</td><td class="day  active">16</td><td class="day ">17</td><td class="day ">18</td><td class="day ">19</td><td class="day ">20</td><td class="day ">21</td></tr><tr><td class="day ">22</td><td class="day ">23</td><td class="day ">24</td><td class="day ">25</td><td class="day ">26</td><td class="day ">27</td><td class="day ">28</td></tr><tr><td class="day ">29</td><td class="day ">30</td><td class="day  new">1</td><td class="day  new">2</td><td class="day  new">3</td><td class="day  new">4</td><td class="day  new">5</td></tr></tbody></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">2019</th><th class="next"></th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month active">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">2010-2019</th><th class="next"></th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year active">2019</span><span class="year old">2020</span></td></tr></tbody></table></div></div><div class="datepicker dropdown-menu"><div class="datepicker-days" style="display: block;"><table class=" table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">September 2019</th><th class="next"></th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day disabled old">25</td><td class="day disabled old">26</td><td class="day disabled old">27</td><td class="day disabled old">28</td><td class="day disabled old">29</td><td class="day disabled old">30</td><td class="day disabled old">31</td></tr><tr><td class="day disabled">1</td><td class="day disabled">2</td><td class="day disabled">3</td><td class="day disabled">4</td><td class="day disabled">5</td><td class="day disabled">6</td><td class="day disabled">7</td></tr><tr><td class="day disabled">8</td><td class="day disabled">9</td><td class="day disabled">10</td><td class="day disabled">11</td><td class="day disabled">12</td><td class="day disabled">13</td><td class="day disabled">14</td></tr><tr><td class="day disabled">15</td><td class="day  active">16</td><td class="day ">17</td><td class="day ">18</td><td class="day ">19</td><td class="day ">20</td><td class="day ">21</td></tr><tr><td class="day ">22</td><td class="day ">23</td><td class="day ">24</td><td class="day ">25</td><td class="day ">26</td><td class="day ">27</td><td class="day ">28</td></tr><tr><td class="day ">29</td><td class="day ">30</td><td class="day  new">1</td><td class="day  new">2</td><td class="day  new">3</td><td class="day  new">4</td><td class="day  new">5</td></tr></tbody></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">2019</th><th class="next"></th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month active">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">2010-2019</th><th class="next"></th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year active">2019</span><span class="year old">2020</span></td></tr></tbody></table></div></div><div class="datepicker dropdown-menu"><div class="datepicker-days" style="display: block;"><table class=" table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">September 2019</th><th class="next"></th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day disabled old">25</td><td class="day disabled old">26</td><td class="day disabled old">27</td><td class="day disabled old">28</td><td class="day disabled old">29</td><td class="day disabled old">30</td><td class="day disabled old">31</td></tr><tr><td class="day disabled">1</td><td class="day disabled">2</td><td class="day disabled">3</td><td class="day disabled">4</td><td class="day disabled">5</td><td class="day disabled">6</td><td class="day disabled">7</td></tr><tr><td class="day disabled">8</td><td class="day disabled">9</td><td class="day disabled">10</td><td class="day disabled">11</td><td class="day disabled">12</td><td class="day disabled">13</td><td class="day disabled">14</td></tr><tr><td class="day disabled">15</td><td class="day disabled active">16</td><td class="day ">17</td><td class="day ">18</td><td class="day ">19</td><td class="day ">20</td><td class="day ">21</td></tr><tr><td class="day ">22</td><td class="day ">23</td><td class="day ">24</td><td class="day ">25</td><td class="day ">26</td><td class="day ">27</td><td class="day ">28</td></tr><tr><td class="day ">29</td><td class="day ">30</td><td class="day  new">1</td><td class="day  new">2</td><td class="day  new">3</td><td class="day  new">4</td><td class="day  new">5</td></tr></tbody></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">2019</th><th class="next"></th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month active">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">2010-2019</th><th class="next"></th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year active">2019</span><span class="year old">2020</span></td></tr></tbody></table></div></div></body></html>

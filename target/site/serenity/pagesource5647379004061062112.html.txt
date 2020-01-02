@@ -1,0 +1,1831 @@
+<html><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="PHPTRAVELS">
+<title></title>
+<link rel="shortcut icon" href="https://www.phptravels.net/uploads/global/favicon.png">
+<link href="https://www.phptravels.net/themes/default/assets/css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="https://www.phptravels.net/themes/default/style.css" rel="stylesheet">
+<link href="https://www.phptravels.net/themes/default/assets/css/navigation.css" rel="stylesheet">
+<link href="https://www.phptravels.net/themes/default/assets/css/mobile.css" rel="stylesheet" media="screen">
+<!-- Child Theme -->
+<style> @import "https://www.phptravels.net/themes/default/assets/css/childstyle.css"; </style>
+
+<!-- facebook -->
+<meta property="og:title" content="">
+<meta property="og:site_name" content="PHPTRAVELS">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://www.phptravels.net/uploads/global/favicon.png">
+<meta property="og:url" content="https://www.phptravels.net/">
+<meta property="og:publisher" content="https://www.facebook.com/PHPTRAVELS">
+<script type="application/ld+json">{"@context":"http://schema.org/","@type":"Organization","name":"PHPTRAVELS","url":"https://www.phptravels.net/","logo":"https://www.phptravels.net/uploads/global/favicon.png","sameAs":"https://www.facebook.com/PHPTRAVELS","sameAs":"https://twitter.com/PHPTRAVELS","sameAs":"https://www.pinterest.com/PHPTRAVELS/","sameAs":"https://plus.google.com/u/0/PHPTRAVELS/posts","contactPoint":{"@type":"ContactPoint","telephone":"+1-234-56789","contactType":"Customer Service"}}{"@context":"http://schema.org","@type":"WebSite","name":"PHPTRAVELS","url":"https://www.phptravels.net"}  </script>
+
+<!-- Google Maps --> 
+<!-- jQuery --> <script src="https://www.phptravels.net/themes/default/assets/js/jquery-2.2.4.min.js"></script>
+<!-- RTL CSS --> <!-- Mobile Redirect --> <!--[if lt IE 7] > <link rel="stylesheet" type="text/css" href="https://www.phptravels.net/themes/default/assets/css/font-awesome-ie7.css" media="screen" /> <![endif]-->
+<!-- Autocomplete files-->
+<link href="https://www.phptravels.net/themes/default/assets/js/autocomplete/easy-autocomplete.min.css" rel="stylesheet" type="text/css">
+<script src="https://www.phptravels.net/themes/default/assets/js/autocomplete/jquery.easy-autocomplete.min.js" type="text/javascript"></script>
+<script src="https://www.phptravels.net/assets/include/datepicker/datepicker.js"></script>
+<script src="https://www.phptravels.net/themes/default/assets/js/bootstrap.min.js"></script>
+<!-- Autocomplete files-->
+<script>var base_url = 'https://www.phptravels.net/';</script>
+<style type="text/css"></style><style type="text/css"></style></head>
+<body style="overflow: visible;">
+<div id="preloader" class="loader-wrapper" style="display: none;">
+    <div class="progress">
+     <div class="indeterminate"></div>
+    </div>
+</div>
+<div class="tbar-top hidden-sm hidden-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-4 col-xs-7 go-right">
+                <div class="contact-box">
+                    <ul class="hidden-sm hidden-xs">
+                                                <li class="go-right">
+                            <i class="icon_set_1_icon-55 go-right align-M mrg5-R f-grey66 fs13"></i>
+                            <span class="contact-no align-M">Call Now: <a href="#tel:+1-234-56789" class="number">+1-234-56789</a></span>
+                        </li>
+                                                                        <li class="go-right">
+                            <span class="sep go-right">|</span>
+                            <i class="fa fa-envelope-o go-right align-M mrg5-R f-grey66 fs13"></i>
+                            <span class="tp-mail"><a title="Mail" href="mailto:info@travelagency.com">info@travelagency.com</a></span>
+                        </li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal  left  fade" id="sidebar_left" tabindex="1" role="dialog" aria-labelledby="sidebar_left">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close go-left" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="close icon-angle-left"></i></span></button>
+                <h4 class="modal-title go-text-right" id="sidebar_left"><i class="icon_set_1_icon-65 go-right"></i> Settings</h4>
+            </div>
+            <ul class="nav navbar-nav navbar-side navbar-right sidebar go-left user_menu">
+        <li id="li_myaccount">
+        <a href="javascript:void(0);" data-toggle="dropdown" class="dropdown-toggle go-text-right"><i class="icon_set_1_icon-70 go-right"></i> My Account <b class="lightcaret mt-2 go-left"></b></a>
+        <ul class="dropdown-menu">
+            <li><a class="go-text-right" href="https://www.phptravels.net/login"> Login</a></li>
+            <li><a class="go-text-right" href="https://www.phptravels.net/register">  Sign Up</a></li>
+        </ul>
+    </li>
+        <div class="header-brdr pull-left hidden-xs hidden-md go-left"></div>
+            <li class="dropdown">
+            <a class="dropdown-toggle go-text-right" data-toggle="dropdown" href="#">
+                <strong><i class="icon-money-2 go-right"></i> 
+                    USD                </strong>
+            </a>
+            <ul class="dropdown-menu wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                                <li>
+                    <a class="go-text-right" data-code="1" href="#" onclick="change_currency(this)">
+                        USD                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="3" href="#" onclick="change_currency(this)">
+                        GBP                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="9" href="#" onclick="change_currency(this)">
+                        SAR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="11" href="#" onclick="change_currency(this)">
+                        EUR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="12" href="#" onclick="change_currency(this)">
+                        PKR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="13" href="#" onclick="change_currency(this)">
+                        KWD                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="17" href="#" onclick="change_currency(this)">
+                        JPY                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="18" href="#" onclick="change_currency(this)">
+                        INR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="19" href="#" onclick="change_currency(this)">
+                        CNY                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="20" href="#" onclick="change_currency(this)">
+                        TRY                    </a>
+                </li>
+                            </ul>
+        </li>
+            <ul class="nav navbar-nav">
+        <li class="dropdown" style="margin-top:-9px">
+            <a href="javascript:void(0);" data-toggle="dropdown" class="go-text-right dropdown-toggle" aria-expanded="true"> <img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/en.png" width="21" height="14" alt="English"> English </a>
+            <ul class="dropdown-menu wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                                <li><a href="" data-langname="Russian" id="ru" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/ru.png" width="21" height="14" alt="">  Russian</a></li>
+                                <li><a href="" data-langname="Farsi" id="fa" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/fa.png" width="21" height="14" alt="">  Farsi</a></li>
+                                <li><a href="" data-langname="German" id="de" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/de.png" width="21" height="14" alt="">  German</a></li>
+                                <li><a href="" data-langname="French" id="fr" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/fr.png" width="21" height="14" alt="">  French</a></li>
+                                <li><a href="" data-langname="Turkish" id="tr" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/tr.png" width="21" height="14" alt="">  Turkish</a></li>
+                                <li><a href="" data-langname="Arabic" id="ar" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/ar.png" width="21" height="14" alt="">  Arabic</a></li>
+                                <li><a href="" data-langname="Spanish" id="es" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/es.png" width="21" height="14" alt="">  Spanish</a></li>
+                                <li><a href="" data-langname="English" id="en" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/en.png" width="21" height="14" alt="">  English</a></li>
+                            </ul>
+        </li>
+    </ul>
+            <li class="visible-xs mob-menu go-text-right"><i class="go-right icon_set_1_icon-87"></i> Services</li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/About-Us"><i class="icon_set_1_icon-93 go-right "></i> About us  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Contact-Us"><i class="icon_set_1_icon-84 go-right "></i> Contact Us  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Terms-of-Use"><i class="icon_set_1_icon-92 go-right "></i> Terms and Conditions  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Privacy-Policy"><i class="icon_set_1_icon-17 go-right "></i> Privacy Policy  <i class="angle right icon pull-right"></i></a></li>
+</ul>        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+   <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header go-right">
+                <button data-toggle="modal" data-target="#sidebar_left" class="navbar-toggle go-left" type="button" style="margin-right: 10px;">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a href="https://www.phptravels.net/" class="navbar-brand go-right" target="">
+                 <img class="" src="https://www.phptravels.net/uploads/global/logo.png" alt="">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav go-right">
+              <!--<li class="text-center go-right"><a href="https://www.phptravels.net/">Home</a></li>-->
+                                <li role="presentation" class="active text-center" data-title="thhotels">
+                    <a class="text-center" href="https://www.phptravels.net/m-thhotels" target="_self">
+                <i class="fa fa-hotel"></i>
+                <div class="visible-xs visible-md clearfix"></div>
+                <span class="hidden-xs">Hotels    </span>
+            </a>
+            </li>
+    <li role="presentation" class=" text-center" data-title="thflight">
+                    <a class="text-center" href="https://www.phptravels.net/m-thflight" target="_self">
+                <i class="fa fa-plane"></i>
+                <div class="visible-xs visible-md clearfix"></div>
+                <span class="hidden-xs">Flights   </span>
+            </a>
+            </li>
+    <li role="presentation" class=" text-center" data-title="tours">
+                    <a class="text-center" href="https://www.phptravels.net/m-tours" target="_self">
+                <i class="fa fa-suitcase"></i>
+                <div class="visible-xs visible-md clearfix"></div>
+                <span class="hidden-xs">Tours     </span>
+            </a>
+            </li>
+    <li role="presentation" class=" text-center" data-title="cars">
+                    <a class="text-center" href="https://www.phptravels.net/m-cars" target="_self">
+                <i class="fa fa-car"></i>
+                <div class="visible-xs visible-md clearfix"></div>
+                <span class="hidden-xs">Cars      </span>
+            </a>
+            </li>
+                                          <li class="text-center go-right"><a href="https://www.phptravels.net/blog">Blog      </a></li>
+                                          <li class="text-center go-right"><a href="https://www.phptravels.net/offers">Offers    </a></li>
+                          </ul>
+            <ul class="nav navbar-nav navbar-right hidden-sm go-left">
+              <ul class="nav navbar-nav navbar-side navbar-right sidebar go-left user_menu">
+        <li id="li_myaccount">
+        <a href="javascript:void(0);" data-toggle="dropdown" class="dropdown-toggle go-text-right"><i class="icon_set_1_icon-70 go-right"></i> My Account <b class="lightcaret mt-2 go-left"></b></a>
+        <ul class="dropdown-menu">
+            <li><a class="go-text-right" href="https://www.phptravels.net/login"> Login</a></li>
+            <li><a class="go-text-right" href="https://www.phptravels.net/register">  Sign Up</a></li>
+        </ul>
+    </li>
+        <div class="header-brdr pull-left hidden-xs hidden-md go-left"></div>
+            <li class="dropdown">
+            <a class="dropdown-toggle go-text-right" data-toggle="dropdown" href="#">
+                <strong><i class="icon-money-2 go-right"></i> 
+                    USD                </strong>
+            </a>
+            <ul class="dropdown-menu wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                                <li>
+                    <a class="go-text-right" data-code="1" href="#" onclick="change_currency(this)">
+                        USD                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="3" href="#" onclick="change_currency(this)">
+                        GBP                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="9" href="#" onclick="change_currency(this)">
+                        SAR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="11" href="#" onclick="change_currency(this)">
+                        EUR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="12" href="#" onclick="change_currency(this)">
+                        PKR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="13" href="#" onclick="change_currency(this)">
+                        KWD                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="17" href="#" onclick="change_currency(this)">
+                        JPY                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="18" href="#" onclick="change_currency(this)">
+                        INR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="19" href="#" onclick="change_currency(this)">
+                        CNY                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="20" href="#" onclick="change_currency(this)">
+                        TRY                    </a>
+                </li>
+                            </ul>
+        </li>
+            <ul class="nav navbar-nav">
+        <li class="dropdown" style="margin-top:-9px">
+            <a href="javascript:void(0);" data-toggle="dropdown" class="go-text-right dropdown-toggle" aria-expanded="true"> <img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/en.png" width="21" height="14" alt="English"> English </a>
+            <ul class="dropdown-menu wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                                <li><a href="" data-langname="Russian" id="ru" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/ru.png" width="21" height="14" alt="">  Russian</a></li>
+                                <li><a href="" data-langname="Farsi" id="fa" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/fa.png" width="21" height="14" alt="">  Farsi</a></li>
+                                <li><a href="" data-langname="German" id="de" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/de.png" width="21" height="14" alt="">  German</a></li>
+                                <li><a href="" data-langname="French" id="fr" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/fr.png" width="21" height="14" alt="">  French</a></li>
+                                <li><a href="" data-langname="Turkish" id="tr" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/tr.png" width="21" height="14" alt="">  Turkish</a></li>
+                                <li><a href="" data-langname="Arabic" id="ar" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/ar.png" width="21" height="14" alt="">  Arabic</a></li>
+                                <li><a href="" data-langname="Spanish" id="es" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/es.png" width="21" height="14" alt="">  Spanish</a></li>
+                                <li><a href="" data-langname="English" id="en" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/en.png" width="21" height="14" alt="">  English</a></li>
+                            </ul>
+        </li>
+    </ul>
+            <li class="visible-xs mob-menu go-text-right"><i class="go-right icon_set_1_icon-87"></i> Services</li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/About-Us"><i class="icon_set_1_icon-93 go-right "></i> About us  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Contact-Us"><i class="icon_set_1_icon-84 go-right "></i> Contact Us  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Terms-of-Use"><i class="icon_set_1_icon-92 go-right "></i> Terms and Conditions  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Privacy-Policy"><i class="icon_set_1_icon-17 go-right "></i> Privacy Policy  <i class="angle right icon pull-right"></i></a></li>
+</ul>            </ul>
+            </div>
+        </div>
+    </nav>
+<div id="body-section"><link rel="stylesheet" href="https://www.phptravels.net/themes/default/assets/css/travelport.css">
+<link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+<link href="https://www.phptravels.net/themes/default/assets/include/slider/slider.min.css" rel="stylesheet">
+<script src="https://www.phptravels.net/themes/default/assets/include/slider/slider.js"></script>
+<style>
+.rooms-search__container.details-page-view form input{font-size:1.125rem;font-weight:500;height:40px;}
+</style>
+<div class="container">
+    <div class="acc-details__description">
+        <div class="description">
+            <div class="description__header">
+                <div class="description__title text-700 c-very-dark-grey">
+                    <span class="h2 strong">Dann Carlton Medellin Hotel</span>
+                    <span class="go-right mob-fs10">
+                                            <i class="star star icon-star-5"></i>
+                                            <i class="star star icon-star-5"></i>
+                                            <i class="star star icon-star-5"></i>
+                                            <i class="star star icon-star-5"></i>
+                                            <i class="star star icon-star-5"></i>
+                                        </span>
+                </div>
+            </div>
+            <div class="description__address c-text-grey text-xs-regular">
+                <span class="description__address-text text-s-regular-sm">
+                    Carrera 43a No.7-50, Avenida El Poblado                </span>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="col-md-12">
+            <style>.fotorama1568510613898 .fotorama__nav--thumbs .fotorama__nav__frame{
+padding:2px;
+height:64px}
+.fotorama1568510613898 .fotorama__thumb-border{
+height:60px;
+border-width:2px;
+margin-top:2px}</style><div class="fotorama--hidden"></div><div style="width:100%" class="row fotorama bg-dark fotorama1568510613898" data-width="1000" data-height="490" data-allowfullscreen="true" data-autoplay="true" data-nav="thumbs"><div class="fotorama__wrap fotorama__wrap--css3 fotorama__wrap--slide fotorama__wrap--toggle-arrows" style="width: 1000px; min-width: 0px; max-width: 100%;"><div class="fotorama__stage" style="width: 1000px; height: 490px;"><div class="fotorama__stage__shaft fotorama__grab" style="transition-duration: 0ms; transform: translate3d(0.001px, 0px, 0px); width: 1000px; margin-left: 0px;"><div class="fotorama__stage__frame fotorama__active fotorama__loaded fotorama__loaded--img" style="left: 0px;"><img src="https://i.travelapi.com/hotels/1000000/120000/112600/112569/dfb1ec10_b.jpg" class="fotorama__img" style="width: 740px; height: 490px; margin-left: -370px; margin-top: -245px;"></div><div class="fotorama__stage__frame fotorama__loaded fotorama__loaded--img" style="left: 1002px;"><img src="https://i.travelapi.com/hotels/1000000/120000/112600/112569/043d289f_b.jpg" class="fotorama__img" style="width: 1000px; height: 363px; margin-left: -500px; margin-top: -182px;"></div></div><div class="fotorama__arr fotorama__arr--prev fotorama__arr--disabled"></div><div class="fotorama__arr fotorama__arr--next"></div><div class="fotorama__video-close"></div><div class="fotorama__fullscreen-icon"></div></div><div class="fotorama__nav-wrap"><div class="fotorama__nav fotorama__nav--thumbs fotorama__shadows--right" style="width: 1000px;"><div class="fotorama__nav__shaft fotorama__grab" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);"><div class="fotorama__thumb-border" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px); width: 60px;"></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb fotorama__active" style="width: 64px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="https://i.travelapi.com/hotels/1000000/120000/112600/112569/dfb1ec10_b.jpg" class="fotorama__img" style="width: 97px; height: 64px; margin-left: -49px; margin-top: -32px;"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="https://i.travelapi.com/hotels/1000000/120000/112600/112569/043d289f_b.jpg" class="fotorama__img" style="width: 177px; height: 64px; margin-left: -89px; margin-top: -32px;"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="https://i.travelapi.com/hotels/1000000/120000/112600/112569/69b3f2d0_b.jpg" class="fotorama__img" style="width: 97px; height: 64px; margin-left: -49px; margin-top: -32px;"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="https://i.travelapi.com/hotels/1000000/120000/112600/112569/77d3f0af_b.jpg" class="fotorama__img" style="width: 96px; height: 64px; margin-left: -48px; margin-top: -32px;"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="https://i.travelapi.com/hotels/1000000/120000/112600/112569/0a6cf204_b.jpg" class="fotorama__img" style="width: 96px; height: 64px; margin-left: -48px; margin-top: -32px;"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="https://i.travelapi.com/hotels/1000000/120000/112600/112569/a9dc7497_b.jpg" class="fotorama__img" style="width: 93px; height: 64px; margin-left: -47px; margin-top: -32px;"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="https://i.travelapi.com/hotels/1000000/120000/112600/112569/0693376f_b.jpg" class="fotorama__img" style="width: 96px; height: 64px; margin-left: -48px; margin-top: -32px;"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="https://i.travelapi.com/hotels/1000000/120000/112600/112569/cf428456_b.jpg" class="fotorama__img" style="width: 96px; height: 64px; margin-left: -48px; margin-top: -32px;"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="https://i.travelapi.com/hotels/1000000/120000/112600/112569/9f10d454_b.jpg" class="fotorama__img" style="width: 96px; height: 64px; margin-left: -48px; margin-top: -32px;"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="https://i.travelapi.com/hotels/1000000/120000/112600/112569/4e0f9b13_b.jpg" class="fotorama__img" style="width: 96px; height: 64px; margin-left: -48px; margin-top: -32px;"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="https://i.travelapi.com/hotels/1000000/120000/112600/112569/1b5cdd80_b.jpg" class="fotorama__img" style="width: 96px; height: 64px; margin-left: -48px; margin-top: -32px;"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="https://i.travelapi.com/hotels/1000000/120000/112600/112569/35922cff_b.jpg" class="fotorama__img" style="width: 96px; height: 64px; margin-left: -48px; margin-top: -32px;"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="https://i.travelapi.com/hotels/1000000/120000/112600/112569/f1dcaec1_b.jpg" class="fotorama__img" style="width: 95px; height: 64px; margin-left: -48px; margin-top: -32px;"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="https://i.travelapi.com/hotels/1000000/120000/112600/112569/ea4a83f7_b.jpg" class="fotorama__img" style="width: 96px; height: 64px; margin-left: -48px; margin-top: -32px;"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="https://i.travelapi.com/hotels/1000000/120000/112600/112569/6300fc38_b.jpg" class="fotorama__img" style="width: 96px; height: 64px; margin-left: -48px; margin-top: -32px;"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="https://i.travelapi.com/hotels/1000000/120000/112600/112569/8db75ad4_b.jpg" class="fotorama__img" style="width: 96px; height: 64px; margin-left: -48px; margin-top: -32px;"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" style="width: 64px;"><div class="fotorama__thumb"></div></div></div></div></div></div></div>
+        </div>
+    </div>
+
+
+    <div class="clearfix"></div>
+
+    <section>
+        <div class="overview">
+            <div class="overview__body">
+                <h4 class="overview__header h4">Overview</h4>
+                <p class="text-s-regular c-text-grey overview__content--less">
+                    </p><p><b>Property Location</b> <br>Located in Medellin (El Poblado), Dann Carlton Medellin Hotel is within a 15-minute walk of Lleras Park and Santa Fe Mall.  This 4.5-star hotel is 2.9 mi (4.7 km) from Park of Lights and 3.2 mi (5.2 km) from Botero Plaza.</p><p><b>Rooms</b> <br>Make yourself at home in one of the 200 air-conditioned rooms featuring minibars and flat-screen televisions. Complimentary wireless Internet access keeps you connected, and cable programming is available for your entertainment. Bathrooms have complimentary toiletries and hair dryers. Conveniences include safes and desks, and housekeeping is provided daily.</p><p><b>Amenities</b> <br>Pamper yourself with a visit to the spa, which offers massages, body treatments, and facials. If you're looking for recreational opportunities, you'll find a health club, an outdoor pool, and a spa tub. Additional features at this hotel include complimentary wireless Internet access, concierge services, and a hair salon.</p><p><b>Dining</b> <br>Grab a bite at Zaguan del Patio, one of the hotel's 4 restaurants, or stay in and take advantage of the 24-hour room service. Quench your thirst with your favorite drink at the bar/lounge. A complimentary buffet breakfast is served daily.</p><p><b>Business, Other Amenities</b> <br>Featured amenities include a 24-hour business center, complimentary newspapers in the lobby, and dry cleaning/laundry services. Planning an event in Medellin? This hotel has facilities measuring 603 square feet (56 square meters), including a conference center. A roundtrip airport shuttle is provided for a surcharge (available 24 hours), and free self parking is available onsite.</p>                <p></p>
+            </div>
+        </div>
+    </section>
+    <section class="acc-details__rooms-section" id="rooms">
+        <div class="acc-details__search-header">
+            <div class="text-l c-dark-blue acc-details__search-header__title">Rooms available</div>
+        </div>
+        <div class="availability-search">
+            <div class="rooms-search">
+                <div class="rooms-search__container details-page-view">
+                    <form action="https://www.phptravels.net/thhotels/recheck/Dann Carlton Medellin Hotel" method="post">
+                        <div style="width:100%">
+                            <div class="form-group col-md-3">
+                                <label class="go-right">Check in</label>
+                                <input type="text" placeholder="Check in" name="checkin" value="2019-09-23" class="form-control hpcheckin">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label class="go-right">Check out</label>
+                                <input type="text" placeholder="Check out" name="checkout" value="2019-09-30" class="form-control hpcheckout">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label class="go-right">Adults</label>
+                                <select class="form-control fs12" name="adults">
+                                    <option value="1">1</option>
+                                    <option value="2" selected="">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label class="go-right">Children</label>
+                                <select class="form-control fs12" name="children">
+                                    <option value="1" selected="">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <input type="hidden" name="hotel_id" value="185071">
+                                <input type="hidden" name="custom_payload" value="{&quot;vendor&quot;:3}">
+                                <input type="hidden" name="search_form" value="{&quot;action&quot;:&quot;https:\/\/www.phptravels.net\/thhotels\/search&quot;,&quot;slug&quot;:&quot;thhotels&quot;,&quot;city&quot;:&quot;medellin&quot;,&quot;checkin&quot;:&quot;09\/23\/2019&quot;,&quot;checkout&quot;:&quot;09\/30\/2019&quot;,&quot;adults&quot;:&quot;2&quot;,&quot;children&quot;:&quot;0&quot;,&quot;ota_id&quot;:&quot;8ed24880-e6ad-11e8-a4c9-15f8a84bf814&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;vendor&quot;:3,&quot;ip_address&quot;:&quot;181.128.92.156&quot;}">
+                                <button type="submit" class="btn btn-danger" style="margin-top: 25px;"><i class="icon_set_1_icon-66"></i>
+                                    <span id="btn-submit-text">Search</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="acc-details__search-results hotelRateDetail">
+            <div class="room-cards">
+                                                            <div class="room-card">
+                            <div class="room-card__container">
+                                <div class="room-card__body">
+                                    <div class="room-card__content">
+                                        <div class="room-card__image-box">
+                                                                                        <img class="room-card__image" src="https://www.phptravels.net/themes/default/assets/img/hotel.jpg">
+                                        </div>
+                                        <div class="room-card__content--left">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Suite</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="room-card__content--right">
+                                            <div class="room-price__container">
+                                                <span class="text-l c-dark-blue">1529.86</span>
+                                            </div>
+                                            <span class="text-xs-regular c-text-grey">Total price including taxes and fees</span>
+                                            <form action="https://www.phptravels.net/thhotels/checkout/Dann Carlton Medellin Hotel" method="post">
+                                                <input type="hidden" name="room" value="eyJyb29tX3N0YXR1cyI6IiIsInJlZnVuZGFibGUiOiIiLCJpZCI6MTEyNTY5LCJ0eXBlX2lkIjoiIiwicHJpY2UiOiIxNTI5Ljg2IiwiaG90ZWxfaWQiOiIxODUwNzEiLCJyb29tX2Rlc2NyaXB0aW9ucyI6IlN1aXRlIiwiaW1hZ2UiOlsiIl0sInJvb21fbmFtZSI6IlN1aXRlIiwicm9vbV9zbHVnIjoiU3VpdGUiLCJzdXBwbGllcl9pZCI6IiIsImFkdWx0cyI6MiwiY2hpbGRzIjowLCJ0eXBlIjoiU3VpdGUiLCJpbWFnZXMiOlsiIl19">
+                                                <input type="hidden" name="hotel" value="eyJpZCI6MTg1MDcxLCJob3RlbF9vcmRlciI6IiIsImhvdGVsX2lzX2ZlYXR1cmVkIjoiIiwic2xpZGVyX2ltYWdlIjoiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC9kZmIxZWMxMF96LmpwZyIsImNvbXBhbnlfbmFtZSI6IkRhbm4gQ2FybHRvbiBNZWRlbGxpbiBIb3RlbCIsImhvdGVsX2RvbWFpbiI6IiIsImFkZHJlc3MiOiJDYXJyZXJhIDQzYSBOby43LTUwLCBBdmVuaWRhIEVsIFBvYmxhZG8iLCJkZXNjcmlwdGlvbiI6IjxwPjxiPlByb3BlcnR5IExvY2F0aW9uPFwvYj4gPGJyIFwvPkxvY2F0ZWQgaW4gTWVkZWxsaW4gKEVsIFBvYmxhZG8pLCBEYW5uIENhcmx0b24gTWVkZWxsaW4gSG90ZWwgaXMgd2l0aGluIGEgMTUtbWludXRlIHdhbGsgb2YgTGxlcmFzIFBhcmsgYW5kIFNhbnRhIEZlIE1hbGwuICBUaGlzIDQuNS1zdGFyIGhvdGVsIGlzIDIuOSBtaSAoNC43IGttKSBmcm9tIFBhcmsgb2YgTGlnaHRzIGFuZCAzLjIgbWkgKDUuMiBrbSkgZnJvbSBCb3Rlcm8gUGxhemEuPFwvcD48cD48Yj5Sb29tczxcL2I+IDxiciBcLz5NYWtlIHlvdXJzZWxmIGF0IGhvbWUgaW4gb25lIG9mIHRoZSAyMDAgYWlyLWNvbmRpdGlvbmVkIHJvb21zIGZlYXR1cmluZyBtaW5pYmFycyBhbmQgZmxhdC1zY3JlZW4gdGVsZXZpc2lvbnMuIENvbXBsaW1lbnRhcnkgd2lyZWxlc3MgSW50ZXJuZXQgYWNjZXNzIGtlZXBzIHlvdSBjb25uZWN0ZWQsIGFuZCBjYWJsZSBwcm9ncmFtbWluZyBpcyBhdmFpbGFibGUgZm9yIHlvdXIgZW50ZXJ0YWlubWVudC4gQmF0aHJvb21zIGhhdmUgY29tcGxpbWVudGFyeSB0b2lsZXRyaWVzIGFuZCBoYWlyIGRyeWVycy4gQ29udmVuaWVuY2VzIGluY2x1ZGUgc2FmZXMgYW5kIGRlc2tzLCBhbmQgaG91c2VrZWVwaW5nIGlzIHByb3ZpZGVkIGRhaWx5LjxcL3A+PHA+PGI+QW1lbml0aWVzPFwvYj4gPGJyIFwvPlBhbXBlciB5b3Vyc2VsZiB3aXRoIGEgdmlzaXQgdG8gdGhlIHNwYSwgd2hpY2ggb2ZmZXJzIG1hc3NhZ2VzLCBib2R5IHRyZWF0bWVudHMsIGFuZCBmYWNpYWxzLiBJZiB5b3UncmUgbG9va2luZyBmb3IgcmVjcmVhdGlvbmFsIG9wcG9ydHVuaXRpZXMsIHlvdSdsbCBmaW5kIGEgaGVhbHRoIGNsdWIsIGFuIG91dGRvb3IgcG9vbCwgYW5kIGEgc3BhIHR1Yi4gQWRkaXRpb25hbCBmZWF0dXJlcyBhdCB0aGlzIGhvdGVsIGluY2x1ZGUgY29tcGxpbWVudGFyeSB3aXJlbGVzcyBJbnRlcm5ldCBhY2Nlc3MsIGNvbmNpZXJnZSBzZXJ2aWNlcywgYW5kIGEgaGFpciBzYWxvbi48XC9wPjxwPjxiPkRpbmluZzxcL2I+IDxiciBcLz5HcmFiIGEgYml0ZSBhdCBaYWd1YW4gZGVsIFBhdGlvLCBvbmUgb2YgdGhlIGhvdGVsJ3MgNCByZXN0YXVyYW50cywgb3Igc3RheSBpbiBhbmQgdGFrZSBhZHZhbnRhZ2Ugb2YgdGhlIDI0LWhvdXIgcm9vbSBzZXJ2aWNlLiBRdWVuY2ggeW91ciB0aGlyc3Qgd2l0aCB5b3VyIGZhdm9yaXRlIGRyaW5rIGF0IHRoZSBiYXJcL2xvdW5nZS4gQSBjb21wbGltZW50YXJ5IGJ1ZmZldCBicmVha2Zhc3QgaXMgc2VydmVkIGRhaWx5LjxcL3A+PHA+PGI+QnVzaW5lc3MsIE90aGVyIEFtZW5pdGllczxcL2I+IDxiciBcLz5GZWF0dXJlZCBhbWVuaXRpZXMgaW5jbHVkZSBhIDI0LWhvdXIgYnVzaW5lc3MgY2VudGVyLCBjb21wbGltZW50YXJ5IG5ld3NwYXBlcnMgaW4gdGhlIGxvYmJ5LCBhbmQgZHJ5IGNsZWFuaW5nXC9sYXVuZHJ5IHNlcnZpY2VzLiBQbGFubmluZyBhbiBldmVudCBpbiBNZWRlbGxpbj8gVGhpcyBob3RlbCBoYXMgZmFjaWxpdGllcyBtZWFzdXJpbmcgNjAzIHNxdWFyZSBmZWV0ICg1NiBzcXVhcmUgbWV0ZXJzKSwgaW5jbHVkaW5nIGEgY29uZmVyZW5jZSBjZW50ZXIuIEEgcm91bmR0cmlwIGFpcnBvcnQgc2h1dHRsZSBpcyBwcm92aWRlZCBmb3IgYSBzdXJjaGFyZ2UgKGF2YWlsYWJsZSAyNCBob3VycyksIGFuZCBmcmVlIHNlbGYgcGFya2luZyBpcyBhdmFpbGFibGUgb25zaXRlLjxcL3A+IiwiaG90ZWxzX3N0YXR1cyI6MCwiY2l0eV9pZCI6IiIsInN0YXR1cyI6MSwiY29tbWlzc2lvbl9wZXJjZW50YWdlIjowLCJzdXBwbGllcl9pZCI6IiIsImxhdGl0dWRlIjo2LjIwNzAxMDAwMDAwMDAwMDM2MDM4NzI3NTU3NzUyMjgxNDI3MzgzNDIyODUxNTYyNSwibG9uZ2l0dWRlIjotNzUuNTcxMzMwMDAwMDAwMDAzMjI0MTU4NzE3Nzg1MDMwNjAzNDA4ODEzNDc2NTYyNSwicmF0aW5nIjo0LjUsImNyZWF0ZWRfYXQiOiIiLCJ1cGRhdGVkX2F0IjoiIiwic3ViZG9tYWluIjoiIiwiY2hlY2tpbiI6IjA5XC8yM1wvMjAxOSIsImNoZWNrb3V0IjoiMDlcLzMwXC8yMDE5IiwiY2hlY2tJblRpbWUiOiIzOjAwIFBNIiwiY2hlY2tPdXRUaW1lIjoiMTowMCBQTSIsImFjY291bnRfaWQiOiIiLCJvdGFfaWQiOiIiLCJmZWF0dXJlX2NpdHlfaWQiOiIiLCJob3RlbF9zbHVnIjoiIiwibW9iaWxlX251bWJlciI6IiIsInBob25lX251bWJlciI6IiIsIndoYXRzYXBwX251bWJlciI6IiIsImVtYWlsX2FkZHJlc3MiOiIiLCJ0aHVtYiI6Imh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZGZiMWVjMTBfYi5qcGciLCJob3RlbF9wb2xpY3kiOiIiLCJwcm9wZXJ0eV90eXBlX2lkIjoiIiwiY3VzdG9tX3BheWxvYWQiOnsidmVuZG9yIjozfSwiY3VycmVuY3lfbmFtZSI6IlVTRCIsInJvb21zIjpbeyJyb29tX3N0YXR1cyI6IiIsInJlZnVuZGFibGUiOiIiLCJpZCI6MTEyNTY5LCJ0eXBlX2lkIjoiIiwicHJpY2UiOiIxNTI5Ljg2IiwiaG90ZWxfaWQiOiIxODUwNzEiLCJyb29tX2Rlc2NyaXB0aW9ucyI6IlN1aXRlIiwiaW1hZ2UiOlsiIl0sInJvb21fbmFtZSI6IlN1aXRlIiwicm9vbV9zbHVnIjoiU3VpdGUiLCJzdXBwbGllcl9pZCI6IiIsImFkdWx0cyI6MiwiY2hpbGRzIjowLCJ0eXBlIjoiU3VpdGUiLCJpbWFnZXMiOlsiIl19LHsicm9vbV9zdGF0dXMiOiIiLCJyZWZ1bmRhYmxlIjoiIiwiaWQiOjExMjU2OSwidHlwZV9pZCI6IiIsInByaWNlIjoiODI0LjQ5IiwiaG90ZWxfaWQiOiIxODUwNzEiLCJyb29tX2Rlc2NyaXB0aW9ucyI6IlN0YW5kYXJkIFR3aW4gUm9vbSwgMiBEb3VibGUgQmVkcyIsImltYWdlIjpbIiJdLCJyb29tX25hbWUiOiJTdGFuZGFyZCBUd2luIFJvb20sIDIgRG91YmxlIEJlZHMiLCJyb29tX3NsdWciOiJTdGFuZGFyZCBUd2luIFJvb20sIDIgRG91YmxlIEJlZHMiLCJzdXBwbGllcl9pZCI6IiIsImFkdWx0cyI6MiwiY2hpbGRzIjowLCJ0eXBlIjoiU3RhbmRhcmQgVHdpbiBSb29tLCAyIERvdWJsZSBCZWRzIiwiaW1hZ2VzIjpbIiJdfSx7InJvb21fc3RhdHVzIjoiIiwicmVmdW5kYWJsZSI6IiIsImlkIjoxMTI1NjksInR5cGVfaWQiOiIiLCJwcmljZSI6IjExNzcuMTciLCJob3RlbF9pZCI6IjE4NTA3MSIsInJvb21fZGVzY3JpcHRpb25zIjoiSnVuaW9yIFN1aXRlIiwiaW1hZ2UiOlsiIl0sInJvb21fbmFtZSI6Ikp1bmlvciBTdWl0ZSIsInJvb21fc2x1ZyI6Ikp1bmlvciBTdWl0ZSIsInN1cHBsaWVyX2lkIjoiIiwiYWR1bHRzIjoyLCJjaGlsZHMiOjAsInR5cGUiOiJKdW5pb3IgU3VpdGUiLCJpbWFnZXMiOlsiIl19LHsicm9vbV9zdGF0dXMiOiIiLCJyZWZ1bmRhYmxlIjoiIiwiaWQiOjExMjU2OSwidHlwZV9pZCI6IiIsInByaWNlIjoiODI0LjQ5IiwiaG90ZWxfaWQiOiIxODUwNzEiLCJyb29tX2Rlc2NyaXB0aW9ucyI6IlN0YW5kYXJkIERvdWJsZSBSb29tIiwiaW1hZ2UiOlsiIl0sInJvb21fbmFtZSI6IlN0YW5kYXJkIERvdWJsZSBSb29tIiwicm9vbV9zbHVnIjoiU3RhbmRhcmQgRG91YmxlIFJvb20iLCJzdXBwbGllcl9pZCI6IiIsImFkdWx0cyI6MiwiY2hpbGRzIjowLCJ0eXBlIjoiU3RhbmRhcmQgRG91YmxlIFJvb20iLCJpbWFnZXMiOlsiIl19XSwiaW1hZ2VzIjpbImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZGZiMWVjMTBfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzA0M2QyODlmX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC82OWIzZjJkMF9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvNzdkM2YwYWZfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzBhNmNmMjA0X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC9hOWRjNzQ5N19iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvMDY5MzM3NmZfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2NmNDI4NDU2X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC85ZjEwZDQ1NF9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvNGUwZjliMTNfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzFiNWNkZDgwX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC8zNTkyMmNmZl9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZjFkY2FlYzFfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2VhNGE4M2Y3X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC82MzAwZmMzOF9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvOGRiNzVhZDRfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzVkOTgwMDZhX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC84ZWFhOTA2OV9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvNzMxOTM1NmNfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzc0OGU3OGNhX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC80MmJmZTIwZl9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvYzVlY2I3Y2FfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzNjMzM4NWQ1X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC82MDkzZmNlZl9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvNDkzNWVlM2NfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2JhNzZjYTVjX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC82NDA5NjBlOF9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZDE0ZjkwNmNfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2U3MjBlYWNiX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC8zN2YyMzI1Y19iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZmYwYWExODFfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2QzZTBjOTM4X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC85MDE0MTExMl9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvOTVmMjAwYjJfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2Q1ZDRjNGQ0X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC9jYmY1MDI3Y19iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZmQzNjU3MDBfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzNiZmE2MzBjX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC8zOGYxZTU4MV9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvMDE3NzgzNWFfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzk5YmM4YzU1X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC8yZWY3YTFlNF9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvNjAyZDQ4MWZfYi5qcGciXSwiYW1lbml0aWVzIjpbeyJ0aXRsZSI6IjI0LWhvdXIgYnVzaW5lc3MgY2VudGVyIn0seyJ0aXRsZSI6IjI0LWhvdXIgZnJvbnQgZGVzayJ9LHsidGl0bGUiOiJBY2Nlc3NpYmxlIGJhdGhyb29tIn0seyJ0aXRsZSI6IkFpcnBvcnQgdHJhbnNwb3J0YXRpb24gKHN1cmNoYXJnZSkifSx7InRpdGxlIjoiQmFyXC9sb3VuZ2UifSx7InRpdGxlIjoiQ29mZmVlXC90ZWEgaW4gY29tbW9uIGFyZWFzIn0seyJ0aXRsZSI6IkNvbmNpZXJnZSBzZXJ2aWNlcyJ9LHsidGl0bGUiOiJDb25mZXJlbmNlIGNlbnRlciJ9LHsidGl0bGUiOiJDb25mZXJlbmNlIHNwYWNlIn0seyJ0aXRsZSI6IkNvbmZlcmVuY2Ugc3BhY2Ugc2l6ZSAoZmVldCkgLSA2MDMifSx7InRpdGxlIjoiQ29uZmVyZW5jZSBzcGFjZSBzaXplIChtZXRlcnMpIC0gNTYifSx7InRpdGxlIjoiRHJ5IGNsZWFuaW5nXC9sYXVuZHJ5IHNlcnZpY2UifSx7InRpdGxlIjoiRWxldmF0b3IifSx7InRpdGxlIjoiRnJlZSBXaUZpIn0seyJ0aXRsZSI6IkZyZWUgYnJlYWtmYXN0In0seyJ0aXRsZSI6IkZyZWUgbmV3c3BhcGVycyBpbiBsb2JieSJ9LHsidGl0bGUiOiJGcmVlIHNlbGYgcGFya2luZyJ9LHsidGl0bGUiOiJGdWxsLXNlcnZpY2Ugc3BhIn0seyJ0aXRsZSI6IkdhcmRlbiJ9LHsidGl0bGUiOiJIYWlyIHNhbG9uIn0seyJ0aXRsZSI6IkhlYWx0aCBjbHViIn0seyJ0aXRsZSI6IkluLXJvb20gYWNjZXNzaWJpbGl0eSJ9LHsidGl0bGUiOiJMdWdnYWdlIHN0b3JhZ2UifSx7InRpdGxlIjoiTnVtYmVyIG9mIGZsb29ycyAtIDE4In0seyJ0aXRsZSI6Ik51bWJlciBvZiByZXN0YXVyYW50cyAtIDQifSx7InRpdGxlIjoiT3V0ZG9vciBwb29sIn0seyJ0aXRsZSI6IlBvb2wgdW1icmVsbGFzIn0seyJ0aXRsZSI6IlBvcnRlclwvYmVsbGhvcCJ9LHsidGl0bGUiOiJSb2xsLWluIHNob3dlciJ9LHsidGl0bGUiOiJTYWZlLWRlcG9zaXQgYm94IGF0IGZyb250IGRlc2sifSx7InRpdGxlIjoiU21va2UtZnJlZSBwcm9wZXJ0eSJ9LHsidGl0bGUiOiJTcGEgdHJlYXRtZW50IHJvb20ocykifSx7InRpdGxlIjoiU3BhIHR1YiJ9LHsidGl0bGUiOiJTdGVhbSByb29tIn0seyJ0aXRsZSI6IlRlbGV2aXNpb24gaW4gY29tbW9uIGFyZWFzIn0seyJ0aXRsZSI6IlRlcnJhY2UifSx7InRpdGxlIjoiVG90YWwgbnVtYmVyIG9mIHJvb21zIC0gMjAwIn0seyJ0aXRsZSI6IlR1cmtpc2ggYmF0aFwvSGFtbWFtIn0seyJ0aXRsZSI6IldlZGRpbmcgc2VydmljZXMifV19">
+                                                <input type="hidden" name="search_form" value="eyJhY3Rpb24iOiJodHRwczpcL1wvd3d3LnBocHRyYXZlbHMubmV0XC90aGhvdGVsc1wvc2VhcmNoIiwic2x1ZyI6InRoaG90ZWxzIiwiY2l0eSI6Im1lZGVsbGluIiwiY2hlY2tpbiI6IjIwMTktMDktMjMiLCJjaGVja291dCI6IjIwMTktMDktMzAiLCJhZHVsdHMiOiIyIiwiY2hpbGRyZW4iOiIwIiwib3RhX2lkIjoiOGVkMjQ4ODAtZTZhZC0xMWU4LWE0YzktMTVmOGE4NGJmODE0IiwiY3VycmVuY3kiOiJVU0QiLCJ2ZW5kb3IiOjMsImlwX2FkZHJlc3MiOiIxODEuMTI4LjkyLjE1NiIsImhvdGVsX2lkIjoiMTg1MDcxIiwiY3VzdG9tX3BheWxvYWQiOiJ7XCJ2ZW5kb3JcIjozfSJ9">
+                                                <button class="core-btn-primary room-card__book-now-btn" type="submit">Book now</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="room-card">
+                            <div class="room-card__container">
+                                <div class="room-card__body">
+                                    <div class="room-card__content">
+                                        <div class="room-card__image-box">
+                                                                                        <img class="room-card__image" src="https://www.phptravels.net/themes/default/assets/img/hotel.jpg">
+                                        </div>
+                                        <div class="room-card__content--left">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Standard Twin Room<br> 2 Double Beds</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="room-card__content--right">
+                                            <div class="room-price__container">
+                                                <span class="text-l c-dark-blue">824.49</span>
+                                            </div>
+                                            <span class="text-xs-regular c-text-grey">Total price including taxes and fees</span>
+                                            <form action="https://www.phptravels.net/thhotels/checkout/Dann Carlton Medellin Hotel" method="post">
+                                                <input type="hidden" name="room" value="eyJyb29tX3N0YXR1cyI6IiIsInJlZnVuZGFibGUiOiIiLCJpZCI6MTEyNTY5LCJ0eXBlX2lkIjoiIiwicHJpY2UiOiI4MjQuNDkiLCJob3RlbF9pZCI6IjE4NTA3MSIsInJvb21fZGVzY3JpcHRpb25zIjoiU3RhbmRhcmQgVHdpbiBSb29tLCAyIERvdWJsZSBCZWRzIiwiaW1hZ2UiOlsiIl0sInJvb21fbmFtZSI6IlN0YW5kYXJkIFR3aW4gUm9vbSwgMiBEb3VibGUgQmVkcyIsInJvb21fc2x1ZyI6IlN0YW5kYXJkIFR3aW4gUm9vbSwgMiBEb3VibGUgQmVkcyIsInN1cHBsaWVyX2lkIjoiIiwiYWR1bHRzIjoyLCJjaGlsZHMiOjAsInR5cGUiOiJTdGFuZGFyZCBUd2luIFJvb20sIDIgRG91YmxlIEJlZHMiLCJpbWFnZXMiOlsiIl19">
+                                                <input type="hidden" name="hotel" value="eyJpZCI6MTg1MDcxLCJob3RlbF9vcmRlciI6IiIsImhvdGVsX2lzX2ZlYXR1cmVkIjoiIiwic2xpZGVyX2ltYWdlIjoiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC9kZmIxZWMxMF96LmpwZyIsImNvbXBhbnlfbmFtZSI6IkRhbm4gQ2FybHRvbiBNZWRlbGxpbiBIb3RlbCIsImhvdGVsX2RvbWFpbiI6IiIsImFkZHJlc3MiOiJDYXJyZXJhIDQzYSBOby43LTUwLCBBdmVuaWRhIEVsIFBvYmxhZG8iLCJkZXNjcmlwdGlvbiI6IjxwPjxiPlByb3BlcnR5IExvY2F0aW9uPFwvYj4gPGJyIFwvPkxvY2F0ZWQgaW4gTWVkZWxsaW4gKEVsIFBvYmxhZG8pLCBEYW5uIENhcmx0b24gTWVkZWxsaW4gSG90ZWwgaXMgd2l0aGluIGEgMTUtbWludXRlIHdhbGsgb2YgTGxlcmFzIFBhcmsgYW5kIFNhbnRhIEZlIE1hbGwuICBUaGlzIDQuNS1zdGFyIGhvdGVsIGlzIDIuOSBtaSAoNC43IGttKSBmcm9tIFBhcmsgb2YgTGlnaHRzIGFuZCAzLjIgbWkgKDUuMiBrbSkgZnJvbSBCb3Rlcm8gUGxhemEuPFwvcD48cD48Yj5Sb29tczxcL2I+IDxiciBcLz5NYWtlIHlvdXJzZWxmIGF0IGhvbWUgaW4gb25lIG9mIHRoZSAyMDAgYWlyLWNvbmRpdGlvbmVkIHJvb21zIGZlYXR1cmluZyBtaW5pYmFycyBhbmQgZmxhdC1zY3JlZW4gdGVsZXZpc2lvbnMuIENvbXBsaW1lbnRhcnkgd2lyZWxlc3MgSW50ZXJuZXQgYWNjZXNzIGtlZXBzIHlvdSBjb25uZWN0ZWQsIGFuZCBjYWJsZSBwcm9ncmFtbWluZyBpcyBhdmFpbGFibGUgZm9yIHlvdXIgZW50ZXJ0YWlubWVudC4gQmF0aHJvb21zIGhhdmUgY29tcGxpbWVudGFyeSB0b2lsZXRyaWVzIGFuZCBoYWlyIGRyeWVycy4gQ29udmVuaWVuY2VzIGluY2x1ZGUgc2FmZXMgYW5kIGRlc2tzLCBhbmQgaG91c2VrZWVwaW5nIGlzIHByb3ZpZGVkIGRhaWx5LjxcL3A+PHA+PGI+QW1lbml0aWVzPFwvYj4gPGJyIFwvPlBhbXBlciB5b3Vyc2VsZiB3aXRoIGEgdmlzaXQgdG8gdGhlIHNwYSwgd2hpY2ggb2ZmZXJzIG1hc3NhZ2VzLCBib2R5IHRyZWF0bWVudHMsIGFuZCBmYWNpYWxzLiBJZiB5b3UncmUgbG9va2luZyBmb3IgcmVjcmVhdGlvbmFsIG9wcG9ydHVuaXRpZXMsIHlvdSdsbCBmaW5kIGEgaGVhbHRoIGNsdWIsIGFuIG91dGRvb3IgcG9vbCwgYW5kIGEgc3BhIHR1Yi4gQWRkaXRpb25hbCBmZWF0dXJlcyBhdCB0aGlzIGhvdGVsIGluY2x1ZGUgY29tcGxpbWVudGFyeSB3aXJlbGVzcyBJbnRlcm5ldCBhY2Nlc3MsIGNvbmNpZXJnZSBzZXJ2aWNlcywgYW5kIGEgaGFpciBzYWxvbi48XC9wPjxwPjxiPkRpbmluZzxcL2I+IDxiciBcLz5HcmFiIGEgYml0ZSBhdCBaYWd1YW4gZGVsIFBhdGlvLCBvbmUgb2YgdGhlIGhvdGVsJ3MgNCByZXN0YXVyYW50cywgb3Igc3RheSBpbiBhbmQgdGFrZSBhZHZhbnRhZ2Ugb2YgdGhlIDI0LWhvdXIgcm9vbSBzZXJ2aWNlLiBRdWVuY2ggeW91ciB0aGlyc3Qgd2l0aCB5b3VyIGZhdm9yaXRlIGRyaW5rIGF0IHRoZSBiYXJcL2xvdW5nZS4gQSBjb21wbGltZW50YXJ5IGJ1ZmZldCBicmVha2Zhc3QgaXMgc2VydmVkIGRhaWx5LjxcL3A+PHA+PGI+QnVzaW5lc3MsIE90aGVyIEFtZW5pdGllczxcL2I+IDxiciBcLz5GZWF0dXJlZCBhbWVuaXRpZXMgaW5jbHVkZSBhIDI0LWhvdXIgYnVzaW5lc3MgY2VudGVyLCBjb21wbGltZW50YXJ5IG5ld3NwYXBlcnMgaW4gdGhlIGxvYmJ5LCBhbmQgZHJ5IGNsZWFuaW5nXC9sYXVuZHJ5IHNlcnZpY2VzLiBQbGFubmluZyBhbiBldmVudCBpbiBNZWRlbGxpbj8gVGhpcyBob3RlbCBoYXMgZmFjaWxpdGllcyBtZWFzdXJpbmcgNjAzIHNxdWFyZSBmZWV0ICg1NiBzcXVhcmUgbWV0ZXJzKSwgaW5jbHVkaW5nIGEgY29uZmVyZW5jZSBjZW50ZXIuIEEgcm91bmR0cmlwIGFpcnBvcnQgc2h1dHRsZSBpcyBwcm92aWRlZCBmb3IgYSBzdXJjaGFyZ2UgKGF2YWlsYWJsZSAyNCBob3VycyksIGFuZCBmcmVlIHNlbGYgcGFya2luZyBpcyBhdmFpbGFibGUgb25zaXRlLjxcL3A+IiwiaG90ZWxzX3N0YXR1cyI6MCwiY2l0eV9pZCI6IiIsInN0YXR1cyI6MSwiY29tbWlzc2lvbl9wZXJjZW50YWdlIjowLCJzdXBwbGllcl9pZCI6IiIsImxhdGl0dWRlIjo2LjIwNzAxMDAwMDAwMDAwMDM2MDM4NzI3NTU3NzUyMjgxNDI3MzgzNDIyODUxNTYyNSwibG9uZ2l0dWRlIjotNzUuNTcxMzMwMDAwMDAwMDAzMjI0MTU4NzE3Nzg1MDMwNjAzNDA4ODEzNDc2NTYyNSwicmF0aW5nIjo0LjUsImNyZWF0ZWRfYXQiOiIiLCJ1cGRhdGVkX2F0IjoiIiwic3ViZG9tYWluIjoiIiwiY2hlY2tpbiI6IjA5XC8yM1wvMjAxOSIsImNoZWNrb3V0IjoiMDlcLzMwXC8yMDE5IiwiY2hlY2tJblRpbWUiOiIzOjAwIFBNIiwiY2hlY2tPdXRUaW1lIjoiMTowMCBQTSIsImFjY291bnRfaWQiOiIiLCJvdGFfaWQiOiIiLCJmZWF0dXJlX2NpdHlfaWQiOiIiLCJob3RlbF9zbHVnIjoiIiwibW9iaWxlX251bWJlciI6IiIsInBob25lX251bWJlciI6IiIsIndoYXRzYXBwX251bWJlciI6IiIsImVtYWlsX2FkZHJlc3MiOiIiLCJ0aHVtYiI6Imh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZGZiMWVjMTBfYi5qcGciLCJob3RlbF9wb2xpY3kiOiIiLCJwcm9wZXJ0eV90eXBlX2lkIjoiIiwiY3VzdG9tX3BheWxvYWQiOnsidmVuZG9yIjozfSwiY3VycmVuY3lfbmFtZSI6IlVTRCIsInJvb21zIjpbeyJyb29tX3N0YXR1cyI6IiIsInJlZnVuZGFibGUiOiIiLCJpZCI6MTEyNTY5LCJ0eXBlX2lkIjoiIiwicHJpY2UiOiIxNTI5Ljg2IiwiaG90ZWxfaWQiOiIxODUwNzEiLCJyb29tX2Rlc2NyaXB0aW9ucyI6IlN1aXRlIiwiaW1hZ2UiOlsiIl0sInJvb21fbmFtZSI6IlN1aXRlIiwicm9vbV9zbHVnIjoiU3VpdGUiLCJzdXBwbGllcl9pZCI6IiIsImFkdWx0cyI6MiwiY2hpbGRzIjowLCJ0eXBlIjoiU3VpdGUiLCJpbWFnZXMiOlsiIl19LHsicm9vbV9zdGF0dXMiOiIiLCJyZWZ1bmRhYmxlIjoiIiwiaWQiOjExMjU2OSwidHlwZV9pZCI6IiIsInByaWNlIjoiODI0LjQ5IiwiaG90ZWxfaWQiOiIxODUwNzEiLCJyb29tX2Rlc2NyaXB0aW9ucyI6IlN0YW5kYXJkIFR3aW4gUm9vbSwgMiBEb3VibGUgQmVkcyIsImltYWdlIjpbIiJdLCJyb29tX25hbWUiOiJTdGFuZGFyZCBUd2luIFJvb20sIDIgRG91YmxlIEJlZHMiLCJyb29tX3NsdWciOiJTdGFuZGFyZCBUd2luIFJvb20sIDIgRG91YmxlIEJlZHMiLCJzdXBwbGllcl9pZCI6IiIsImFkdWx0cyI6MiwiY2hpbGRzIjowLCJ0eXBlIjoiU3RhbmRhcmQgVHdpbiBSb29tLCAyIERvdWJsZSBCZWRzIiwiaW1hZ2VzIjpbIiJdfSx7InJvb21fc3RhdHVzIjoiIiwicmVmdW5kYWJsZSI6IiIsImlkIjoxMTI1NjksInR5cGVfaWQiOiIiLCJwcmljZSI6IjExNzcuMTciLCJob3RlbF9pZCI6IjE4NTA3MSIsInJvb21fZGVzY3JpcHRpb25zIjoiSnVuaW9yIFN1aXRlIiwiaW1hZ2UiOlsiIl0sInJvb21fbmFtZSI6Ikp1bmlvciBTdWl0ZSIsInJvb21fc2x1ZyI6Ikp1bmlvciBTdWl0ZSIsInN1cHBsaWVyX2lkIjoiIiwiYWR1bHRzIjoyLCJjaGlsZHMiOjAsInR5cGUiOiJKdW5pb3IgU3VpdGUiLCJpbWFnZXMiOlsiIl19LHsicm9vbV9zdGF0dXMiOiIiLCJyZWZ1bmRhYmxlIjoiIiwiaWQiOjExMjU2OSwidHlwZV9pZCI6IiIsInByaWNlIjoiODI0LjQ5IiwiaG90ZWxfaWQiOiIxODUwNzEiLCJyb29tX2Rlc2NyaXB0aW9ucyI6IlN0YW5kYXJkIERvdWJsZSBSb29tIiwiaW1hZ2UiOlsiIl0sInJvb21fbmFtZSI6IlN0YW5kYXJkIERvdWJsZSBSb29tIiwicm9vbV9zbHVnIjoiU3RhbmRhcmQgRG91YmxlIFJvb20iLCJzdXBwbGllcl9pZCI6IiIsImFkdWx0cyI6MiwiY2hpbGRzIjowLCJ0eXBlIjoiU3RhbmRhcmQgRG91YmxlIFJvb20iLCJpbWFnZXMiOlsiIl19XSwiaW1hZ2VzIjpbImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZGZiMWVjMTBfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzA0M2QyODlmX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC82OWIzZjJkMF9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvNzdkM2YwYWZfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzBhNmNmMjA0X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC9hOWRjNzQ5N19iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvMDY5MzM3NmZfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2NmNDI4NDU2X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC85ZjEwZDQ1NF9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvNGUwZjliMTNfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzFiNWNkZDgwX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC8zNTkyMmNmZl9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZjFkY2FlYzFfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2VhNGE4M2Y3X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC82MzAwZmMzOF9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvOGRiNzVhZDRfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzVkOTgwMDZhX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC84ZWFhOTA2OV9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvNzMxOTM1NmNfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzc0OGU3OGNhX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC80MmJmZTIwZl9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvYzVlY2I3Y2FfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzNjMzM4NWQ1X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC82MDkzZmNlZl9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvNDkzNWVlM2NfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2JhNzZjYTVjX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC82NDA5NjBlOF9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZDE0ZjkwNmNfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2U3MjBlYWNiX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC8zN2YyMzI1Y19iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZmYwYWExODFfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2QzZTBjOTM4X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC85MDE0MTExMl9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvOTVmMjAwYjJfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2Q1ZDRjNGQ0X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC9jYmY1MDI3Y19iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZmQzNjU3MDBfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzNiZmE2MzBjX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC8zOGYxZTU4MV9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvMDE3NzgzNWFfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzk5YmM4YzU1X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC8yZWY3YTFlNF9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvNjAyZDQ4MWZfYi5qcGciXSwiYW1lbml0aWVzIjpbeyJ0aXRsZSI6IjI0LWhvdXIgYnVzaW5lc3MgY2VudGVyIn0seyJ0aXRsZSI6IjI0LWhvdXIgZnJvbnQgZGVzayJ9LHsidGl0bGUiOiJBY2Nlc3NpYmxlIGJhdGhyb29tIn0seyJ0aXRsZSI6IkFpcnBvcnQgdHJhbnNwb3J0YXRpb24gKHN1cmNoYXJnZSkifSx7InRpdGxlIjoiQmFyXC9sb3VuZ2UifSx7InRpdGxlIjoiQ29mZmVlXC90ZWEgaW4gY29tbW9uIGFyZWFzIn0seyJ0aXRsZSI6IkNvbmNpZXJnZSBzZXJ2aWNlcyJ9LHsidGl0bGUiOiJDb25mZXJlbmNlIGNlbnRlciJ9LHsidGl0bGUiOiJDb25mZXJlbmNlIHNwYWNlIn0seyJ0aXRsZSI6IkNvbmZlcmVuY2Ugc3BhY2Ugc2l6ZSAoZmVldCkgLSA2MDMifSx7InRpdGxlIjoiQ29uZmVyZW5jZSBzcGFjZSBzaXplIChtZXRlcnMpIC0gNTYifSx7InRpdGxlIjoiRHJ5IGNsZWFuaW5nXC9sYXVuZHJ5IHNlcnZpY2UifSx7InRpdGxlIjoiRWxldmF0b3IifSx7InRpdGxlIjoiRnJlZSBXaUZpIn0seyJ0aXRsZSI6IkZyZWUgYnJlYWtmYXN0In0seyJ0aXRsZSI6IkZyZWUgbmV3c3BhcGVycyBpbiBsb2JieSJ9LHsidGl0bGUiOiJGcmVlIHNlbGYgcGFya2luZyJ9LHsidGl0bGUiOiJGdWxsLXNlcnZpY2Ugc3BhIn0seyJ0aXRsZSI6IkdhcmRlbiJ9LHsidGl0bGUiOiJIYWlyIHNhbG9uIn0seyJ0aXRsZSI6IkhlYWx0aCBjbHViIn0seyJ0aXRsZSI6IkluLXJvb20gYWNjZXNzaWJpbGl0eSJ9LHsidGl0bGUiOiJMdWdnYWdlIHN0b3JhZ2UifSx7InRpdGxlIjoiTnVtYmVyIG9mIGZsb29ycyAtIDE4In0seyJ0aXRsZSI6Ik51bWJlciBvZiByZXN0YXVyYW50cyAtIDQifSx7InRpdGxlIjoiT3V0ZG9vciBwb29sIn0seyJ0aXRsZSI6IlBvb2wgdW1icmVsbGFzIn0seyJ0aXRsZSI6IlBvcnRlclwvYmVsbGhvcCJ9LHsidGl0bGUiOiJSb2xsLWluIHNob3dlciJ9LHsidGl0bGUiOiJTYWZlLWRlcG9zaXQgYm94IGF0IGZyb250IGRlc2sifSx7InRpdGxlIjoiU21va2UtZnJlZSBwcm9wZXJ0eSJ9LHsidGl0bGUiOiJTcGEgdHJlYXRtZW50IHJvb20ocykifSx7InRpdGxlIjoiU3BhIHR1YiJ9LHsidGl0bGUiOiJTdGVhbSByb29tIn0seyJ0aXRsZSI6IlRlbGV2aXNpb24gaW4gY29tbW9uIGFyZWFzIn0seyJ0aXRsZSI6IlRlcnJhY2UifSx7InRpdGxlIjoiVG90YWwgbnVtYmVyIG9mIHJvb21zIC0gMjAwIn0seyJ0aXRsZSI6IlR1cmtpc2ggYmF0aFwvSGFtbWFtIn0seyJ0aXRsZSI6IldlZGRpbmcgc2VydmljZXMifV19">
+                                                <input type="hidden" name="search_form" value="eyJhY3Rpb24iOiJodHRwczpcL1wvd3d3LnBocHRyYXZlbHMubmV0XC90aGhvdGVsc1wvc2VhcmNoIiwic2x1ZyI6InRoaG90ZWxzIiwiY2l0eSI6Im1lZGVsbGluIiwiY2hlY2tpbiI6IjIwMTktMDktMjMiLCJjaGVja291dCI6IjIwMTktMDktMzAiLCJhZHVsdHMiOiIyIiwiY2hpbGRyZW4iOiIwIiwib3RhX2lkIjoiOGVkMjQ4ODAtZTZhZC0xMWU4LWE0YzktMTVmOGE4NGJmODE0IiwiY3VycmVuY3kiOiJVU0QiLCJ2ZW5kb3IiOjMsImlwX2FkZHJlc3MiOiIxODEuMTI4LjkyLjE1NiIsImhvdGVsX2lkIjoiMTg1MDcxIiwiY3VzdG9tX3BheWxvYWQiOiJ7XCJ2ZW5kb3JcIjozfSJ9">
+                                                <button class="core-btn-primary room-card__book-now-btn" type="submit">Book now</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="room-card">
+                            <div class="room-card__container">
+                                <div class="room-card__body">
+                                    <div class="room-card__content">
+                                        <div class="room-card__image-box">
+                                                                                        <img class="room-card__image" src="https://www.phptravels.net/themes/default/assets/img/hotel.jpg">
+                                        </div>
+                                        <div class="room-card__content--left">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Junior Suite</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="room-card__content--right">
+                                            <div class="room-price__container">
+                                                <span class="text-l c-dark-blue">1177.17</span>
+                                            </div>
+                                            <span class="text-xs-regular c-text-grey">Total price including taxes and fees</span>
+                                            <form action="https://www.phptravels.net/thhotels/checkout/Dann Carlton Medellin Hotel" method="post">
+                                                <input type="hidden" name="room" value="eyJyb29tX3N0YXR1cyI6IiIsInJlZnVuZGFibGUiOiIiLCJpZCI6MTEyNTY5LCJ0eXBlX2lkIjoiIiwicHJpY2UiOiIxMTc3LjE3IiwiaG90ZWxfaWQiOiIxODUwNzEiLCJyb29tX2Rlc2NyaXB0aW9ucyI6Ikp1bmlvciBTdWl0ZSIsImltYWdlIjpbIiJdLCJyb29tX25hbWUiOiJKdW5pb3IgU3VpdGUiLCJyb29tX3NsdWciOiJKdW5pb3IgU3VpdGUiLCJzdXBwbGllcl9pZCI6IiIsImFkdWx0cyI6MiwiY2hpbGRzIjowLCJ0eXBlIjoiSnVuaW9yIFN1aXRlIiwiaW1hZ2VzIjpbIiJdfQ==">
+                                                <input type="hidden" name="hotel" value="eyJpZCI6MTg1MDcxLCJob3RlbF9vcmRlciI6IiIsImhvdGVsX2lzX2ZlYXR1cmVkIjoiIiwic2xpZGVyX2ltYWdlIjoiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC9kZmIxZWMxMF96LmpwZyIsImNvbXBhbnlfbmFtZSI6IkRhbm4gQ2FybHRvbiBNZWRlbGxpbiBIb3RlbCIsImhvdGVsX2RvbWFpbiI6IiIsImFkZHJlc3MiOiJDYXJyZXJhIDQzYSBOby43LTUwLCBBdmVuaWRhIEVsIFBvYmxhZG8iLCJkZXNjcmlwdGlvbiI6IjxwPjxiPlByb3BlcnR5IExvY2F0aW9uPFwvYj4gPGJyIFwvPkxvY2F0ZWQgaW4gTWVkZWxsaW4gKEVsIFBvYmxhZG8pLCBEYW5uIENhcmx0b24gTWVkZWxsaW4gSG90ZWwgaXMgd2l0aGluIGEgMTUtbWludXRlIHdhbGsgb2YgTGxlcmFzIFBhcmsgYW5kIFNhbnRhIEZlIE1hbGwuICBUaGlzIDQuNS1zdGFyIGhvdGVsIGlzIDIuOSBtaSAoNC43IGttKSBmcm9tIFBhcmsgb2YgTGlnaHRzIGFuZCAzLjIgbWkgKDUuMiBrbSkgZnJvbSBCb3Rlcm8gUGxhemEuPFwvcD48cD48Yj5Sb29tczxcL2I+IDxiciBcLz5NYWtlIHlvdXJzZWxmIGF0IGhvbWUgaW4gb25lIG9mIHRoZSAyMDAgYWlyLWNvbmRpdGlvbmVkIHJvb21zIGZlYXR1cmluZyBtaW5pYmFycyBhbmQgZmxhdC1zY3JlZW4gdGVsZXZpc2lvbnMuIENvbXBsaW1lbnRhcnkgd2lyZWxlc3MgSW50ZXJuZXQgYWNjZXNzIGtlZXBzIHlvdSBjb25uZWN0ZWQsIGFuZCBjYWJsZSBwcm9ncmFtbWluZyBpcyBhdmFpbGFibGUgZm9yIHlvdXIgZW50ZXJ0YWlubWVudC4gQmF0aHJvb21zIGhhdmUgY29tcGxpbWVudGFyeSB0b2lsZXRyaWVzIGFuZCBoYWlyIGRyeWVycy4gQ29udmVuaWVuY2VzIGluY2x1ZGUgc2FmZXMgYW5kIGRlc2tzLCBhbmQgaG91c2VrZWVwaW5nIGlzIHByb3ZpZGVkIGRhaWx5LjxcL3A+PHA+PGI+QW1lbml0aWVzPFwvYj4gPGJyIFwvPlBhbXBlciB5b3Vyc2VsZiB3aXRoIGEgdmlzaXQgdG8gdGhlIHNwYSwgd2hpY2ggb2ZmZXJzIG1hc3NhZ2VzLCBib2R5IHRyZWF0bWVudHMsIGFuZCBmYWNpYWxzLiBJZiB5b3UncmUgbG9va2luZyBmb3IgcmVjcmVhdGlvbmFsIG9wcG9ydHVuaXRpZXMsIHlvdSdsbCBmaW5kIGEgaGVhbHRoIGNsdWIsIGFuIG91dGRvb3IgcG9vbCwgYW5kIGEgc3BhIHR1Yi4gQWRkaXRpb25hbCBmZWF0dXJlcyBhdCB0aGlzIGhvdGVsIGluY2x1ZGUgY29tcGxpbWVudGFyeSB3aXJlbGVzcyBJbnRlcm5ldCBhY2Nlc3MsIGNvbmNpZXJnZSBzZXJ2aWNlcywgYW5kIGEgaGFpciBzYWxvbi48XC9wPjxwPjxiPkRpbmluZzxcL2I+IDxiciBcLz5HcmFiIGEgYml0ZSBhdCBaYWd1YW4gZGVsIFBhdGlvLCBvbmUgb2YgdGhlIGhvdGVsJ3MgNCByZXN0YXVyYW50cywgb3Igc3RheSBpbiBhbmQgdGFrZSBhZHZhbnRhZ2Ugb2YgdGhlIDI0LWhvdXIgcm9vbSBzZXJ2aWNlLiBRdWVuY2ggeW91ciB0aGlyc3Qgd2l0aCB5b3VyIGZhdm9yaXRlIGRyaW5rIGF0IHRoZSBiYXJcL2xvdW5nZS4gQSBjb21wbGltZW50YXJ5IGJ1ZmZldCBicmVha2Zhc3QgaXMgc2VydmVkIGRhaWx5LjxcL3A+PHA+PGI+QnVzaW5lc3MsIE90aGVyIEFtZW5pdGllczxcL2I+IDxiciBcLz5GZWF0dXJlZCBhbWVuaXRpZXMgaW5jbHVkZSBhIDI0LWhvdXIgYnVzaW5lc3MgY2VudGVyLCBjb21wbGltZW50YXJ5IG5ld3NwYXBlcnMgaW4gdGhlIGxvYmJ5LCBhbmQgZHJ5IGNsZWFuaW5nXC9sYXVuZHJ5IHNlcnZpY2VzLiBQbGFubmluZyBhbiBldmVudCBpbiBNZWRlbGxpbj8gVGhpcyBob3RlbCBoYXMgZmFjaWxpdGllcyBtZWFzdXJpbmcgNjAzIHNxdWFyZSBmZWV0ICg1NiBzcXVhcmUgbWV0ZXJzKSwgaW5jbHVkaW5nIGEgY29uZmVyZW5jZSBjZW50ZXIuIEEgcm91bmR0cmlwIGFpcnBvcnQgc2h1dHRsZSBpcyBwcm92aWRlZCBmb3IgYSBzdXJjaGFyZ2UgKGF2YWlsYWJsZSAyNCBob3VycyksIGFuZCBmcmVlIHNlbGYgcGFya2luZyBpcyBhdmFpbGFibGUgb25zaXRlLjxcL3A+IiwiaG90ZWxzX3N0YXR1cyI6MCwiY2l0eV9pZCI6IiIsInN0YXR1cyI6MSwiY29tbWlzc2lvbl9wZXJjZW50YWdlIjowLCJzdXBwbGllcl9pZCI6IiIsImxhdGl0dWRlIjo2LjIwNzAxMDAwMDAwMDAwMDM2MDM4NzI3NTU3NzUyMjgxNDI3MzgzNDIyODUxNTYyNSwibG9uZ2l0dWRlIjotNzUuNTcxMzMwMDAwMDAwMDAzMjI0MTU4NzE3Nzg1MDMwNjAzNDA4ODEzNDc2NTYyNSwicmF0aW5nIjo0LjUsImNyZWF0ZWRfYXQiOiIiLCJ1cGRhdGVkX2F0IjoiIiwic3ViZG9tYWluIjoiIiwiY2hlY2tpbiI6IjA5XC8yM1wvMjAxOSIsImNoZWNrb3V0IjoiMDlcLzMwXC8yMDE5IiwiY2hlY2tJblRpbWUiOiIzOjAwIFBNIiwiY2hlY2tPdXRUaW1lIjoiMTowMCBQTSIsImFjY291bnRfaWQiOiIiLCJvdGFfaWQiOiIiLCJmZWF0dXJlX2NpdHlfaWQiOiIiLCJob3RlbF9zbHVnIjoiIiwibW9iaWxlX251bWJlciI6IiIsInBob25lX251bWJlciI6IiIsIndoYXRzYXBwX251bWJlciI6IiIsImVtYWlsX2FkZHJlc3MiOiIiLCJ0aHVtYiI6Imh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZGZiMWVjMTBfYi5qcGciLCJob3RlbF9wb2xpY3kiOiIiLCJwcm9wZXJ0eV90eXBlX2lkIjoiIiwiY3VzdG9tX3BheWxvYWQiOnsidmVuZG9yIjozfSwiY3VycmVuY3lfbmFtZSI6IlVTRCIsInJvb21zIjpbeyJyb29tX3N0YXR1cyI6IiIsInJlZnVuZGFibGUiOiIiLCJpZCI6MTEyNTY5LCJ0eXBlX2lkIjoiIiwicHJpY2UiOiIxNTI5Ljg2IiwiaG90ZWxfaWQiOiIxODUwNzEiLCJyb29tX2Rlc2NyaXB0aW9ucyI6IlN1aXRlIiwiaW1hZ2UiOlsiIl0sInJvb21fbmFtZSI6IlN1aXRlIiwicm9vbV9zbHVnIjoiU3VpdGUiLCJzdXBwbGllcl9pZCI6IiIsImFkdWx0cyI6MiwiY2hpbGRzIjowLCJ0eXBlIjoiU3VpdGUiLCJpbWFnZXMiOlsiIl19LHsicm9vbV9zdGF0dXMiOiIiLCJyZWZ1bmRhYmxlIjoiIiwiaWQiOjExMjU2OSwidHlwZV9pZCI6IiIsInByaWNlIjoiODI0LjQ5IiwiaG90ZWxfaWQiOiIxODUwNzEiLCJyb29tX2Rlc2NyaXB0aW9ucyI6IlN0YW5kYXJkIFR3aW4gUm9vbSwgMiBEb3VibGUgQmVkcyIsImltYWdlIjpbIiJdLCJyb29tX25hbWUiOiJTdGFuZGFyZCBUd2luIFJvb20sIDIgRG91YmxlIEJlZHMiLCJyb29tX3NsdWciOiJTdGFuZGFyZCBUd2luIFJvb20sIDIgRG91YmxlIEJlZHMiLCJzdXBwbGllcl9pZCI6IiIsImFkdWx0cyI6MiwiY2hpbGRzIjowLCJ0eXBlIjoiU3RhbmRhcmQgVHdpbiBSb29tLCAyIERvdWJsZSBCZWRzIiwiaW1hZ2VzIjpbIiJdfSx7InJvb21fc3RhdHVzIjoiIiwicmVmdW5kYWJsZSI6IiIsImlkIjoxMTI1NjksInR5cGVfaWQiOiIiLCJwcmljZSI6IjExNzcuMTciLCJob3RlbF9pZCI6IjE4NTA3MSIsInJvb21fZGVzY3JpcHRpb25zIjoiSnVuaW9yIFN1aXRlIiwiaW1hZ2UiOlsiIl0sInJvb21fbmFtZSI6Ikp1bmlvciBTdWl0ZSIsInJvb21fc2x1ZyI6Ikp1bmlvciBTdWl0ZSIsInN1cHBsaWVyX2lkIjoiIiwiYWR1bHRzIjoyLCJjaGlsZHMiOjAsInR5cGUiOiJKdW5pb3IgU3VpdGUiLCJpbWFnZXMiOlsiIl19LHsicm9vbV9zdGF0dXMiOiIiLCJyZWZ1bmRhYmxlIjoiIiwiaWQiOjExMjU2OSwidHlwZV9pZCI6IiIsInByaWNlIjoiODI0LjQ5IiwiaG90ZWxfaWQiOiIxODUwNzEiLCJyb29tX2Rlc2NyaXB0aW9ucyI6IlN0YW5kYXJkIERvdWJsZSBSb29tIiwiaW1hZ2UiOlsiIl0sInJvb21fbmFtZSI6IlN0YW5kYXJkIERvdWJsZSBSb29tIiwicm9vbV9zbHVnIjoiU3RhbmRhcmQgRG91YmxlIFJvb20iLCJzdXBwbGllcl9pZCI6IiIsImFkdWx0cyI6MiwiY2hpbGRzIjowLCJ0eXBlIjoiU3RhbmRhcmQgRG91YmxlIFJvb20iLCJpbWFnZXMiOlsiIl19XSwiaW1hZ2VzIjpbImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZGZiMWVjMTBfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzA0M2QyODlmX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC82OWIzZjJkMF9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvNzdkM2YwYWZfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzBhNmNmMjA0X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC9hOWRjNzQ5N19iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvMDY5MzM3NmZfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2NmNDI4NDU2X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC85ZjEwZDQ1NF9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvNGUwZjliMTNfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzFiNWNkZDgwX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC8zNTkyMmNmZl9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZjFkY2FlYzFfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2VhNGE4M2Y3X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC82MzAwZmMzOF9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvOGRiNzVhZDRfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzVkOTgwMDZhX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC84ZWFhOTA2OV9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvNzMxOTM1NmNfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzc0OGU3OGNhX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC80MmJmZTIwZl9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvYzVlY2I3Y2FfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzNjMzM4NWQ1X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC82MDkzZmNlZl9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvNDkzNWVlM2NfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2JhNzZjYTVjX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC82NDA5NjBlOF9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZDE0ZjkwNmNfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2U3MjBlYWNiX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC8zN2YyMzI1Y19iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZmYwYWExODFfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2QzZTBjOTM4X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC85MDE0MTExMl9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvOTVmMjAwYjJfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2Q1ZDRjNGQ0X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC9jYmY1MDI3Y19iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZmQzNjU3MDBfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzNiZmE2MzBjX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC8zOGYxZTU4MV9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvMDE3NzgzNWFfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzk5YmM4YzU1X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC8yZWY3YTFlNF9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvNjAyZDQ4MWZfYi5qcGciXSwiYW1lbml0aWVzIjpbeyJ0aXRsZSI6IjI0LWhvdXIgYnVzaW5lc3MgY2VudGVyIn0seyJ0aXRsZSI6IjI0LWhvdXIgZnJvbnQgZGVzayJ9LHsidGl0bGUiOiJBY2Nlc3NpYmxlIGJhdGhyb29tIn0seyJ0aXRsZSI6IkFpcnBvcnQgdHJhbnNwb3J0YXRpb24gKHN1cmNoYXJnZSkifSx7InRpdGxlIjoiQmFyXC9sb3VuZ2UifSx7InRpdGxlIjoiQ29mZmVlXC90ZWEgaW4gY29tbW9uIGFyZWFzIn0seyJ0aXRsZSI6IkNvbmNpZXJnZSBzZXJ2aWNlcyJ9LHsidGl0bGUiOiJDb25mZXJlbmNlIGNlbnRlciJ9LHsidGl0bGUiOiJDb25mZXJlbmNlIHNwYWNlIn0seyJ0aXRsZSI6IkNvbmZlcmVuY2Ugc3BhY2Ugc2l6ZSAoZmVldCkgLSA2MDMifSx7InRpdGxlIjoiQ29uZmVyZW5jZSBzcGFjZSBzaXplIChtZXRlcnMpIC0gNTYifSx7InRpdGxlIjoiRHJ5IGNsZWFuaW5nXC9sYXVuZHJ5IHNlcnZpY2UifSx7InRpdGxlIjoiRWxldmF0b3IifSx7InRpdGxlIjoiRnJlZSBXaUZpIn0seyJ0aXRsZSI6IkZyZWUgYnJlYWtmYXN0In0seyJ0aXRsZSI6IkZyZWUgbmV3c3BhcGVycyBpbiBsb2JieSJ9LHsidGl0bGUiOiJGcmVlIHNlbGYgcGFya2luZyJ9LHsidGl0bGUiOiJGdWxsLXNlcnZpY2Ugc3BhIn0seyJ0aXRsZSI6IkdhcmRlbiJ9LHsidGl0bGUiOiJIYWlyIHNhbG9uIn0seyJ0aXRsZSI6IkhlYWx0aCBjbHViIn0seyJ0aXRsZSI6IkluLXJvb20gYWNjZXNzaWJpbGl0eSJ9LHsidGl0bGUiOiJMdWdnYWdlIHN0b3JhZ2UifSx7InRpdGxlIjoiTnVtYmVyIG9mIGZsb29ycyAtIDE4In0seyJ0aXRsZSI6Ik51bWJlciBvZiByZXN0YXVyYW50cyAtIDQifSx7InRpdGxlIjoiT3V0ZG9vciBwb29sIn0seyJ0aXRsZSI6IlBvb2wgdW1icmVsbGFzIn0seyJ0aXRsZSI6IlBvcnRlclwvYmVsbGhvcCJ9LHsidGl0bGUiOiJSb2xsLWluIHNob3dlciJ9LHsidGl0bGUiOiJTYWZlLWRlcG9zaXQgYm94IGF0IGZyb250IGRlc2sifSx7InRpdGxlIjoiU21va2UtZnJlZSBwcm9wZXJ0eSJ9LHsidGl0bGUiOiJTcGEgdHJlYXRtZW50IHJvb20ocykifSx7InRpdGxlIjoiU3BhIHR1YiJ9LHsidGl0bGUiOiJTdGVhbSByb29tIn0seyJ0aXRsZSI6IlRlbGV2aXNpb24gaW4gY29tbW9uIGFyZWFzIn0seyJ0aXRsZSI6IlRlcnJhY2UifSx7InRpdGxlIjoiVG90YWwgbnVtYmVyIG9mIHJvb21zIC0gMjAwIn0seyJ0aXRsZSI6IlR1cmtpc2ggYmF0aFwvSGFtbWFtIn0seyJ0aXRsZSI6IldlZGRpbmcgc2VydmljZXMifV19">
+                                                <input type="hidden" name="search_form" value="eyJhY3Rpb24iOiJodHRwczpcL1wvd3d3LnBocHRyYXZlbHMubmV0XC90aGhvdGVsc1wvc2VhcmNoIiwic2x1ZyI6InRoaG90ZWxzIiwiY2l0eSI6Im1lZGVsbGluIiwiY2hlY2tpbiI6IjIwMTktMDktMjMiLCJjaGVja291dCI6IjIwMTktMDktMzAiLCJhZHVsdHMiOiIyIiwiY2hpbGRyZW4iOiIwIiwib3RhX2lkIjoiOGVkMjQ4ODAtZTZhZC0xMWU4LWE0YzktMTVmOGE4NGJmODE0IiwiY3VycmVuY3kiOiJVU0QiLCJ2ZW5kb3IiOjMsImlwX2FkZHJlc3MiOiIxODEuMTI4LjkyLjE1NiIsImhvdGVsX2lkIjoiMTg1MDcxIiwiY3VzdG9tX3BheWxvYWQiOiJ7XCJ2ZW5kb3JcIjozfSJ9">
+                                                <button class="core-btn-primary room-card__book-now-btn" type="submit">Book now</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="room-card">
+                            <div class="room-card__container">
+                                <div class="room-card__body">
+                                    <div class="room-card__content">
+                                        <div class="room-card__image-box">
+                                                                                        <img class="room-card__image" src="https://www.phptravels.net/themes/default/assets/img/hotel.jpg">
+                                        </div>
+                                        <div class="room-card__content--left">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Standard Double Room</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="room-card__content--right">
+                                            <div class="room-price__container">
+                                                <span class="text-l c-dark-blue">824.49</span>
+                                            </div>
+                                            <span class="text-xs-regular c-text-grey">Total price including taxes and fees</span>
+                                            <form action="https://www.phptravels.net/thhotels/checkout/Dann Carlton Medellin Hotel" method="post">
+                                                <input type="hidden" name="room" value="eyJyb29tX3N0YXR1cyI6IiIsInJlZnVuZGFibGUiOiIiLCJpZCI6MTEyNTY5LCJ0eXBlX2lkIjoiIiwicHJpY2UiOiI4MjQuNDkiLCJob3RlbF9pZCI6IjE4NTA3MSIsInJvb21fZGVzY3JpcHRpb25zIjoiU3RhbmRhcmQgRG91YmxlIFJvb20iLCJpbWFnZSI6WyIiXSwicm9vbV9uYW1lIjoiU3RhbmRhcmQgRG91YmxlIFJvb20iLCJyb29tX3NsdWciOiJTdGFuZGFyZCBEb3VibGUgUm9vbSIsInN1cHBsaWVyX2lkIjoiIiwiYWR1bHRzIjoyLCJjaGlsZHMiOjAsInR5cGUiOiJTdGFuZGFyZCBEb3VibGUgUm9vbSIsImltYWdlcyI6WyIiXX0=">
+                                                <input type="hidden" name="hotel" value="eyJpZCI6MTg1MDcxLCJob3RlbF9vcmRlciI6IiIsImhvdGVsX2lzX2ZlYXR1cmVkIjoiIiwic2xpZGVyX2ltYWdlIjoiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC9kZmIxZWMxMF96LmpwZyIsImNvbXBhbnlfbmFtZSI6IkRhbm4gQ2FybHRvbiBNZWRlbGxpbiBIb3RlbCIsImhvdGVsX2RvbWFpbiI6IiIsImFkZHJlc3MiOiJDYXJyZXJhIDQzYSBOby43LTUwLCBBdmVuaWRhIEVsIFBvYmxhZG8iLCJkZXNjcmlwdGlvbiI6IjxwPjxiPlByb3BlcnR5IExvY2F0aW9uPFwvYj4gPGJyIFwvPkxvY2F0ZWQgaW4gTWVkZWxsaW4gKEVsIFBvYmxhZG8pLCBEYW5uIENhcmx0b24gTWVkZWxsaW4gSG90ZWwgaXMgd2l0aGluIGEgMTUtbWludXRlIHdhbGsgb2YgTGxlcmFzIFBhcmsgYW5kIFNhbnRhIEZlIE1hbGwuICBUaGlzIDQuNS1zdGFyIGhvdGVsIGlzIDIuOSBtaSAoNC43IGttKSBmcm9tIFBhcmsgb2YgTGlnaHRzIGFuZCAzLjIgbWkgKDUuMiBrbSkgZnJvbSBCb3Rlcm8gUGxhemEuPFwvcD48cD48Yj5Sb29tczxcL2I+IDxiciBcLz5NYWtlIHlvdXJzZWxmIGF0IGhvbWUgaW4gb25lIG9mIHRoZSAyMDAgYWlyLWNvbmRpdGlvbmVkIHJvb21zIGZlYXR1cmluZyBtaW5pYmFycyBhbmQgZmxhdC1zY3JlZW4gdGVsZXZpc2lvbnMuIENvbXBsaW1lbnRhcnkgd2lyZWxlc3MgSW50ZXJuZXQgYWNjZXNzIGtlZXBzIHlvdSBjb25uZWN0ZWQsIGFuZCBjYWJsZSBwcm9ncmFtbWluZyBpcyBhdmFpbGFibGUgZm9yIHlvdXIgZW50ZXJ0YWlubWVudC4gQmF0aHJvb21zIGhhdmUgY29tcGxpbWVudGFyeSB0b2lsZXRyaWVzIGFuZCBoYWlyIGRyeWVycy4gQ29udmVuaWVuY2VzIGluY2x1ZGUgc2FmZXMgYW5kIGRlc2tzLCBhbmQgaG91c2VrZWVwaW5nIGlzIHByb3ZpZGVkIGRhaWx5LjxcL3A+PHA+PGI+QW1lbml0aWVzPFwvYj4gPGJyIFwvPlBhbXBlciB5b3Vyc2VsZiB3aXRoIGEgdmlzaXQgdG8gdGhlIHNwYSwgd2hpY2ggb2ZmZXJzIG1hc3NhZ2VzLCBib2R5IHRyZWF0bWVudHMsIGFuZCBmYWNpYWxzLiBJZiB5b3UncmUgbG9va2luZyBmb3IgcmVjcmVhdGlvbmFsIG9wcG9ydHVuaXRpZXMsIHlvdSdsbCBmaW5kIGEgaGVhbHRoIGNsdWIsIGFuIG91dGRvb3IgcG9vbCwgYW5kIGEgc3BhIHR1Yi4gQWRkaXRpb25hbCBmZWF0dXJlcyBhdCB0aGlzIGhvdGVsIGluY2x1ZGUgY29tcGxpbWVudGFyeSB3aXJlbGVzcyBJbnRlcm5ldCBhY2Nlc3MsIGNvbmNpZXJnZSBzZXJ2aWNlcywgYW5kIGEgaGFpciBzYWxvbi48XC9wPjxwPjxiPkRpbmluZzxcL2I+IDxiciBcLz5HcmFiIGEgYml0ZSBhdCBaYWd1YW4gZGVsIFBhdGlvLCBvbmUgb2YgdGhlIGhvdGVsJ3MgNCByZXN0YXVyYW50cywgb3Igc3RheSBpbiBhbmQgdGFrZSBhZHZhbnRhZ2Ugb2YgdGhlIDI0LWhvdXIgcm9vbSBzZXJ2aWNlLiBRdWVuY2ggeW91ciB0aGlyc3Qgd2l0aCB5b3VyIGZhdm9yaXRlIGRyaW5rIGF0IHRoZSBiYXJcL2xvdW5nZS4gQSBjb21wbGltZW50YXJ5IGJ1ZmZldCBicmVha2Zhc3QgaXMgc2VydmVkIGRhaWx5LjxcL3A+PHA+PGI+QnVzaW5lc3MsIE90aGVyIEFtZW5pdGllczxcL2I+IDxiciBcLz5GZWF0dXJlZCBhbWVuaXRpZXMgaW5jbHVkZSBhIDI0LWhvdXIgYnVzaW5lc3MgY2VudGVyLCBjb21wbGltZW50YXJ5IG5ld3NwYXBlcnMgaW4gdGhlIGxvYmJ5LCBhbmQgZHJ5IGNsZWFuaW5nXC9sYXVuZHJ5IHNlcnZpY2VzLiBQbGFubmluZyBhbiBldmVudCBpbiBNZWRlbGxpbj8gVGhpcyBob3RlbCBoYXMgZmFjaWxpdGllcyBtZWFzdXJpbmcgNjAzIHNxdWFyZSBmZWV0ICg1NiBzcXVhcmUgbWV0ZXJzKSwgaW5jbHVkaW5nIGEgY29uZmVyZW5jZSBjZW50ZXIuIEEgcm91bmR0cmlwIGFpcnBvcnQgc2h1dHRsZSBpcyBwcm92aWRlZCBmb3IgYSBzdXJjaGFyZ2UgKGF2YWlsYWJsZSAyNCBob3VycyksIGFuZCBmcmVlIHNlbGYgcGFya2luZyBpcyBhdmFpbGFibGUgb25zaXRlLjxcL3A+IiwiaG90ZWxzX3N0YXR1cyI6MCwiY2l0eV9pZCI6IiIsInN0YXR1cyI6MSwiY29tbWlzc2lvbl9wZXJjZW50YWdlIjowLCJzdXBwbGllcl9pZCI6IiIsImxhdGl0dWRlIjo2LjIwNzAxMDAwMDAwMDAwMDM2MDM4NzI3NTU3NzUyMjgxNDI3MzgzNDIyODUxNTYyNSwibG9uZ2l0dWRlIjotNzUuNTcxMzMwMDAwMDAwMDAzMjI0MTU4NzE3Nzg1MDMwNjAzNDA4ODEzNDc2NTYyNSwicmF0aW5nIjo0LjUsImNyZWF0ZWRfYXQiOiIiLCJ1cGRhdGVkX2F0IjoiIiwic3ViZG9tYWluIjoiIiwiY2hlY2tpbiI6IjA5XC8yM1wvMjAxOSIsImNoZWNrb3V0IjoiMDlcLzMwXC8yMDE5IiwiY2hlY2tJblRpbWUiOiIzOjAwIFBNIiwiY2hlY2tPdXRUaW1lIjoiMTowMCBQTSIsImFjY291bnRfaWQiOiIiLCJvdGFfaWQiOiIiLCJmZWF0dXJlX2NpdHlfaWQiOiIiLCJob3RlbF9zbHVnIjoiIiwibW9iaWxlX251bWJlciI6IiIsInBob25lX251bWJlciI6IiIsIndoYXRzYXBwX251bWJlciI6IiIsImVtYWlsX2FkZHJlc3MiOiIiLCJ0aHVtYiI6Imh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZGZiMWVjMTBfYi5qcGciLCJob3RlbF9wb2xpY3kiOiIiLCJwcm9wZXJ0eV90eXBlX2lkIjoiIiwiY3VzdG9tX3BheWxvYWQiOnsidmVuZG9yIjozfSwiY3VycmVuY3lfbmFtZSI6IlVTRCIsInJvb21zIjpbeyJyb29tX3N0YXR1cyI6IiIsInJlZnVuZGFibGUiOiIiLCJpZCI6MTEyNTY5LCJ0eXBlX2lkIjoiIiwicHJpY2UiOiIxNTI5Ljg2IiwiaG90ZWxfaWQiOiIxODUwNzEiLCJyb29tX2Rlc2NyaXB0aW9ucyI6IlN1aXRlIiwiaW1hZ2UiOlsiIl0sInJvb21fbmFtZSI6IlN1aXRlIiwicm9vbV9zbHVnIjoiU3VpdGUiLCJzdXBwbGllcl9pZCI6IiIsImFkdWx0cyI6MiwiY2hpbGRzIjowLCJ0eXBlIjoiU3VpdGUiLCJpbWFnZXMiOlsiIl19LHsicm9vbV9zdGF0dXMiOiIiLCJyZWZ1bmRhYmxlIjoiIiwiaWQiOjExMjU2OSwidHlwZV9pZCI6IiIsInByaWNlIjoiODI0LjQ5IiwiaG90ZWxfaWQiOiIxODUwNzEiLCJyb29tX2Rlc2NyaXB0aW9ucyI6IlN0YW5kYXJkIFR3aW4gUm9vbSwgMiBEb3VibGUgQmVkcyIsImltYWdlIjpbIiJdLCJyb29tX25hbWUiOiJTdGFuZGFyZCBUd2luIFJvb20sIDIgRG91YmxlIEJlZHMiLCJyb29tX3NsdWciOiJTdGFuZGFyZCBUd2luIFJvb20sIDIgRG91YmxlIEJlZHMiLCJzdXBwbGllcl9pZCI6IiIsImFkdWx0cyI6MiwiY2hpbGRzIjowLCJ0eXBlIjoiU3RhbmRhcmQgVHdpbiBSb29tLCAyIERvdWJsZSBCZWRzIiwiaW1hZ2VzIjpbIiJdfSx7InJvb21fc3RhdHVzIjoiIiwicmVmdW5kYWJsZSI6IiIsImlkIjoxMTI1NjksInR5cGVfaWQiOiIiLCJwcmljZSI6IjExNzcuMTciLCJob3RlbF9pZCI6IjE4NTA3MSIsInJvb21fZGVzY3JpcHRpb25zIjoiSnVuaW9yIFN1aXRlIiwiaW1hZ2UiOlsiIl0sInJvb21fbmFtZSI6Ikp1bmlvciBTdWl0ZSIsInJvb21fc2x1ZyI6Ikp1bmlvciBTdWl0ZSIsInN1cHBsaWVyX2lkIjoiIiwiYWR1bHRzIjoyLCJjaGlsZHMiOjAsInR5cGUiOiJKdW5pb3IgU3VpdGUiLCJpbWFnZXMiOlsiIl19LHsicm9vbV9zdGF0dXMiOiIiLCJyZWZ1bmRhYmxlIjoiIiwiaWQiOjExMjU2OSwidHlwZV9pZCI6IiIsInByaWNlIjoiODI0LjQ5IiwiaG90ZWxfaWQiOiIxODUwNzEiLCJyb29tX2Rlc2NyaXB0aW9ucyI6IlN0YW5kYXJkIERvdWJsZSBSb29tIiwiaW1hZ2UiOlsiIl0sInJvb21fbmFtZSI6IlN0YW5kYXJkIERvdWJsZSBSb29tIiwicm9vbV9zbHVnIjoiU3RhbmRhcmQgRG91YmxlIFJvb20iLCJzdXBwbGllcl9pZCI6IiIsImFkdWx0cyI6MiwiY2hpbGRzIjowLCJ0eXBlIjoiU3RhbmRhcmQgRG91YmxlIFJvb20iLCJpbWFnZXMiOlsiIl19XSwiaW1hZ2VzIjpbImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZGZiMWVjMTBfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzA0M2QyODlmX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC82OWIzZjJkMF9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvNzdkM2YwYWZfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzBhNmNmMjA0X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC9hOWRjNzQ5N19iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvMDY5MzM3NmZfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2NmNDI4NDU2X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC85ZjEwZDQ1NF9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvNGUwZjliMTNfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzFiNWNkZDgwX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC8zNTkyMmNmZl9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZjFkY2FlYzFfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2VhNGE4M2Y3X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC82MzAwZmMzOF9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvOGRiNzVhZDRfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzVkOTgwMDZhX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC84ZWFhOTA2OV9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvNzMxOTM1NmNfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzc0OGU3OGNhX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC80MmJmZTIwZl9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvYzVlY2I3Y2FfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzNjMzM4NWQ1X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC82MDkzZmNlZl9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvNDkzNWVlM2NfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2JhNzZjYTVjX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC82NDA5NjBlOF9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZDE0ZjkwNmNfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2U3MjBlYWNiX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC8zN2YyMzI1Y19iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZmYwYWExODFfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2QzZTBjOTM4X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC85MDE0MTExMl9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvOTVmMjAwYjJfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcL2Q1ZDRjNGQ0X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC9jYmY1MDI3Y19iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvZmQzNjU3MDBfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzNiZmE2MzBjX2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC8zOGYxZTU4MV9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvMDE3NzgzNWFfYi5qcGciLCJodHRwczpcL1wvaS50cmF2ZWxhcGkuY29tXC9ob3RlbHNcLzEwMDAwMDBcLzEyMDAwMFwvMTEyNjAwXC8xMTI1NjlcLzk5YmM4YzU1X2IuanBnIiwiaHR0cHM6XC9cL2kudHJhdmVsYXBpLmNvbVwvaG90ZWxzXC8xMDAwMDAwXC8xMjAwMDBcLzExMjYwMFwvMTEyNTY5XC8yZWY3YTFlNF9iLmpwZyIsImh0dHBzOlwvXC9pLnRyYXZlbGFwaS5jb21cL2hvdGVsc1wvMTAwMDAwMFwvMTIwMDAwXC8xMTI2MDBcLzExMjU2OVwvNjAyZDQ4MWZfYi5qcGciXSwiYW1lbml0aWVzIjpbeyJ0aXRsZSI6IjI0LWhvdXIgYnVzaW5lc3MgY2VudGVyIn0seyJ0aXRsZSI6IjI0LWhvdXIgZnJvbnQgZGVzayJ9LHsidGl0bGUiOiJBY2Nlc3NpYmxlIGJhdGhyb29tIn0seyJ0aXRsZSI6IkFpcnBvcnQgdHJhbnNwb3J0YXRpb24gKHN1cmNoYXJnZSkifSx7InRpdGxlIjoiQmFyXC9sb3VuZ2UifSx7InRpdGxlIjoiQ29mZmVlXC90ZWEgaW4gY29tbW9uIGFyZWFzIn0seyJ0aXRsZSI6IkNvbmNpZXJnZSBzZXJ2aWNlcyJ9LHsidGl0bGUiOiJDb25mZXJlbmNlIGNlbnRlciJ9LHsidGl0bGUiOiJDb25mZXJlbmNlIHNwYWNlIn0seyJ0aXRsZSI6IkNvbmZlcmVuY2Ugc3BhY2Ugc2l6ZSAoZmVldCkgLSA2MDMifSx7InRpdGxlIjoiQ29uZmVyZW5jZSBzcGFjZSBzaXplIChtZXRlcnMpIC0gNTYifSx7InRpdGxlIjoiRHJ5IGNsZWFuaW5nXC9sYXVuZHJ5IHNlcnZpY2UifSx7InRpdGxlIjoiRWxldmF0b3IifSx7InRpdGxlIjoiRnJlZSBXaUZpIn0seyJ0aXRsZSI6IkZyZWUgYnJlYWtmYXN0In0seyJ0aXRsZSI6IkZyZWUgbmV3c3BhcGVycyBpbiBsb2JieSJ9LHsidGl0bGUiOiJGcmVlIHNlbGYgcGFya2luZyJ9LHsidGl0bGUiOiJGdWxsLXNlcnZpY2Ugc3BhIn0seyJ0aXRsZSI6IkdhcmRlbiJ9LHsidGl0bGUiOiJIYWlyIHNhbG9uIn0seyJ0aXRsZSI6IkhlYWx0aCBjbHViIn0seyJ0aXRsZSI6IkluLXJvb20gYWNjZXNzaWJpbGl0eSJ9LHsidGl0bGUiOiJMdWdnYWdlIHN0b3JhZ2UifSx7InRpdGxlIjoiTnVtYmVyIG9mIGZsb29ycyAtIDE4In0seyJ0aXRsZSI6Ik51bWJlciBvZiByZXN0YXVyYW50cyAtIDQifSx7InRpdGxlIjoiT3V0ZG9vciBwb29sIn0seyJ0aXRsZSI6IlBvb2wgdW1icmVsbGFzIn0seyJ0aXRsZSI6IlBvcnRlclwvYmVsbGhvcCJ9LHsidGl0bGUiOiJSb2xsLWluIHNob3dlciJ9LHsidGl0bGUiOiJTYWZlLWRlcG9zaXQgYm94IGF0IGZyb250IGRlc2sifSx7InRpdGxlIjoiU21va2UtZnJlZSBwcm9wZXJ0eSJ9LHsidGl0bGUiOiJTcGEgdHJlYXRtZW50IHJvb20ocykifSx7InRpdGxlIjoiU3BhIHR1YiJ9LHsidGl0bGUiOiJTdGVhbSByb29tIn0seyJ0aXRsZSI6IlRlbGV2aXNpb24gaW4gY29tbW9uIGFyZWFzIn0seyJ0aXRsZSI6IlRlcnJhY2UifSx7InRpdGxlIjoiVG90YWwgbnVtYmVyIG9mIHJvb21zIC0gMjAwIn0seyJ0aXRsZSI6IlR1cmtpc2ggYmF0aFwvSGFtbWFtIn0seyJ0aXRsZSI6IldlZGRpbmcgc2VydmljZXMifV19">
+                                                <input type="hidden" name="search_form" value="eyJhY3Rpb24iOiJodHRwczpcL1wvd3d3LnBocHRyYXZlbHMubmV0XC90aGhvdGVsc1wvc2VhcmNoIiwic2x1ZyI6InRoaG90ZWxzIiwiY2l0eSI6Im1lZGVsbGluIiwiY2hlY2tpbiI6IjIwMTktMDktMjMiLCJjaGVja291dCI6IjIwMTktMDktMzAiLCJhZHVsdHMiOiIyIiwiY2hpbGRyZW4iOiIwIiwib3RhX2lkIjoiOGVkMjQ4ODAtZTZhZC0xMWU4LWE0YzktMTVmOGE4NGJmODE0IiwiY3VycmVuY3kiOiJVU0QiLCJ2ZW5kb3IiOjMsImlwX2FkZHJlc3MiOiIxODEuMTI4LjkyLjE1NiIsImhvdGVsX2lkIjoiMTg1MDcxIiwiY3VzdG9tX3BheWxvYWQiOiJ7XCJ2ZW5kb3JcIjozfSJ9">
+                                                <button class="core-btn-primary room-card__book-now-btn" type="submit">Book now</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                </div>
+        </div>
+    </section>
+            <section class="acc-details__facilities_section" id="facilities">
+            <div>
+                <h2 class="text-l c-dark-blue">Hotel facilities</h2>
+                <div class="hotel-facilities">
+                    <div class="hotel-facilities__container row">
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">24-hour business center</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">24-hour front desk</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Accessible bathroom</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Airport transportation (surcharge)</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Bar/lounge</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Coffee/tea in common areas</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Concierge services</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Conference center</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Conference space</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Conference space size (feet) - 603</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Conference space size (meters) - 56</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Dry cleaning/laundry service</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Elevator</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Free WiFi</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Free breakfast</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Free newspapers in lobby</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Free self parking</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Full-service spa</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Garden</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Hair salon</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Health club</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">In-room accessibility</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Luggage storage</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Number of floors - 18</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Number of restaurants - 4</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Outdoor pool</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Pool umbrellas</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Porter/bellhop</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Roll-in shower</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Safe-deposit box at front desk</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Smoke-free property</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Spa treatment room(s)</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Spa tub</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Steam room</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Television in common areas</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Terrace</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Total number of rooms - 200</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Turkish bath/Hammam</span>
+                                </div>
+                            </div>
+                                                    <div class="col-md-3">
+                                <div class="hotel-facility">
+                                    <i class="fa fa-check text-success"></i>
+                                    <span class="text-s-regular c-text-grey">Wedding services</span>
+                                </div>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+<script>
+    $(function(){
+        $("[name=hotelRateDetail]").on('submit', function(e) {
+            e.preventDefault();
+            var payload = $(this).serialize();
+            $('#btn-submit-text').text('SEARCHING...');
+            $.get('https://www.phptravels.net/hotelport/rateAndRule', payload, function(resp) {
+                $('#btn-submit-text').empty().text('SEARCHING');
+                $('.hotelRateDetail').empty().html(resp.body);
+            });
+        });
+        var nowTemp = new Date();
+        var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+
+        var checkin = $('[name=checkin]').datepicker({
+            format: 'yyyy-mm-dd',
+            onRender: function(date) {
+                return date.valueOf() < now.valueOf() ? 'disabled' : '';
+            }
+        })
+        .on('changeDate', function(e){
+            $(this).datepicker('hide');
+            var newDate = new Date(e.date);
+            checkout.setValue(newDate.setDate(newDate.getDate() + 1));
+            $('[name=checkout]').focus();
+        }).data('datepicker');
+
+        // Checkout time
+        var checkout = $('[name=checkout]').datepicker({
+            format: 'yyyy-mm-dd',
+            onRender: function(date) {
+                return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+            }
+        }).on('changeDate', function(){
+            $(this).datepicker('hide');
+        }).data('datepicker');
+
+        // Default fill up date
+        if(checkin.element.val()) {
+            checkin.setValue(checkin.element.val());
+        }
+        if(checkout.element.val()) {
+            checkout.setValue(checkout.element.val());
+        }
+    });
+</script></div> <!--/ .body-section -->
+ <footer id="footer" class="">
+
+   <div class="sc-6z3jy0-0 fVcoLU">
+    <div class="sc-6z3jy0-1 hvpYIF">
+        <div class="sc-fjdhpX ehqOdj container">
+            <div class="sc-kTUwUJ ljwnSF row">
+                <div class="sc-VigVT fIhGog col-lg-3 col-sm-4 col-xs-12">
+                    <div class="sc-6z3jy0-4 htcuoB">
+                        <div class="sc-6z3jy0-6 hZsjPq">
+                            <!--<p class="sc-6z3jy0-7 chKsbs">Available now</p> -->
+                        </div>
+                        <div class="alm-f-phone-img sc-6z3jy0-5 hVfXnf">
+                            <img class="img-responsive" src="https://www.phptravels.net/themes/default/assets/img/mobile.png" width="230" alt="mobile apps">
+                        </div>
+                    </div>
+                </div>
+                <div class="sc-VigVT fIhGog col-lg-9 col-sm-8">
+                    <h3 class="sc-6z3jy0-2 gkbDIH">Get the mobile app!</h3>
+                    <p class="sc-6z3jy0-3 fGcVuz">Our app has all your booking needs covered: Secure payment channels, easy 4-step booking process, and sleek user designs. What more could you ask for?</p>
+                    <ul class="theme-mobile-app-btn-list">
+                                                <li>
+                            <a target="blank" class="btn btn-dark theme-mobile-app-btn" href="https://itunes.apple.com/us/app/phptravels/id1018217005?mt=8">
+                            <i class="theme-mobile-app-logo">
+                            <img src="https://www.phptravels.net/themes/default/assets/img/apple.png" alt="Image Alternative text" title="Image Title">
+                            </i>
+                            <span>Download on
+                            <br>
+                            <span>App Store</span>
+                            </span>
+                            </a>
+                        </li>
+                                                                        <li>
+                            <a target="blank" class="btn btn-dark theme-mobile-app-btn" href="https://play.google.com/store/apps/details?id=com.phptravelsnative">
+                            <i class="theme-mobile-app-logo">
+                            <img src="https://www.phptravels.net/themes/default/assets/img/android.png" alt="Image Alternative text" title="Image Title">
+                            </i>
+                            <span>Download on
+                            <br>
+                            <span>Play Market</span>
+                            </span>
+                            </a>
+                        </li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="sc-97mfds-0 xrttw">
+<div class="sc-97mfds-1 cynRGe sc-fjdhpX ehqOdj container">
+<div class="sc-97mfds-2 haPKPH sc-kTUwUJ ljwnSF row">
+  <div class="sc-97mfds-3 col-xs-12 sc-97mfds-5 lnfyst sc-VigVT fIhGog col">
+    <img src="https://www.phptravels.net/themes/default/assets/img/call.png" class="sc-97mfds-6 dxKlUD">
+    <div class="sc-97mfds-7 ePuuND">
+        <div class="sc-97mfds-8 bLWkbc">Need Help? Call Now :</div>
+        <div class="sc-97mfds-9 dpdHAC">+1-234-56789</div>
+    </div>
+</div>
+<div class="sc-97mfds-3 sc-97mfds-4 bYdCGD sc-VigVT fIhGog col hidden-xs hidden-sm">
+    <img src="https://www.phptravels.net/themes/default/assets/img/mail.png" class="sc-97mfds-6 dxKlUD">
+    <div class="sc-97mfds-7 ePuuND">
+        <div class="sc-97mfds-8 bLWkbc">24/7 Customer Support:</div>
+        <div class="sc-97mfds-9 dpdHAC"><a href="mailto:info@travelagency.com">info@travelagency.com</a></div>
+    </div>
+</div>
+<div class="sc-97mfds-3 col-xs-12 jApvwl sc-VigVT fIhGog col">
+    <div class="sc-97mfds-7 ePuuND">
+        <div class="sc-97mfds-8 hqiKow">Find us on our social media channels</div>
+        <div class="sc-97mfds-10 jpNgQd">
+                <a href="https://www.facebook.com/travelbusiness" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Facebook"><img src="https://www.phptravels.net/uploads/images/social/slufm6otpasooc.png" class="social-icons-footer sc-97mfds-11 hccXzw"></a>
+                <a href="https://twitter.com/phptravels" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Twitter"><img src="https://www.phptravels.net/uploads/images/social/9ztbr148kh4o8c8.png" class="social-icons-footer sc-97mfds-11 hccXzw"></a>
+                <a href="http:///www.youtube.com/phptravels" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Youtube"><img src="https://www.phptravels.net/uploads/images/social/946746yt.png.png" class="social-icons-footer sc-97mfds-11 hccXzw"></a>
+                <a href="https://plus.google.com/+Phptravels/" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Google+"><img src="https://www.phptravels.net/uploads/images/social/2wz814aq9mgw04k.png" class="social-icons-footer sc-97mfds-11 hccXzw"></a>
+                <a href="http://phptravels.net/sitemap.xml" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="RSS"><img src="https://www.phptravels.net/uploads/images/social/729370rs.png.png" class="social-icons-footer sc-97mfds-11 hccXzw"></a>
+                </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+</footer>
+
+
+
+<div class="theme-hero-area mobside visible-lg">
+    <div class="theme-hero-area-bg-wrap">
+        <div class="theme-hero-area-bg-pattern theme-hero-area-bg-pattern-ultra-light" style="background-image:url(img/patterns/travel/1.png);"></div>
+        <div class="theme-hero-area-grad-mask theme-hero-area-grad-mask-i"></div>
+        <div class="theme-hero-area-inner-shadow theme-hero-area-inner-shadow-light"></div>
+    </div>
+    <div class="theme-hero-area-body">
+        <div class="container">
+            <div class="col-md-12">
+
+                            <div class="sc-1t1b6dh-2 joxZVq sc-VigVT fIhGog col-md-2 go-right">
+              <h2 class="sc-1t1b6dh-5 imcuxF go-text-right"><strong>Company</strong></h2>
+              <ul class="sc-1t1b6dh-6 jjJkOp go-right go-text-right">
+                                <li><a href="https://www.phptravels.net/contact-us" target="" title="">Contact</a></li>
+                                <li><a href="https://www.phptravels.net/About-Us" target="" title="">About Us</a></li>
+                                <li><a href="https://www.phptravels.net/How-to-Book" target="" title="">How to Book</a></li>
+                                <li><a href="https://www.phptravels.net/Booking-Tips" target="" title="">Booking Tips</a></li>
+                              </ul>
+            </div>
+                            <div class="sc-1t1b6dh-2 joxZVq sc-VigVT fIhGog col-md-2 go-right">
+              <h2 class="sc-1t1b6dh-5 imcuxF go-text-right"><strong>Support</strong></h2>
+              <ul class="sc-1t1b6dh-6 jjJkOp go-right go-text-right">
+                                <li><a href="https://www.phptravels.net/Our-Partners" target="" title="">Our Partners</a></li>
+                                <li><a href="https://www.phptravels.net/Privacy-Policy" target="" title="">Privacy Policy</a></li>
+                                <li><a href="https://www.phptravels.net/Terms-of-Use" target="" title="">Terms of Use</a></li>
+                              </ul>
+            </div>
+                            <div class="sc-1t1b6dh-2 joxZVq sc-VigVT fIhGog col-md-2 go-right">
+              <h2 class="sc-1t1b6dh-5 imcuxF go-text-right"><strong>Business</strong></h2>
+              <ul class="sc-1t1b6dh-6 jjJkOp go-right go-text-right">
+                                <li><a href="https://www.phptravels.net/FAQ" target="" title="">FAQ</a></li>
+                                <li><a href="https://www.phptravels.net/themes/default/../../supplier" target="_blank" title="">Supplier Login</a></li>
+                              </ul>
+            </div>
+                <div class="sc-1t1b6dh-2 joxZVq sc-VigVT fIhGog col-md-2 go-right">
+                 <h3 class="sc-1t1b6dh-5 imcuxF go-text-right"><strong class="title">Supplier</strong></h3>
+                <ul class="sc-1t1b6dh-6 jjJkOp go-right go-text-right">
+                                       <li><a target="_blank" href="https://www.phptravels.net/supplier-register/">Supplier Sign Up</a></li>
+                                        <li><a target="_blank" href="https://www.phptravels.net/supplier/">Extranet Login</a></li>
+                </ul>
+                </div>
+
+                                        <div class="sc-1t1b6dh-2 joxZVq sc-VigVT fIhGog col-md-4 go-left">
+                    <h3 class="sc-1t1b6dh-5 imcuxF go-text-right"><strong class="title">Newsletter</strong></h3>
+                    <div class="col-md-12">
+                        <div id="message-newsletter_2"></div>
+                        <form role="search" onsubmit="return false;">
+                        </form>
+                        <div class="row">
+                            <input type="email" class="form-control input-lg fccustom2 sub_email form-group" id="exampleInputEmail1" placeholder="Newsletter Enter your email" required="">
+                            <div class="clearfix"></div>
+                            <button type="submit" class="btn btn-danger btn-block sub_newsletter ttu"> Subscribe</button>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a class="newstext" href="javascript:void(0);">
+                                    <div class="wow fadeIn subscriberesponse" style="visibility: hidden; animation-name: none;"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                            </div>
+
+            <!-- ********************   Removing powered by linkback will result to cancellation of your support service.    ********************  -->
+            <div class="hidden-xs hidden-sm" style="padding:10px;color:#ffffff">
+            <div class="container">
+            <div class="text-center">Powered by <a href="http://www.phptravels.com" target="_blank"> <img src="https://www.phptravels.net/uploads/global/phptravels.png" style="height:22px;color:#ffffff" height="22" alt="PHPTRAVELS"> <strong style="color:#ffffff">PHPTRAVELS</strong></a></div>
+            </div>
+            </div>
+            <!-- ********************   Removing powered by linkback will result to cancellation of your support service.    ********************  -->
+
+
+        </div>
+    </div>
+
+<div class="rightsdiv">
+<!-- tripadvisors block -->
+<!-- tripadvisors block -->
+</div>
+
+<div class="hidden-xs hidden-sm gotopDiv">
+ <center>
+  <a href="javascript:void" class="gotop scroll wow fadeInUp btn btn-default" style="visibility: hidden; animation-name: none;"><i class="icon-up-open-big"></i></a>
+ </center>
+</div>
+
+<h5 style="padding:10px" class="text-center">All Rights Reserved by PHPTRAVELS</h5>
+
+<style>
+.cc-window{opacity:1;transition:opacity 1s ease;}
+.cc-link{text-decoration:underline;}
+.cc-window{left:0;right:0;bottom:0px;position:fixed;overflow:hidden;box-sizing:border-box;font-size:16px;line-height:1.5em;display:-ms-flexbox;display:flex;-ms-flex-wrap:nowrap;flex-wrap:nowrap;z-index:9999;}
+.cc-window.cc-banner{padding:1em 1.8em;width:100%;-ms-flex-direction:row;flex-direction:row;}
+.cc-btn,.cc-link{cursor:pointer;}
+.cc-link{opacity:.8;padding:.2em;}
+.cc-link:hover{opacity:1;} .cc-link:active,.cc-link:visited{color:initial;}
+.cc-btn{display:block;padding:.4em .8em;font-size:.9em;font-weight:700;border-width:2px;border-style:solid;text-align:center;white-space:nowrap;}
+.cc-window.cc-banner{-ms-flex-align:center;align-items:center;}
+.cc-banner .cc-message{display:block;-ms-flex:1 1 auto;flex:1 1 auto;max-width:100%;margin-right:1em;}
+.cc-compliance{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-line-pack:justify;align-content:space-between;}
+@media print{
+.cc-window{display:none;} } @media screen and (max-width:900px){
+.cc-btn{white-space:normal;} } @media screen and (max-width:414px) and (orientation:portrait),screen and (max-width:736px) and (orientation:landscape){
+.cc-window.cc-top{top:0;}
+.cc-window.cc-banner{left:0;right:0;}
+.cc-window.cc-banner{-ms-flex-direction:column;flex-direction:column;}
+.cc-window.cc-banner .cc-compliance{-ms-flex:1 1 auto;flex:1 1 auto;}
+.cc-window .cc-message{margin-bottom:1em;}
+.cc-window.cc-banner{-ms-flex-align:unset;align-items:unset;}
+.cc-window.cc-banner .cc-message{margin-right:0;} }
+.cc-color-override--1961008818.cc-window{color:rgb(255, 255, 255);background-color:rgb(0, 0, 0);}
+.cc-color-override--1961008818 .cc-link,.cc-color-override--1961008818
+.cc-link:active,.cc-color-override--1961008818 .cc-link:visited{color:rgb(255, 255, 255);}
+.cc-color-override--1961008818 .cc-btn{color:rgb(0, 0, 0);border-color:transparent;background-color:rgb(241, 214, 0);padding:5px 25px;}
+.cc-color-override--1961008818 .cc-btn:hover,.cc-color-override--1961008818
+.cc-btn:focus{background-color:rgb(255, 252, 38);}
+
+footer .row { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-right: -15px; margin-left: -15px; }
+.col { -ms-flex-preferred-size: 0; flex-basis: 0; -ms-flex-positive: 1; flex-grow: 1; max-width: 100%; }
+.ehqOdj{max-width:1200px}
+.QtkYb{user-select:none;pointer-events:none;flex:0 0 auto}
+.lhtPeR{user-select:none;pointer-events:none;flex:0 0 auto;width:24px;height:24px}
+.hvpYIF{background:linear-gradient(#ffffff 81%,#e0e0e0 100%)}
+.gkbDIH{margin-top:70px;margin-bottom:10px;color:#333;font-weight:700;font-size:22px;text-transform:uppercase;width:280px;line-height:1}
+.fGcVuz{color:#777;font-size:14px;line-height:20px}
+.htcuoB{display:flex;-webkit-box-pack:justify;justify-content:space-between}
+.hVfXnf{margin-right:25px}
+.hZsjPq{display:flex;flex-direction:column;margin-top:110px}
+@media(max-width:768px){.hZsjPq{margin-top:36px}
+}.hZsjPq{display:flex;flex-direction:column;margin-top:110px}
+@media(max-width:768px){.hZsjPq{margin-top:36px}
+}.chKsbs{font-size:18px;font-weight:600;line-height:1.4}
+.bxPLvS{display:flex}
+@media(max-width:768px){.bxPLvS{display:inline-block}
+}.bxPLvS{display:flex}
+@media(max-width:768px){.bxPLvS{display:inline-block}
+}
+.bQVrqA{display:flex;-webkit-box-pack:center;justify-content:center}
+.bQVrqA svg{height:35px;width:40px;margin:0 4px}
+.ktkPch{display:flex;flex:1 1 auto;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;flex-direction:column;margin-top:10px}
+.ktkPch,.ktkPch:hover{text-decoration:none}
+.ktkPch img{max-height:40px}
+.cjXiuZ{margin-bottom:0;padding-bottom:10px;font-size:12px;margin-top:5px;font-stretch:normal;color:#fff}
+.jVXChf{display:block;margin-bottom:10px;margin-right:10px}
+.cnVTPK{padding-top:15px;background:linear-gradient(280deg,#23a5b9,#003143)}
+.joxZVq{padding:0 8px}
+@media(max-width:768px){.joxZVq{width:49%}
+.joxZVq:first-of-type{width:100%}
+}.joxZVq{padding:0 8px}
+@media(max-width:768px){.joxZVq{width:49%}
+.joxZVq:first-of-type{width:100%}
+}.bLvlOX{text-align:center;margin-top:20px}
+@media(max-width:768px){.bLvlOX{margin-top:0}
+}.bLvlOX{text-align:center;margin-top:20px}
+@media(max-width:768px){.bLvlOX{margin-top:0}
+}.duQxgw{margin-bottom:10px}
+@media(max-width:768px){.duQxgw{float:left;width:41px}
+}.duQxgw{margin-bottom:10px}
+@media(max-width:768px){.duQxgw{float:left;width:41px}
+}
+.imcuxF{position:relative;margin-top:17px;margin-bottom:8.5px;padding-bottom:15px;text-align:left;color:white;font-size:20px;font-weight:600}
+.imcuxF::after{content:"";position:absolute;display:block;height:1px;width:20px;background-color:white;top:40px}
+.jjJkOp{padding:0;margin:0 0 8.5px;font-size:14px;text-align:left;color:white}
+.fZfcDq{list-style:none;display:block}
+.gaOUoF{padding:10px 0;display:flex;-webkit-box-pack:center;justify-content:center}
+.cUNzUo{padding:10px 0;color:white;font-size:13px;font-weight:400;text-decoration:none;line-height:18px;display:flex;-webkit-box-align:center;align-items:center}
+.cUNzUo:hover{color:white;text-decoration:none}
+.ctZSxi{width:22px;height:20px;margin-right:8px}
+.btJsFD{width:22px;height:20px;margin-right:8px}
+.hMmmeK{width:22px;height:20px;margin-right:8px}
+.zGvrg{width:22px;height:20px;margin-right:8px}
+.ejjCuB{width:22px;height:20px;margin-right:8px}
+.eyDSQc{width:22px;height:20px;margin-right:8px}
+.bJHwoi{text-align:center;margin-top:10px;padding-bottom:10px;color:white;font-size:14px}
+.iexggQ{display:inline-block}
+.gsJDya{margin-left:5px;margin-right:5px;margin-top:5px}
+.gsJDya{margin-left:5px;margin-right:5px;margin-top:5px}
+.jzxXqV{display:table;width:100%;text-align:center;max-width:65px;margin-left:auto;margin-right:auto;margin-top:10px}
+@media(max-width:768px){.jzxXqV{display:none}
+}.jzxXqV{display:table;width:100%;text-align:center;max-width:65px;margin-left:auto;margin-right:auto;margin-top:10px}
+@media(max-width:768px){.jzxXqV{display:none}
+}.gshHXn{width:100%;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;display:flex}
+.gshHXn>img{margin-left:5px;margin-right:5px;max-width:51px;float:left;width:100%}
+@media(min-width:768px){.gshHXn>img{display:none}
+}.gshHXn{width:100%;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;display:flex}
+.gshHXn>img{margin-left:5px;margin-right:5px;max-width:51px;float:left;width:100%}
+@media(min-width:768px){.gshHXn>img{display:none}
+}
+.xrttw{min-height:100px;padding:20px 0}
+.cynRGe{height:100%}
+.haPKPH{height:100%}
+.jApvwl{border-right:2px solid #bdbdbd;display:flex;flex-direction:row;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}
+.jApvwl:last-child{border-right:0}
+.bYdCGD{border-right:2px solid #bdbdbd;display:flex;flex-direction:row;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}
+@media(max-width:768px){.bYdCGD{visibility:hidden;height:10px;border-top:1px solid red}
+}.bYdCGD{border-right:2px solid #bdbdbd;display:flex;flex-direction:row;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}
+@media(max-width:768px){.bYdCGD{visibility:hidden;height:10px;border-top:1px solid red}
+}.lnfyst{border-right:2px solid #bdbdbd;display:flex;flex-direction:row;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}
+@media(max-width:768px){.lnfyst{border-bottom:1px solid #e0e0e0;padding-bottom:5px}
+}.lnfyst{border-right:2px solid #bdbdbd;display:flex;flex-direction:row;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}
+@media(max-width:768px){.lnfyst{border-bottom:1px solid #e0e0e0;padding-bottom:5px}
+}
+.dxKlUD{margin-right:20px;max-width:40px}
+.bLWkbc{font-size:14px;color:#333}
+.hqiKow{font-size:14px;color:#333;margin-bottom:7px}
+.dpdHAC{font-size:24px;font-weight:700;color:#333}
+.dpdHAC a,.dpdHAC a:hover{text-decoration:none;color:#333}
+.hccXzw{margin-right:15px}
+.hccXzw,.hccXzw:hover{color:#23a5b9}
+.jjJkOp li {padding: 5px 0px;}
+.jjJkOp a {color:#ffffff}
+.jjJkOp a:hover {color:#eee}
+</style>
+
+<div id="cookyGotItBtnBox" style="display: flex; visibility: visible; animation-duration: 0.5s; animation-delay: 5s; animation-name: fadeIn;" data-wow-duration="0.5s" data-wow-delay="5s" role="dialog" class="wow fadeIn cc-window cc-banner cc-type-info cc-theme-block cc-color-override--1961008818  animated">
+<span id="cookieconsent:desc" class="cc-message">This website uses cookies to ensure you get the best experience on our website. <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://www.phptravels.net/cookies-policy" rel="noopener noreferrer nofollow" target="_blank">Learn more</a></span>
+<div class="cc-compliance">
+<button aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss" id="cookyGotItBtn">Got it!</button></div></div>
+
+<script src="https://www.phptravels.net/themes/default/assets/js/scripts.js"></script>
+<script>
+    const cookyDisablePeriodInDays = 100;
+    function createCookie(cookieName,cookieValue,daysToExpire)
+    {
+        var date = new Date();
+        date.setTime(date.getTime()+(daysToExpire*24*60*60*1000));
+        document.cookie = cookieName + "=" + cookieValue + "; expires=" + date.toGMTString();
+    }
+    function accessCookie(cookieName)
+    {
+        var name = cookieName + "=";
+        var allCookieArray = document.cookie.split(';');
+        for(var i=0; i<allCookieArray.length; i++)
+        {
+            var temp = allCookieArray[i].trim();
+            if (temp.indexOf(name)==0)
+                return temp.substring(name.length,temp.length);
+        }
+        return "";
+    }
+    // If user accept cooky policy by clicking `Got It` button then do not show the button to the user.
+    const cookyGotItStatus = accessCookie("cookyGotItButton");
+    if (cookyGotItStatus != "" && cookyGotItStatus == "hide") {
+        $("#cookyGotItBtnBox").css("display", "none");
+    } else {
+        setTimeout(function () {
+            console.log('show');
+            $("#cookyGotItBtnBox").css("display", "flex");
+        }, 1000);
+    }
+    $("#cookyGotItBtn").click(function () {
+        createCookie("cookyGotItButton", "hide", cookyDisablePeriodInDays);
+        $("#cookyGotItBtnBox").css("display", "none");
+    });
+
+    // Travelport flight: start
+    // First, checks if it isn't implemented yet.
+    if (!String.prototype.format) {
+     String.prototype.format = function() {
+       var args = arguments;
+       return this.replace(/{(\d+)}/g, function(match, number) {
+         return typeof args[number] != 'undefined'
+         ? args[number]
+         : match
+         ;
+       });
+     };
+   }
+   $(function(){
+           var adult = parseInt($("[name='tadult']").val()); // Should be 1
+           var children = parseInt($("[name='tchildren']").val());
+           var infant = parseInt($("[name='tinfant']").val());
+           var totalPassenger = (adult + children + infant);
+           var triptype = 'oneway';
+           var arrivalDatetimePicker = $("[name='arrival']");
+           arrivalDatetimePicker.attr('disabled', 'disabled').css('background', '#d9d9d9');
+           $(".trip-check label, .iCheck-helper").on('click', function() {
+             triptype = $(this).parent().find("input").val();
+             if (triptype == 'oneway') {
+               arrivalDatetimePicker.attr('disabled', 'disabled').css('background', '#d9d9d9');
+               arrivalDatetimePicker.removeAttr('required');
+             } else {
+               arrivalDatetimePicker.removeAttr('disabled').css('background', '#F9F9F9');
+               arrivalDatetimePicker.attr('required', 'required');
+             }
+             arrivalDatetimePicker.val('');
+           });
+           
+           $(".widget-select2").select2({
+             placeholder: "Enter Location",
+             minimumInputLength: 3,
+             width: '100%',
+             maximumSelectionSize: 1,
+             ajax:{
+               url: 'https://www.phptravels.net/Suggestions/airports/tport',
+               dataType: 'json',
+               data: function(term, page) {
+                 return {
+                   q: term
+                 }
+               },
+               results: function(data, page) {
+                 return {
+                   results: data
+                 }
+               }
+             },
+             initSelection : function (element, callback) {
+               var elementText = $(element).val();
+               callback({"text": elementText, "id": elementText});
+             }
+           });
+
+           var nowTemp = new Date();
+           var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+           // Depature time
+           var departureTime = $('.departureTime').datepicker({
+             format: 'yyyy-mm-dd',
+             onRender: function(date) {
+               return date.valueOf() < now.valueOf() ? 'disabled' : '';
+             }
+           }).on('changeDate', function(e){
+             $(this).datepicker('hide');
+             if (triptype == 'round' || triptype == 'return') {
+               var newDate = new Date(e.date);
+               arrivalTime.setValue(newDate.setDate(newDate.getDate() + 1));
+               $('.arrivalTime').focus();
+             }
+           }).data('datepicker');
+
+         //  Arrival time
+         var arrivalTime = $('.arrivalTime').datepicker({
+           format: 'yyyy-mm-dd',
+           onRender: function(date) {
+             return date.valueOf() <= departureTime.date.valueOf() ? 'disabled' : '';
+           }
+         }).on('changeDate', function(){
+           $(this).datepicker('hide');
+         }).data('datepicker');
+
+           // Default fill up date
+           if($('.departureTime').length > 0){
+            if(departureTime.element.val()) {
+             departureTime.setValue(departureTime.element.val());
+           }
+         }
+         if($('.arrivalTime').length > 0) {
+           if(arrivalTime.element.val()) {
+             arrivalTime.setValue(arrivalTime.element.val());
+           }
+         }
+
+         $("[name='tadult']").on('change', function() { adult = parseInt($("[name='tadult']").val()); });
+         $("[name='tchildren']").on('change', function() { children = parseInt($("[name='tchildren']").val()); });
+         $("[name='tinfant']").on('change', function() { infant = parseInt($("[name='tinfant']").val()); });
+         $("#tsumPassenger").on('click', function() {
+           totalPassenger = (adult + children + infant);
+           $("[name='ttotalPassenger']").val(totalPassenger);
+         });
+
+         $("form[name='flightSearch']").on('submit', function(e) {
+           e.preventDefault();
+           var payload = {
+             triptype: triptype,
+             cabinclass: $('[name="cabinclass"]').val(),
+             passenger: {
+               total: totalPassenger,
+               adult: adult,
+               children: children,
+               infant: infant
+             },
+             origin: $(this).find("[name='origin']").val(),
+             destination: $(this).find("[name='destination']").val(),
+             departure: $(this).find("[name='departure']").val(),
+             arrival: $(this).find("[name='arrival']").val(),
+           };
+
+           $('.loader-wrapper').show();
+           $.post(base_url + 'flight/getLowFareFlights', payload, function(response) {
+             $('.loader-wrapper').hide();
+             $('#body-section').html(response.body);
+             window.history.pushState("", "", get_path('flight/search', payload));
+           });
+         });
+       });
+
+function get_path(req, payload)
+{
+ var return_hash = "{0}/{1}/{2}/{3}".format(req, payload.origin, payload.destination, payload.departure);
+
+ if (payload.arrival) {
+   return_hash = "{0}/{1}".format(return_hash, payload.arrival)
+ }
+ if (payload.cabinclass) {
+   return_hash = "{0}/{1}".format(return_hash, payload.cabinclass)
+ }
+ if (payload.passenger.adult) {
+   return_hash = "{0}/{1}Adult".format(return_hash, payload.passenger.adult)
+ }
+ if (payload.passenger.children) {
+   return_hash = "{0}/{1}Children".format(return_hash, payload.passenger.children)
+ }
+ if (payload.passenger.infant) {
+   return_hash = "{0}/{1}Infant".format(return_hash, payload.passenger.infant)
+ }
+
+ return base_url + return_hash;
+}
+   // Travelport flight: end
+
+   if (!String.prototype.format) {
+    String.prototype.format = function() {
+      var args = arguments;
+      return this.replace(/{(\d+)}/g, function(match, number) {
+        return typeof args[number] != 'undefined'
+        ? args[number]
+        : match
+        ;
+      });
+    };
+  }
+
+  $(function(){
+
+    var triptype = 'oneway';
+    var manualtriptype = $('input[name=triptype]:checked').val();
+
+    var arrivalDatetimePicker = $("[name='arrival']");
+    arrivalDatetimePicker.attr('disabled', 'disabled').css('background', '#d9d9d9');
+    $(".trip-check label, .iCheck-helper").on('click', function() {
+      manualtriptype = $(this).parent().find("input").val();
+      if (manualtriptype == 'oneway') {
+        arrivalDatetimePicker.attr('disabled', 'disabled').css('background', '#d9d9d9');
+        arrivalDatetimePicker.removeAttr('required');
+      } else {
+        arrivalDatetimePicker.removeAttr('disabled').css('background', '#F9F9F9');
+        arrivalDatetimePicker.attr('required', 'required');
+      }
+      arrivalDatetimePicker.val('');
+    });
+
+    var nowTemp = new Date();
+    var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+        // Depature time
+        var departureTime = $('.departureTime').datepicker({
+          format: 'yyyy-mm-dd',
+          onRender: function(date) {
+            return date.valueOf() < now.valueOf() ? 'disabled' : '';
+          }
+        }).on('changeDate', function(e){
+          $(this).datepicker('hide');
+          if (manualtriptype == 'round') {
+            var newDate = new Date(e.date);
+            arrivalTime.setValue(newDate.setDate(newDate.getDate() + 1));
+            $('.arrivalTime').focus();
+          }
+        }).data('datepicker');
+
+        // Arrival time
+        var arrivalTime = $('.arrivalTime').datepicker({
+          format: 'yyyy-mm-dd',
+          onRender: function(date) {
+            return date.valueOf() <= departureTime.date.valueOf() ? 'disabled' : '';
+          }
+        }).on('changeDate', function(){
+          $(this).datepicker('hide');
+        }).data('datepicker');
+
+        // Default fill up date
+        if(departureTime != undefined) {
+          if(departureTime.element.val()) {
+            departureTime.setValue(departureTime.element.val());
+          }
+        }
+        if(departureTime != undefined) {
+          if(arrivalTime.element.val()) {
+            arrivalTime.setValue(arrivalTime.element.val());
+          }
+        }
+        var madult = parseInt($("[name='madult']").val()); // Should be 1
+        var mchildren = parseInt($("[name='mchildren']").val());
+        var minfant = parseInt($("[name='minfant']").val());
+        var totalManualPassenger = (madult + mchildren + minfant);
+        $("[name='madult']").on('change', function() { madult = parseInt($(this).val()); });
+        $("[name='mchildren']").on('change', function() { mchildren = parseInt($(this).val()); });
+        $("[name='minfant']").on('change', function() { minfant = parseInt($(this).val()); });
+        $("#sumManualPassenger").on('click', function() {
+          totalManualPassenger = (madult + mchildren + minfant);
+          $("[name='totalManualPassenger']").val(totalManualPassenger);
+        });
+
+
+
+        // // iati origin
+        // $('input[name="iorigin"]').select2('val', 'HEHEHE');
+        // $('input[name="idestination"]').select2('val', 'HUHUHUHU');
+        var adult = parseInt($("[name='iadult']").val()); // Should be 1
+        var children = parseInt($("[name='ichildren']").val());
+        var infant = parseInt($("[name='iinfant']").val());
+        var xtotalManualPassenger = (adult + children + infant);
+        $("[name='iadult']").on('change', function() { adult = parseInt($(this).val()); });
+        $("[name='ichildren']").on('change', function() { children = parseInt($(this).val()); });
+        $("[name='iinfant']").on('change', function() { infant = parseInt($(this).val()); });
+        $("#isumPassenger").on('click', function() { 
+          var xtotalManualPassenger = (adult + children + infant);
+          $("[name='totalPassenger']").val(xtotalManualPassenger);
+            // console.log(xtotalManualPassenger);
+          });
+
+
+
+        
+        $('#location_from_code').val('{"code":null,"location":""}');
+        $('#location_to_code').val('{"code":null,"location":""}');
+        $('#location_from').select2(
+        {
+          placeholder: "Enter City Or Airport",
+          minimumInputLength: 3,
+          width:'100%', maximumSelectionSize: 1,
+          initSelection: function (element, callback) {
+            var data = {id: "1", text: ""};
+            callback(data);
+          },
+          ajax: {
+            url: "https://www.phptravels.net/admin/ajaxcalls/flightAjex",
+            dataType: 'json',
+            data: function (term, page) {
+              return {
+                        query: term, // search term
+
+                      };
+                    },
+                    results: function (data, page) {
+
+                      return {results: data};
+                    }
+                  }
+                }
+                );
+
+        $('#location_from').on("select2-selecting", function(e) {
+          $("#location_from_code").val(e.val);
+          console.log(e.val);
+        });
+
+
+
+
+        $('#location_to').select2(
+        {
+          placeholder: "Enter City Or Airport",
+          minimumInputLength: 3,
+          width:'100%', maximumSelectionSize: 1,
+          initSelection: function (element, callback) {
+            var data = {id: "1", text: ""};
+            callback(data);
+          },
+          ajax: {
+            url: "https://www.phptravels.net/admin/ajaxcalls/flightAjex",
+            dataType: 'json',
+            data: function (term, page) {
+              return {
+                        query: term, // search term
+
+                      };
+                    },
+                    results: function (data, page) {
+
+                      return {results: data};
+                    }
+                  }
+                }
+                );
+
+        $('#location_to').on("select2-selecting", function(e) {
+         $("#location_to_code").val(e.val);
+         console.log(e.val);
+       });
+
+
+        $("form[name='flightmanualSearch']").on('submit', function(e) {
+          e.preventDefault();
+          var payload = {
+            triptype: manualtriptype,
+            cabinclass: $('[name="cabinclass"]').val(),
+            passenger: {
+              total: totalManualPassenger,
+              adult: madult,
+              children: mchildren,
+              infant: minfant
+            },
+            origin: jQuery.parseJSON($(this).find("[name='origin']").val()).code,
+            destination: jQuery.parseJSON($(this).find("[name='destination']").val()).code,
+            departure: $(this).find("[name='departure']").val(),
+            arrival: $(this).find("[name='arrival']").val(),
+          };
+          $('.loader-wrapper').show();
+          window.location.href = get_manual_path('flights', payload);
+        });
+        function get_manual_path(req, payload)
+        {
+          var return_hash = "{0}/{1}/{2}/{3}".format(req, payload.origin, payload.destination, payload.departure);
+
+          if (payload.arrival) {
+            return_hash = "{0}/{1}".format(return_hash, payload.arrival)
+          }else{
+            return_hash = "{0}/{1}".format(return_hash, 0)
+
+          }
+          if (payload.triptype) {
+            return_hash = "{0}/{1}".format(return_hash, payload.triptype)
+          }
+          if (payload.cabinclass) {
+            return_hash = "{0}/{1}".format(return_hash, payload.cabinclass)
+          }
+          if (payload.passenger.adult) {
+            return_hash = "{0}/{1}".format(return_hash, payload.passenger.adult)
+          }
+          return_hash = "{0}/{1}".format(return_hash, payload.passenger.children);
+          return_hash = "{0}/{1}".format(return_hash, payload.passenger.infant);
+          return_hash = "{0}/{1}".format(return_hash, 0);
+          return_hash = "{0}/{1}".format(return_hash, 0);
+          return_hash = "{0}/{1}".format(return_hash, 0);
+
+            // alert(JSON.stringify(payload.passenger));
+        // alert(payload.passenger.children);
+        return base_url + return_hash;
+      }
+
+    });
+
+$(document).ready(function(){
+        // Safari 3.0+ "[object HTMLElementConstructor]"
+        var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0 || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
+        if(isSafari == true){
+          $(".bg-warning").css("padding-bottom", "82px !important");
+        }
+      });
+
+$(".car-startlocation").select2({
+  placeholder: "Search for an Item",
+  minimumInputLength: 3,
+  width: '100%',
+  maximumSelectionSize: 1,
+  ajax: {
+    url: 'https://www.phptravels.net/cartrawler/getLocations',
+    dataType: 'json',
+    type: "GET",
+    quietMillis: 50,
+    data: function (term) {
+      return {
+        term: term
+      };
+    },
+    results: function (data) {
+      return {
+        results: $.map(data.locations, function (item) {
+          return {
+            text: item.locationName,
+            code: item.locationCode,
+            id: item.locationName
+          }
+        })
+      };
+    }
+  }
+});
+$(".car-endlocation").select2({
+  placeholder: "Search for an Item",
+  minimumInputLength: 3,
+  width: '100%',
+  maximumSelectionSize: 1,
+  ajax: {
+    url: 'https://www.phptravels.net/cartrawler/getLocations',
+    dataType: 'json',
+    type: "GET",
+    quietMillis: 50,
+    data: function (term) {
+      return {
+        term: term
+      };
+    },
+    results: function (data) {
+      return {
+        results: $.map(data.locations, function (item) {
+          return {
+            text: item.locationName,
+            code: item.locationCode,
+            id: item.locationName
+          }
+        })
+      };
+    }
+  }
+});
+
+$(".car-startlocation").on("select2-selecting",function(e){
+  $("input[name='pickupLocationId']").val(e.object.code);
+  $("input[name='returnLocationId']").val(e.object.code);
+  $('.car-endlocation').select2('data', {
+    text: e.object.text,
+    id: e.object.text
+  });
+});
+
+var options = {
+  url: function(phrase) {
+   return "https://yasen.hotellook.com/autocomplete?lang=en-US&limit=10&term="+phrase;
+ },
+ categories:[{
+  listLocation: "cities"
+}],
+list: {
+  match: {
+    enabled: false
+  },
+  maxNumberOfElements: 10
+},
+getValue: "fullname",
+};
+$("#citiesInput").easyAutocomplete(options);
+
+var fmt = "dd/mm/yyyy";
+var baseURL = "https://www.phptravels.net/";
+
+// $(document).ready(function() {
+
+  /* Wish list global function */
+  $(".wishlistcheck").on("click",function(){
+    var id = $(this).prop('id');
+    var module = $(this).data('module');
+    var userid = "";
+    var action = "add";
+    var thisdiv = $(this);
+    if($(this).hasClass('fav')){
+      action = "remove";
+    }
+
+
+    $.post(baseURL+'account/wishlist/'+action,{module: module, itemid: id, loggedin: userid},function(resp){
+      var response = $.parseJSON(resp);
+      if(response.isloggedIn){
+
+        if(action == "remove"){
+          $("."+module+"wishsign"+id).html("+");
+        //$("."+module+"wishtext"+id).html("Add to Wishlist");
+        $("."+module+"wishtext"+id).tooltip('hide').attr('data-original-title', "Add to wishlist").tooltip('fixTitle').tooltip('show');
+        $("."+module+"wishsign"+id).removeClass("fav");
+        thisdiv.removeClass('fav');
+
+      }else{
+
+        thisdiv.addClass('fav');
+        $("."+module+"wishsign"+id).addClass("fav");
+        $("."+module+"wishsign"+id).html("-");
+        //$("."+module+"wishtext"+id).html("Remove From Wishlist");
+        $("."+module+"wishtext"+id).tooltip('hide').attr('data-original-title', "Remove from wishlist").tooltip('fixTitle').tooltip('show');
+
+      }
+
+    }else{
+      alert("Please Login to add to wishlist.");
+    }
+
+  });
+
+  });
+  /* End Wish list global function */
+
+
+  /* tours ajax categories loader */
+      $('#location').on('change',function(){ var location = $(this).val(); $.post(baseURL+'tours/tourajaxcalls/onChangeLocation',{location: location},function(resp){ var response = $.parseJSON(resp); console.log(response); if(response.hasResult){ $("#tourtype").html(response.optionsList); }else{ $("#tourtype").html(response.optionsList); } mySelectUpdate(); }) });
+  
+  /* cars ajax types loader */
+      var totalsVal=$("#cartotals").val();if(totalsVal=="1"){$(".showTotal").show()}else{$(".showTotal").hide()}
+    var pickupLocation=$('#pickuplocation').val();var dropoffLocation=$('#droplocation').val();$('#carlocations').on('change',function(){var location=$(this).val();$.post(baseURL+'cars/carajaxcalls/onChangeLocation',{location:location},function(resp){var response=$.parseJSON(resp);if(response.hasResult){$("#carlocations2").html(response.optionsList).select2({width:'100%',maximumSelectionSize:1})}})});$('#pickuplocation').on('change',function(){var location=$('#pickuplocation').val();var carid=$("#itemid").val();var pickupDate=$("#departcar").val();var dropoffDate=$("#returncar").val();$.post(baseURL+'cars/carajaxcalls/getDropoffLocations',{location:location,carid:carid,pickupDate:pickupDate,dropoffDate:dropoffDate},function(resp){var response=$.parseJSON(resp);console.log(response);if(response.hasResult){$(".showTotal").show();$(".totaldeposit").html(response.priceInfo.depositAmount);$(".totalTax").html(response.priceInfo.taxAmount);$(".grandTotal").html(response.priceInfo.grandTotal);$("#droplocation").html(response.optionsList).select2({width:'100%',maximumSelectionSize:1})}})});$('.carDates').blur(function(){setTimeout(function(){getCarPrice()},500)});$('#droplocation').on("change",(function(){getCarPrice()}));function getCarPrice(){var pickupLocation=$('#pickuplocation').val();var dropoffLocation=$('#droplocation').val();var carid=$("#itemid").val();var pickupDate=$("#departcar").val();var dropoffDate=$("#returncar").val();$.post(baseURL+'cars/carajaxcalls/getCarPriceAjax',{pickupLocation:pickupLocation,dropoffLocation:dropoffLocation,carid:carid,pickupDate:pickupDate,dropoffDate:dropoffDate},function(resp){var response=$.parseJSON(resp);console.log(response);$(".showTotal").show();$(".totaldeposit").html(response.depositAmount);$(".totalTax").html(response.taxAmount);$(".grandTotal").html(response.grandTotal)})}
+  
+  /* Datepicker */
+  /* disabling dates */
+  var nowTemp = new Date();
+  var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+  var checkin = $('.dpd1').datepicker({
+    format: fmt,
+    onRender: function(date) {
+      return date.valueOf() < now.valueOf() ? 'disabled' : '';
+    }
+  }).on('changeDate', function(ev) {
+    // if (ev.date.valueOf() > checkout.date.valueOf()) {
+      var newDate = new Date(ev.date);
+      newDate.setDate(newDate.getDate() + 1);
+      checkout.setValue(newDate);
+    // }
+    checkin.hide();
+    $('.dpd2')[0].focus();
+  }).data('datepicker');
+  var checkout = $('.dpd2').datepicker({
+    format: fmt,
+    onRender: function(date) {
+      return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+    }
+  }).on('changeDate', function(ev) {
+    var newDate = new Date(ev.date);
+    checkout.hide();
+
+  }).data('datepicker');
+
+  /* disabling dates for rooms search */
+  var nowTemprooms = new Date();
+  var nowrooms = new Date(nowTemprooms.getFullYear(), nowTemprooms.getMonth(), nowTemprooms.getDate(), 0, 0, 0, 0);
+  var checkinrooms = $('.dpd1rooms').datepicker({
+    format: fmt,
+    onRender: function(date) {
+      return date.valueOf() < now.valueOf() ? 'disabled' : '';
+    }
+  }).on('changeDate', function(ev) {
+    // if (ev.date.valueOf() > checkout.date.valueOf()) {
+      var newDaterooms = new Date(ev.date);
+      newDaterooms.setDate(newDaterooms.getDate() + 1);
+      checkoutrooms.setValue(newDaterooms);
+    // }
+    checkinrooms.hide();
+    $('.dpd2rooms')[0].focus();
+  }).data('datepicker');
+  var checkoutrooms = $('.dpd2rooms').datepicker({
+    format: fmt,
+    onRender: function(date) {
+      return date.valueOf() <= checkinrooms.date.valueOf() ? 'disabled' : '';
+    }
+  }).on('changeDate', function(ev) {
+    var newDaterooms = new Date(ev.date);
+    checkoutrooms.hide();
+
+  }).data('datepicker');
+
+  /* Expedia datepicker */
+    /* End Expedia Datepicker*/
+
+  /* Dohop datepicker */
+    /* End Dohop Datepicker*/
+
+      // Tours checkin - disabling Single date
+    var nowTemp4 = new Date();
+    var now4 = new Date(nowTemp4.getFullYear(), nowTemp4.getMonth(), nowTemp4.getDate(), 0, 0, 0, 0);
+    var checkin4 = $('.tchkin').datepicker({format: fmt, onRender: function(date) {
+      return date.valueOf() < now4.valueOf() ? 'disabled' : ''; } }).on('changeDate', function(ev) {
+        var tdate =new Date(ev.date);
+        $('.tchkin').datepicker('hide');
+      });
+              var nowTemp5 = new Date();
+      var now5 = new Date(nowTemp5.getFullYear(), nowTemp5.getMonth(), nowTemp5.getDate(), 0, 0, 0, 0);
+      var departcar = $('#departcar').datepicker({
+        format: fmt,
+        onRender: function(date) {
+          return date.valueOf() < now5.valueOf() ? 'disabled' : '';
+        }
+      }).on('changeDate', function(ev) {
+    //   if (ev.date.valueOf() > returncar.date.valueOf()) {
+      var newDate5 = new Date(ev.date)
+
+      newDate5.setDate(newDate5.getDate() + 0);
+
+      returncar.setValue(newDate5);
+    //  }
+    departcar.hide();
+    $('#returncar')[0].focus();
+  }).data('datepicker');
+      var returncar = $('#returncar').datepicker({
+        format: fmt,
+        onRender: function(date) {
+          return date.valueOf() <= departcar.date.valueOf() ? 'disabled' : '';
+        }
+      }).on('changeDate', function(ev) {
+        var cnewDate = new Date(ev.date);
+        returncar.hide();
+
+      }).data('datepicker');
+
+      var nowTemp52 = new Date();
+      var now52 = new Date(nowTemp52.getFullYear(), nowTemp52.getMonth(), nowTemp52.getDate(), 0, 0, 0, 0);
+      var departcar2 = $('#departcar2').datepicker({
+        format: fmt,
+        onRender: function(date) {
+          return date.valueOf() < now52.valueOf() ? 'disabled' : '';
+        }
+      }).on('changeDate', function(ev) {
+    //   if (ev.date.valueOf() > returncar.date.valueOf()) {
+      var newDate52 = new Date(ev.date)
+
+      newDate52.setDate(newDate52.getDate() + 0);
+
+      returncar2.setValue(newDate52);
+    //  }
+    departcar2.hide();
+    $('#returncar2')[0].focus();
+  }).data('datepicker');
+      var returncar2 = $('#returncar2').datepicker({
+        format: fmt,
+        onRender: function(date) {
+          return date.valueOf() <= departcar2.date.valueOf() ? 'disabled' : '';
+        }
+      }).on('changeDate', function(ev) {
+        var cnewDate2 = new Date(ev.date);
+        returncar2.hide();
+
+      }).data('datepicker');
+
+    
+
+
+
+    /* Newsletter subscription */
+    $(".sub_newsletter").on("click",function(){var e=$(".sub_email").val();$.post("https://www.phptravels.net/home/subscribe",{email:e},function(e){$(".subscriberesponse").html(e).fadeIn("slow"),setTimeout(function(){$(".subscriberesponse").fadeOut("slow")},2000)})});
+
+    /* dropdown on hover */
+    $("ul.nav li.dropdown").hover(function(){$(this).find(".dropdown-menu").stop(!0,!0).delay(200).fadeIn(200)},function(){$(this).find(".dropdown-menu").stop(!0,!0).delay(200).fadeOut(200)});
+
+// }); end: $(function(){});
+
+/* start change currency functionality */
+function change_currency(element){
+  var currency_id = $(element).data('code');
+  $("#loadingbg").css("display","block"),
+  $.post("https://www.phptravels.net/admin/ajaxcalls/changeCurrency",{ id: currency_id}, function() {
+    location.reload();
+  }
+  )};
+
+  /* map iframe modal */
+  function showMap(a,o){"modal"==o?($("#mapModal").modal("show"),$("#mapModal").on("shown.bs.modal",function(){$("#mapModal .mapContent").html('<iframe src="'+a+'" width="100%" height="450" frameborder="0" style="border:0"></iframe>')})):$("#"+o).html('<iframe src="'+a+'" width="100%" height="450" frameborder="0" style="border:0"></iframe>')}
+</script>
+
+
+
+<div class="datepicker dropdown-menu"><div class="datepicker-days" style="display: block;"><table class=" table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">September 2019</th><th class="next"></th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day disabled old">25</td><td class="day disabled old">26</td><td class="day disabled old">27</td><td class="day disabled old">28</td><td class="day disabled old">29</td><td class="day disabled old">30</td><td class="day disabled old">31</td></tr><tr><td class="day disabled">1</td><td class="day disabled">2</td><td class="day disabled">3</td><td class="day disabled">4</td><td class="day disabled">5</td><td class="day disabled">6</td><td class="day disabled">7</td></tr><tr><td class="day disabled">8</td><td class="day disabled">9</td><td class="day disabled">10</td><td class="day disabled">11</td><td class="day disabled">12</td><td class="day disabled">13</td><td class="day ">14</td></tr><tr><td class="day ">15</td><td class="day ">16</td><td class="day ">17</td><td class="day ">18</td><td class="day ">19</td><td class="day ">20</td><td class="day ">21</td></tr><tr><td class="day ">22</td><td class="day  active">23</td><td class="day ">24</td><td class="day ">25</td><td class="day ">26</td><td class="day ">27</td><td class="day ">28</td></tr><tr><td class="day ">29</td><td class="day ">30</td><td class="day  new">1</td><td class="day  new">2</td><td class="day  new">3</td><td class="day  new">4</td><td class="day  new">5</td></tr></tbody></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">2019</th><th class="next"></th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month active">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">2010-2019</th><th class="next"></th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year active">2019</span><span class="year old">2020</span></td></tr></tbody></table></div></div><div class="datepicker dropdown-menu"><div class="datepicker-days" style="display: block;"><table class=" table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">September 2019</th><th class="next"></th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day disabled old">25</td><td class="day disabled old">26</td><td class="day disabled old">27</td><td class="day disabled old">28</td><td class="day disabled old">29</td><td class="day disabled old">30</td><td class="day disabled old">31</td></tr><tr><td class="day disabled">1</td><td class="day disabled">2</td><td class="day disabled">3</td><td class="day disabled">4</td><td class="day disabled">5</td><td class="day disabled">6</td><td class="day disabled">7</td></tr><tr><td class="day disabled">8</td><td class="day disabled">9</td><td class="day disabled">10</td><td class="day disabled">11</td><td class="day disabled">12</td><td class="day disabled">13</td><td class="day disabled">14</td></tr><tr><td class="day disabled">15</td><td class="day disabled">16</td><td class="day disabled">17</td><td class="day disabled">18</td><td class="day disabled">19</td><td class="day disabled">20</td><td class="day disabled">21</td></tr><tr><td class="day disabled">22</td><td class="day disabled">23</td><td class="day ">24</td><td class="day ">25</td><td class="day ">26</td><td class="day ">27</td><td class="day ">28</td></tr><tr><td class="day ">29</td><td class="day  active">30</td><td class="day  new">1</td><td class="day  new">2</td><td class="day  new">3</td><td class="day  new">4</td><td class="day  new">5</td></tr></tbody></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">2019</th><th class="next"></th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month active">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev"></th><th colspan="5" class="switch">2010-2019</th><th class="next"></th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year active">2019</span><span class="year old">2020</span></td></tr></tbody></table></div></div></body></html>

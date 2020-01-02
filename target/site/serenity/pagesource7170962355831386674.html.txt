@@ -1,0 +1,1397 @@
+<html><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="PHPTRAVELS">
+<title>Login</title>
+<link rel="shortcut icon" href="https://www.phptravels.net/uploads/global/favicon.png">
+<link href="https://www.phptravels.net/themes/default/assets/css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="https://www.phptravels.net/themes/default/style.css" rel="stylesheet">
+<link href="https://www.phptravels.net/themes/default/assets/css/navigation.css" rel="stylesheet">
+<link href="https://www.phptravels.net/themes/default/assets/css/mobile.css" rel="stylesheet" media="screen">
+<!-- Child Theme -->
+<style> @import "https://www.phptravels.net/themes/default/assets/css/childstyle.css"; </style>
+
+<!-- facebook -->
+<meta property="og:title" content="Login">
+<meta property="og:site_name" content="PHPTRAVELS">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://www.phptravels.net/uploads/global/favicon.png">
+<meta property="og:url" content="https://www.phptravels.net/">
+<meta property="og:publisher" content="https://www.facebook.com/PHPTRAVELS">
+<script type="application/ld+json">{"@context":"http://schema.org/","@type":"Organization","name":"PHPTRAVELS","url":"https://www.phptravels.net/","logo":"https://www.phptravels.net/uploads/global/favicon.png","sameAs":"https://www.facebook.com/PHPTRAVELS","sameAs":"https://twitter.com/PHPTRAVELS","sameAs":"https://www.pinterest.com/PHPTRAVELS/","sameAs":"https://plus.google.com/u/0/PHPTRAVELS/posts","contactPoint":{"@type":"ContactPoint","telephone":"+1-234-56789","contactType":"Customer Service"}}{"@context":"http://schema.org","@type":"WebSite","name":"PHPTRAVELS","url":"https://www.phptravels.net"}  </script>
+
+<!-- Google Maps --> 
+<!-- jQuery --> <script src="https://www.phptravels.net/themes/default/assets/js/jquery-2.2.4.min.js"></script>
+<!-- RTL CSS --> <!-- Mobile Redirect --> <!--[if lt IE 7] > <link rel="stylesheet" type="text/css" href="https://www.phptravels.net/themes/default/assets/css/font-awesome-ie7.css" media="screen" /> <![endif]-->
+<!-- Autocomplete files-->
+<link href="https://www.phptravels.net/themes/default/assets/js/autocomplete/easy-autocomplete.min.css" rel="stylesheet" type="text/css">
+<script src="https://www.phptravels.net/themes/default/assets/js/autocomplete/jquery.easy-autocomplete.min.js" type="text/javascript"></script>
+<script src="https://www.phptravels.net/assets/include/datepicker/datepicker.js"></script>
+<script src="https://www.phptravels.net/themes/default/assets/js/bootstrap.min.js"></script>
+<!-- Autocomplete files-->
+<script>var base_url = 'https://www.phptravels.net/';</script>
+</head>
+<body style="overflow: visible;">
+<div id="preloader" class="loader-wrapper" style="display: none;">
+    <div class="progress">
+     <div class="indeterminate"></div>
+    </div>
+</div>
+<div class="tbar-top hidden-sm hidden-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-4 col-xs-7 go-right">
+                <div class="contact-box">
+                    <ul class="hidden-sm hidden-xs">
+                                                <li class="go-right">
+                            <i class="icon_set_1_icon-55 go-right align-M mrg5-R f-grey66 fs13"></i>
+                            <span class="contact-no align-M">Call Now: <a href="#tel:+1-234-56789" class="number">+1-234-56789</a></span>
+                        </li>
+                                                                        <li class="go-right">
+                            <span class="sep go-right">|</span>
+                            <i class="fa fa-envelope-o go-right align-M mrg5-R f-grey66 fs13"></i>
+                            <span class="tp-mail"><a title="Mail" href="mailto:info@travelagency.com">info@travelagency.com</a></span>
+                        </li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal  left  fade" id="sidebar_left" tabindex="1" role="dialog" aria-labelledby="sidebar_left">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close go-left" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="close icon-angle-left"></i></span></button>
+                <h4 class="modal-title go-text-right" id="sidebar_left"><i class="icon_set_1_icon-65 go-right"></i> Settings</h4>
+            </div>
+            <ul class="nav navbar-nav navbar-side navbar-right sidebar go-left user_menu">
+        <li id="li_myaccount">
+        <a href="javascript:void(0);" data-toggle="dropdown" class="dropdown-toggle go-text-right"><i class="icon_set_1_icon-70 go-right"></i> My Account <b class="lightcaret mt-2 go-left"></b></a>
+        <ul class="dropdown-menu">
+            <li><a class="go-text-right" href="https://www.phptravels.net/login"> Login</a></li>
+            <li><a class="go-text-right" href="https://www.phptravels.net/register">  Sign Up</a></li>
+        </ul>
+    </li>
+        <div class="header-brdr pull-left hidden-xs hidden-md go-left"></div>
+            <li class="dropdown">
+            <a class="dropdown-toggle go-text-right" data-toggle="dropdown" href="#">
+                <strong><i class="icon-money-2 go-right"></i> 
+                    USD                </strong>
+            </a>
+            <ul class="dropdown-menu wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                                <li>
+                    <a class="go-text-right" data-code="1" href="#" onclick="change_currency(this)">
+                        USD                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="3" href="#" onclick="change_currency(this)">
+                        GBP                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="9" href="#" onclick="change_currency(this)">
+                        SAR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="11" href="#" onclick="change_currency(this)">
+                        EUR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="12" href="#" onclick="change_currency(this)">
+                        PKR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="13" href="#" onclick="change_currency(this)">
+                        KWD                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="17" href="#" onclick="change_currency(this)">
+                        JPY                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="18" href="#" onclick="change_currency(this)">
+                        INR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="19" href="#" onclick="change_currency(this)">
+                        CNY                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="20" href="#" onclick="change_currency(this)">
+                        TRY                    </a>
+                </li>
+                            </ul>
+        </li>
+            <ul class="nav navbar-nav">
+        <li class="dropdown" style="margin-top:-9px">
+            <a href="javascript:void(0);" data-toggle="dropdown" class="go-text-right dropdown-toggle" aria-expanded="true"> <img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/en.png" width="21" height="14" alt="English"> English </a>
+            <ul class="dropdown-menu wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                                <li><a href="https://www.phptravels.net/login/ru" data-langname="Russian" id="ru" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/ru.png" width="21" height="14" alt="">  Russian</a></li>
+                                <li><a href="https://www.phptravels.net/login/fa" data-langname="Farsi" id="fa" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/fa.png" width="21" height="14" alt="">  Farsi</a></li>
+                                <li><a href="https://www.phptravels.net/login/de" data-langname="German" id="de" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/de.png" width="21" height="14" alt="">  German</a></li>
+                                <li><a href="https://www.phptravels.net/login/fr" data-langname="French" id="fr" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/fr.png" width="21" height="14" alt="">  French</a></li>
+                                <li><a href="https://www.phptravels.net/login/tr" data-langname="Turkish" id="tr" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/tr.png" width="21" height="14" alt="">  Turkish</a></li>
+                                <li><a href="https://www.phptravels.net/login/ar" data-langname="Arabic" id="ar" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/ar.png" width="21" height="14" alt="">  Arabic</a></li>
+                                <li><a href="https://www.phptravels.net/login/es" data-langname="Spanish" id="es" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/es.png" width="21" height="14" alt="">  Spanish</a></li>
+                                <li><a href="https://www.phptravels.net/login/en" data-langname="English" id="en" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/en.png" width="21" height="14" alt="">  English</a></li>
+                            </ul>
+        </li>
+    </ul>
+            <li class="visible-xs mob-menu go-text-right"><i class="go-right icon_set_1_icon-87"></i> Services</li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/About-Us"><i class="icon_set_1_icon-93 go-right "></i> About us  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Contact-Us"><i class="icon_set_1_icon-84 go-right "></i> Contact Us  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Terms-of-Use"><i class="icon_set_1_icon-92 go-right "></i> Terms and Conditions  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Privacy-Policy"><i class="icon_set_1_icon-17 go-right "></i> Privacy Policy  <i class="angle right icon pull-right"></i></a></li>
+</ul>        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+   <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header go-right">
+                <button data-toggle="modal" data-target="#sidebar_left" class="navbar-toggle go-left" type="button" style="margin-right: 10px;">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a href="https://www.phptravels.net/" class="navbar-brand go-right" target="">
+                 <img class="" src="https://www.phptravels.net/uploads/global/logo.png" alt="Login">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav go-right">
+              <!--<li class="text-center go-right"><a href="https://www.phptravels.net/">Home</a></li>-->
+                                <li role="presentation" class=" text-center" data-title="thhotels">
+                    <a class="text-center" href="https://www.phptravels.net/m-thhotels" target="_self">
+                <i class="fa fa-hotel"></i>
+                <div class="visible-xs visible-md clearfix"></div>
+                <span class="hidden-xs">Hotels    </span>
+            </a>
+            </li>
+    <li role="presentation" class=" text-center" data-title="thflight">
+                    <a class="text-center" href="https://www.phptravels.net/m-thflight" target="_self">
+                <i class="fa fa-plane"></i>
+                <div class="visible-xs visible-md clearfix"></div>
+                <span class="hidden-xs">Flights   </span>
+            </a>
+            </li>
+    <li role="presentation" class=" text-center" data-title="tours">
+                    <a class="text-center" href="https://www.phptravels.net/m-tours" target="_self">
+                <i class="fa fa-suitcase"></i>
+                <div class="visible-xs visible-md clearfix"></div>
+                <span class="hidden-xs">Tours     </span>
+            </a>
+            </li>
+    <li role="presentation" class=" text-center" data-title="cars">
+                    <a class="text-center" href="https://www.phptravels.net/m-cars" target="_self">
+                <i class="fa fa-car"></i>
+                <div class="visible-xs visible-md clearfix"></div>
+                <span class="hidden-xs">Cars      </span>
+            </a>
+            </li>
+                                          <li class="text-center go-right"><a href="https://www.phptravels.net/blog">Blog      </a></li>
+                                          <li class="text-center go-right"><a href="https://www.phptravels.net/offers">Offers    </a></li>
+                          </ul>
+            <ul class="nav navbar-nav navbar-right hidden-sm go-left">
+              <ul class="nav navbar-nav navbar-side navbar-right sidebar go-left user_menu">
+        <li id="li_myaccount">
+        <a href="javascript:void(0);" data-toggle="dropdown" class="dropdown-toggle go-text-right"><i class="icon_set_1_icon-70 go-right"></i> My Account <b class="lightcaret mt-2 go-left"></b></a>
+        <ul class="dropdown-menu">
+            <li><a class="go-text-right" href="https://www.phptravels.net/login"> Login</a></li>
+            <li><a class="go-text-right" href="https://www.phptravels.net/register">  Sign Up</a></li>
+        </ul>
+    </li>
+        <div class="header-brdr pull-left hidden-xs hidden-md go-left"></div>
+            <li class="dropdown">
+            <a class="dropdown-toggle go-text-right" data-toggle="dropdown" href="#">
+                <strong><i class="icon-money-2 go-right"></i> 
+                    USD                </strong>
+            </a>
+            <ul class="dropdown-menu wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                                <li>
+                    <a class="go-text-right" data-code="1" href="#" onclick="change_currency(this)">
+                        USD                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="3" href="#" onclick="change_currency(this)">
+                        GBP                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="9" href="#" onclick="change_currency(this)">
+                        SAR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="11" href="#" onclick="change_currency(this)">
+                        EUR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="12" href="#" onclick="change_currency(this)">
+                        PKR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="13" href="#" onclick="change_currency(this)">
+                        KWD                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="17" href="#" onclick="change_currency(this)">
+                        JPY                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="18" href="#" onclick="change_currency(this)">
+                        INR                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="19" href="#" onclick="change_currency(this)">
+                        CNY                    </a>
+                </li>
+                                <li>
+                    <a class="go-text-right" data-code="20" href="#" onclick="change_currency(this)">
+                        TRY                    </a>
+                </li>
+                            </ul>
+        </li>
+            <ul class="nav navbar-nav">
+        <li class="dropdown" style="margin-top:-9px">
+            <a href="javascript:void(0);" data-toggle="dropdown" class="go-text-right dropdown-toggle" aria-expanded="true"> <img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/en.png" width="21" height="14" alt="English"> English </a>
+            <ul class="dropdown-menu wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                                <li><a href="https://www.phptravels.net/login/ru" data-langname="Russian" id="ru" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/ru.png" width="21" height="14" alt="">  Russian</a></li>
+                                <li><a href="https://www.phptravels.net/login/fa" data-langname="Farsi" id="fa" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/fa.png" width="21" height="14" alt="">  Farsi</a></li>
+                                <li><a href="https://www.phptravels.net/login/de" data-langname="German" id="de" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/de.png" width="21" height="14" alt="">  German</a></li>
+                                <li><a href="https://www.phptravels.net/login/fr" data-langname="French" id="fr" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/fr.png" width="21" height="14" alt="">  French</a></li>
+                                <li><a href="https://www.phptravels.net/login/tr" data-langname="Turkish" id="tr" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/tr.png" width="21" height="14" alt="">  Turkish</a></li>
+                                <li><a href="https://www.phptravels.net/login/ar" data-langname="Arabic" id="ar" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/ar.png" width="21" height="14" alt="">  Arabic</a></li>
+                                <li><a href="https://www.phptravels.net/login/es" data-langname="Spanish" id="es" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/es.png" width="21" height="14" alt="">  Spanish</a></li>
+                                <li><a href="https://www.phptravels.net/login/en" data-langname="English" id="en" class="go-text-right changelang"><img class="go-right flafFIX" src="https://www.phptravels.net/uploads/images/language/en.png" width="21" height="14" alt="">  English</a></li>
+                            </ul>
+        </li>
+    </ul>
+            <li class="visible-xs mob-menu go-text-right"><i class="go-right icon_set_1_icon-87"></i> Services</li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/About-Us"><i class="icon_set_1_icon-93 go-right "></i> About us  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Contact-Us"><i class="icon_set_1_icon-84 go-right "></i> Contact Us  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Terms-of-Use"><i class="icon_set_1_icon-92 go-right "></i> Terms and Conditions  <i class="angle right icon pull-right"></i></a></li>
+    <li class="visible-xs go-text-right"><a href="https://www.phptravels.net/Privacy-Policy"><i class="icon_set_1_icon-17 go-right "></i> Privacy Policy  <i class="angle right icon pull-right"></i></a></li>
+</ul>            </ul>
+            </div>
+        </div>
+    </nav>
+<div id="body-section"><style>
+  .forms { color: #303030; max-width: 350px; padding: 19px 29px 29px; margin: 0 auto; margin-bottom: 15px; }
+  .logpanel { min-height: 20px; padding: 8px; background-color: rgb(255, 255, 255); -webkit-border-radius: 0px; border-radius: 1px; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); box-shadow: 3px 3px 2px 0 rgba(44, 49, 55, .1); border-radius: 4px; }
+  .form-heading { padding: 0px 0; margin: 10px 0; padding-top: 0px; padding-bottom: 5px; font-size: 20px; }
+  .form-signin .form-control { position: relative; height: auto; -webkit-box-sizing: border-box; box-sizing: border-box; margin-bottom: 10px!important; }
+  .form-signin .forget-password { text-align: center; }
+</style>
+<div class="">
+  <!-- 100% Width & Height container  -->
+  <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3" style="margin-bottom:100px;margin-top100px">
+        <form method="POST" action="" id="loginfrm" accept-charset="UTF-8" onsubmit="return false;">
+      <p>
+        <img data-wow-duration="0.5s" data-wow-delay="0.5s" src="https://www.phptravels.net//assets/img/admin.png" class="center-block wow fadeIn center-block animated" style="width: 78px; height: 60px; margin-top: 50px; margin-bottom: 20px; visibility: visible; animation-duration: 0.5s; animation-delay: 0.5s; animation-name: fadeIn;" alt="">
+      </p>
+      <div class="panel panel-default">
+        <div class="panel-heading go-text-right">Login</div>
+        <div class="resultlogin"></div>
+        <div id="login-overlay"></div>
+        <div class="clearfix"></div>
+        <div data-wow-duration="1s" data-wow-delay="1s" class="wow fadeIn animated" style="visibility: visible; animation-duration: 1s; animation-delay: 1s; animation-name: fadeIn;">
+          <div style="background-color: white;" class="panel-body">
+            <div class="form-group">
+              <label class="go-right">Email</label>
+              <input type="email" class="form-control padding-10" placeholder="Email" required="required" name="username">
+            </div>
+            <div class="form-group">
+              <label class="go-right">Password</label>
+              <input type="password" class="form-control padding-10" placeholder="Password" required="required" name="password">
+            </div>
+                        <input type="hidden" class="url" value="https://www.phptravels.net/account/">
+                        <label class="go-right"><input class="go-right" type="checkbox" name="remember" id="remember-me" value="1"> <span style="font-size:13px;color:#000"><span class="go-left"> &nbsp; Remember Me &nbsp; </span></span></label>
+          </div>
+        </div>
+      </div>
+      <button style="font-size: 16px;" type="submit" class="btn btn-action btn-lg btn-block loginbtn">Login</button>
+      <br>
+      <div class="wow zoomInDown animated row animated" style="visibility: visible; animation-name: zoomInDown;">
+                <div class="col-md-12"><a class="btn btn-default br25 btn-block form-group" href="https://www.phptravels.net/register"><span></span>Sign Up</a></div>
+                <div class="clearfix form-group"></div>
+        <div class="col-md-12"><a class="btn btn-default br25 btn-block" data-toggle="modal" href="#ForgetPassword">Forget Password</a></div>
+      </div>
+      <!-- End of Login Wrap  -->
+    </form>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<!-- End of Container  -->
+<div class="clearfix"></div>
+<!-- PHPTRAVELS forget password starting -->
+<div class="modal wow fadeIn animated animated" id="ForgetPassword" tabindex="" role="dialog" aria-labelledby="ForgetPassword" aria-hidden="true" style="visibility: visible; animation-name: fadeIn;">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title"><i class="fa fa-asterisk"></i> Forget Password</h4>
+      </div>
+      <div class="modal-body">
+        <form method="POST" action="" id="passresetfrm" accept-charset="UTF-8" onsubmit="return false;">
+          <div class="resultreset"></div>
+          <div class="input-group">
+            <input type="text" placeholder="your@email.com" class="form-control" id="resetemail" name="email" required="">
+            <span class="input-group-btn">
+            <button type="submit" class="btn btn-primary resetbtn">Reset</button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- PHPTRAVELS forget password ending -->
+<script>
+  $(function(){
+  var url = $(".url").val();
+  // start login functionality
+  $(".loginbtn").on('click',function(){
+  $.post("https://www.phptravels.net/account/login",$("#loginfrm").serialize(), function(response){ if(response != 'true'){
+  $(".resultlogin").html("<div class='alert alert-danger'>"+response+"</div>"); }else{
+  $(".resultlogin").html("<div id='rotatingDiv'></div> <div class='alert alert-success'>Loading please wait.</div>");
+  window.location.replace(url); }}); });
+  // end login functionality
+
+  // start password reset functionality
+  $(".resetbtn").on('click',function(){
+   var resetemail = $("#resetemail").val();
+     $(".resultreset").html("<div id='rotatingDiv'></div>");
+  $.post("https://www.phptravels.net/account/resetpass",$("#passresetfrm").serialize(), function(response){
+  if($.trim(response) == '1'){
+  $(".resultreset").html("<div class='alert alert-success'>New Password sent to "+resetemail+", Kindly check email</div>");
+  }else{
+  $(".resultreset").html("<div class='alert alert-danger'>Email Not Found</div>");
+  } }); });
+  // end password reset functionality
+  });
+</script></div> <!--/ .body-section -->
+ <footer id="footer" class="">
+
+   <div class="sc-6z3jy0-0 fVcoLU">
+    <div class="sc-6z3jy0-1 hvpYIF">
+        <div class="sc-fjdhpX ehqOdj container">
+            <div class="sc-kTUwUJ ljwnSF row">
+                <div class="sc-VigVT fIhGog col-lg-3 col-sm-4 col-xs-12">
+                    <div class="sc-6z3jy0-4 htcuoB">
+                        <div class="sc-6z3jy0-6 hZsjPq">
+                            <!--<p class="sc-6z3jy0-7 chKsbs">Available now</p> -->
+                        </div>
+                        <div class="alm-f-phone-img sc-6z3jy0-5 hVfXnf">
+                            <img class="img-responsive" src="https://www.phptravels.net/themes/default/assets/img/mobile.png" width="230" alt="mobile apps">
+                        </div>
+                    </div>
+                </div>
+                <div class="sc-VigVT fIhGog col-lg-9 col-sm-8">
+                    <h3 class="sc-6z3jy0-2 gkbDIH">Get the mobile app!</h3>
+                    <p class="sc-6z3jy0-3 fGcVuz">Our app has all your booking needs covered: Secure payment channels, easy 4-step booking process, and sleek user designs. What more could you ask for?</p>
+                    <ul class="theme-mobile-app-btn-list">
+                                                <li>
+                            <a target="blank" class="btn btn-dark theme-mobile-app-btn" href="https://itunes.apple.com/us/app/phptravels/id1018217005?mt=8">
+                            <i class="theme-mobile-app-logo">
+                            <img src="https://www.phptravels.net/themes/default/assets/img/apple.png" alt="Image Alternative text" title="Image Title">
+                            </i>
+                            <span>Download on
+                            <br>
+                            <span>App Store</span>
+                            </span>
+                            </a>
+                        </li>
+                                                                        <li>
+                            <a target="blank" class="btn btn-dark theme-mobile-app-btn" href="https://play.google.com/store/apps/details?id=com.phptravelsnative">
+                            <i class="theme-mobile-app-logo">
+                            <img src="https://www.phptravels.net/themes/default/assets/img/android.png" alt="Image Alternative text" title="Image Title">
+                            </i>
+                            <span>Download on
+                            <br>
+                            <span>Play Market</span>
+                            </span>
+                            </a>
+                        </li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="sc-97mfds-0 xrttw">
+<div class="sc-97mfds-1 cynRGe sc-fjdhpX ehqOdj container">
+<div class="sc-97mfds-2 haPKPH sc-kTUwUJ ljwnSF row">
+  <div class="sc-97mfds-3 col-xs-12 sc-97mfds-5 lnfyst sc-VigVT fIhGog col">
+    <img src="https://www.phptravels.net/themes/default/assets/img/call.png" class="sc-97mfds-6 dxKlUD">
+    <div class="sc-97mfds-7 ePuuND">
+        <div class="sc-97mfds-8 bLWkbc">Need Help? Call Now :</div>
+        <div class="sc-97mfds-9 dpdHAC">+1-234-56789</div>
+    </div>
+</div>
+<div class="sc-97mfds-3 sc-97mfds-4 bYdCGD sc-VigVT fIhGog col hidden-xs hidden-sm">
+    <img src="https://www.phptravels.net/themes/default/assets/img/mail.png" class="sc-97mfds-6 dxKlUD">
+    <div class="sc-97mfds-7 ePuuND">
+        <div class="sc-97mfds-8 bLWkbc">24/7 Customer Support:</div>
+        <div class="sc-97mfds-9 dpdHAC"><a href="mailto:info@travelagency.com">info@travelagency.com</a></div>
+    </div>
+</div>
+<div class="sc-97mfds-3 col-xs-12 jApvwl sc-VigVT fIhGog col">
+    <div class="sc-97mfds-7 ePuuND">
+        <div class="sc-97mfds-8 hqiKow">Find us on our social media channels</div>
+        <div class="sc-97mfds-10 jpNgQd">
+                <a href="https://www.facebook.com/travelbusiness" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Facebook"><img src="https://www.phptravels.net/uploads/images/social/slufm6otpasooc.png" class="social-icons-footer sc-97mfds-11 hccXzw"></a>
+                <a href="https://twitter.com/phptravels" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Twitter"><img src="https://www.phptravels.net/uploads/images/social/9ztbr148kh4o8c8.png" class="social-icons-footer sc-97mfds-11 hccXzw"></a>
+                <a href="http:///www.youtube.com/phptravels" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Youtube"><img src="https://www.phptravels.net/uploads/images/social/946746yt.png.png" class="social-icons-footer sc-97mfds-11 hccXzw"></a>
+                <a href="https://plus.google.com/+Phptravels/" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Google+"><img src="https://www.phptravels.net/uploads/images/social/2wz814aq9mgw04k.png" class="social-icons-footer sc-97mfds-11 hccXzw"></a>
+                <a href="http://phptravels.net/sitemap.xml" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="RSS"><img src="https://www.phptravels.net/uploads/images/social/729370rs.png.png" class="social-icons-footer sc-97mfds-11 hccXzw"></a>
+                </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+</footer>
+
+
+
+<div class="theme-hero-area mobside visible-lg">
+    <div class="theme-hero-area-bg-wrap">
+        <div class="theme-hero-area-bg-pattern theme-hero-area-bg-pattern-ultra-light" style="background-image:url(img/patterns/travel/1.png);"></div>
+        <div class="theme-hero-area-grad-mask theme-hero-area-grad-mask-i"></div>
+        <div class="theme-hero-area-inner-shadow theme-hero-area-inner-shadow-light"></div>
+    </div>
+    <div class="theme-hero-area-body">
+        <div class="container">
+            <div class="col-md-12">
+
+                            <div class="sc-1t1b6dh-2 joxZVq sc-VigVT fIhGog col-md-2 go-right">
+              <h2 class="sc-1t1b6dh-5 imcuxF go-text-right"><strong>Company</strong></h2>
+              <ul class="sc-1t1b6dh-6 jjJkOp go-right go-text-right">
+                                <li><a href="https://www.phptravels.net/contact-us" target="" title="">Contact</a></li>
+                                <li><a href="https://www.phptravels.net/About-Us" target="" title="">About Us</a></li>
+                                <li><a href="https://www.phptravels.net/How-to-Book" target="" title="">How to Book</a></li>
+                                <li><a href="https://www.phptravels.net/Booking-Tips" target="" title="">Booking Tips</a></li>
+                              </ul>
+            </div>
+                            <div class="sc-1t1b6dh-2 joxZVq sc-VigVT fIhGog col-md-2 go-right">
+              <h2 class="sc-1t1b6dh-5 imcuxF go-text-right"><strong>Support</strong></h2>
+              <ul class="sc-1t1b6dh-6 jjJkOp go-right go-text-right">
+                                <li><a href="https://www.phptravels.net/Our-Partners" target="" title="">Our Partners</a></li>
+                                <li><a href="https://www.phptravels.net/Privacy-Policy" target="" title="">Privacy Policy</a></li>
+                                <li><a href="https://www.phptravels.net/Terms-of-Use" target="" title="">Terms of Use</a></li>
+                              </ul>
+            </div>
+                            <div class="sc-1t1b6dh-2 joxZVq sc-VigVT fIhGog col-md-2 go-right">
+              <h2 class="sc-1t1b6dh-5 imcuxF go-text-right"><strong>Business</strong></h2>
+              <ul class="sc-1t1b6dh-6 jjJkOp go-right go-text-right">
+                                <li><a href="https://www.phptravels.net/FAQ" target="" title="">FAQ</a></li>
+                                <li><a href="https://www.phptravels.net/themes/default/../../supplier" target="_blank" title="">Supplier Login</a></li>
+                              </ul>
+            </div>
+                <div class="sc-1t1b6dh-2 joxZVq sc-VigVT fIhGog col-md-2 go-right">
+                 <h3 class="sc-1t1b6dh-5 imcuxF go-text-right"><strong class="title">Supplier</strong></h3>
+                <ul class="sc-1t1b6dh-6 jjJkOp go-right go-text-right">
+                                       <li><a target="_blank" href="https://www.phptravels.net/supplier-register/">Supplier Sign Up</a></li>
+                                        <li><a target="_blank" href="https://www.phptravels.net/supplier/">Extranet Login</a></li>
+                </ul>
+                </div>
+
+                                        <div class="sc-1t1b6dh-2 joxZVq sc-VigVT fIhGog col-md-4 go-left">
+                    <h3 class="sc-1t1b6dh-5 imcuxF go-text-right"><strong class="title">Newsletter</strong></h3>
+                    <div class="col-md-12">
+                        <div id="message-newsletter_2"></div>
+                        <form role="search" onsubmit="return false;">
+                        </form>
+                        <div class="row">
+                            <input type="email" class="form-control input-lg fccustom2 sub_email form-group" id="exampleInputEmail1" placeholder="Newsletter Enter your email" required="">
+                            <div class="clearfix"></div>
+                            <button type="submit" class="btn btn-danger btn-block sub_newsletter ttu"> Subscribe</button>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a class="newstext" href="javascript:void(0);">
+                                    <div class="wow fadeIn subscriberesponse" style="visibility: hidden; animation-name: none;"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                            </div>
+
+            <!-- ********************   Removing powered by linkback will result to cancellation of your support service.    ********************  -->
+            <div class="hidden-xs hidden-sm" style="padding:10px;color:#ffffff">
+            <div class="container">
+            <div class="text-center">Powered by <a href="http://www.phptravels.com" target="_blank"> <img src="https://www.phptravels.net/uploads/global/phptravels.png" style="height:22px;color:#ffffff" height="22" alt="PHPTRAVELS"> <strong style="color:#ffffff">PHPTRAVELS</strong></a></div>
+            </div>
+            </div>
+            <!-- ********************   Removing powered by linkback will result to cancellation of your support service.    ********************  -->
+
+
+        </div>
+    </div>
+
+<div class="rightsdiv">
+<!-- tripadvisors block -->
+<!-- tripadvisors block -->
+</div>
+
+<div class="hidden-xs hidden-sm gotopDiv">
+ <center>
+  <a href="javascript:void" class="gotop scroll wow fadeInUp btn btn-default" style="visibility: hidden; animation-name: none;"><i class="icon-up-open-big"></i></a>
+ </center>
+</div>
+
+<h5 style="padding:10px" class="text-center">All Rights Reserved by PHPTRAVELS</h5>
+
+<style>
+.cc-window{opacity:1;transition:opacity 1s ease;}
+.cc-link{text-decoration:underline;}
+.cc-window{left:0;right:0;bottom:0px;position:fixed;overflow:hidden;box-sizing:border-box;font-size:16px;line-height:1.5em;display:-ms-flexbox;display:flex;-ms-flex-wrap:nowrap;flex-wrap:nowrap;z-index:9999;}
+.cc-window.cc-banner{padding:1em 1.8em;width:100%;-ms-flex-direction:row;flex-direction:row;}
+.cc-btn,.cc-link{cursor:pointer;}
+.cc-link{opacity:.8;padding:.2em;}
+.cc-link:hover{opacity:1;} .cc-link:active,.cc-link:visited{color:initial;}
+.cc-btn{display:block;padding:.4em .8em;font-size:.9em;font-weight:700;border-width:2px;border-style:solid;text-align:center;white-space:nowrap;}
+.cc-window.cc-banner{-ms-flex-align:center;align-items:center;}
+.cc-banner .cc-message{display:block;-ms-flex:1 1 auto;flex:1 1 auto;max-width:100%;margin-right:1em;}
+.cc-compliance{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-line-pack:justify;align-content:space-between;}
+@media print{
+.cc-window{display:none;} } @media screen and (max-width:900px){
+.cc-btn{white-space:normal;} } @media screen and (max-width:414px) and (orientation:portrait),screen and (max-width:736px) and (orientation:landscape){
+.cc-window.cc-top{top:0;}
+.cc-window.cc-banner{left:0;right:0;}
+.cc-window.cc-banner{-ms-flex-direction:column;flex-direction:column;}
+.cc-window.cc-banner .cc-compliance{-ms-flex:1 1 auto;flex:1 1 auto;}
+.cc-window .cc-message{margin-bottom:1em;}
+.cc-window.cc-banner{-ms-flex-align:unset;align-items:unset;}
+.cc-window.cc-banner .cc-message{margin-right:0;} }
+.cc-color-override--1961008818.cc-window{color:rgb(255, 255, 255);background-color:rgb(0, 0, 0);}
+.cc-color-override--1961008818 .cc-link,.cc-color-override--1961008818
+.cc-link:active,.cc-color-override--1961008818 .cc-link:visited{color:rgb(255, 255, 255);}
+.cc-color-override--1961008818 .cc-btn{color:rgb(0, 0, 0);border-color:transparent;background-color:rgb(241, 214, 0);padding:5px 25px;}
+.cc-color-override--1961008818 .cc-btn:hover,.cc-color-override--1961008818
+.cc-btn:focus{background-color:rgb(255, 252, 38);}
+
+footer .row { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-right: -15px; margin-left: -15px; }
+.col { -ms-flex-preferred-size: 0; flex-basis: 0; -ms-flex-positive: 1; flex-grow: 1; max-width: 100%; }
+.ehqOdj{max-width:1200px}
+.QtkYb{user-select:none;pointer-events:none;flex:0 0 auto}
+.lhtPeR{user-select:none;pointer-events:none;flex:0 0 auto;width:24px;height:24px}
+.hvpYIF{background:linear-gradient(#ffffff 81%,#e0e0e0 100%)}
+.gkbDIH{margin-top:70px;margin-bottom:10px;color:#333;font-weight:700;font-size:22px;text-transform:uppercase;width:280px;line-height:1}
+.fGcVuz{color:#777;font-size:14px;line-height:20px}
+.htcuoB{display:flex;-webkit-box-pack:justify;justify-content:space-between}
+.hVfXnf{margin-right:25px}
+.hZsjPq{display:flex;flex-direction:column;margin-top:110px}
+@media(max-width:768px){.hZsjPq{margin-top:36px}
+}.hZsjPq{display:flex;flex-direction:column;margin-top:110px}
+@media(max-width:768px){.hZsjPq{margin-top:36px}
+}.chKsbs{font-size:18px;font-weight:600;line-height:1.4}
+.bxPLvS{display:flex}
+@media(max-width:768px){.bxPLvS{display:inline-block}
+}.bxPLvS{display:flex}
+@media(max-width:768px){.bxPLvS{display:inline-block}
+}
+.bQVrqA{display:flex;-webkit-box-pack:center;justify-content:center}
+.bQVrqA svg{height:35px;width:40px;margin:0 4px}
+.ktkPch{display:flex;flex:1 1 auto;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;flex-direction:column;margin-top:10px}
+.ktkPch,.ktkPch:hover{text-decoration:none}
+.ktkPch img{max-height:40px}
+.cjXiuZ{margin-bottom:0;padding-bottom:10px;font-size:12px;margin-top:5px;font-stretch:normal;color:#fff}
+.jVXChf{display:block;margin-bottom:10px;margin-right:10px}
+.cnVTPK{padding-top:15px;background:linear-gradient(280deg,#23a5b9,#003143)}
+.joxZVq{padding:0 8px}
+@media(max-width:768px){.joxZVq{width:49%}
+.joxZVq:first-of-type{width:100%}
+}.joxZVq{padding:0 8px}
+@media(max-width:768px){.joxZVq{width:49%}
+.joxZVq:first-of-type{width:100%}
+}.bLvlOX{text-align:center;margin-top:20px}
+@media(max-width:768px){.bLvlOX{margin-top:0}
+}.bLvlOX{text-align:center;margin-top:20px}
+@media(max-width:768px){.bLvlOX{margin-top:0}
+}.duQxgw{margin-bottom:10px}
+@media(max-width:768px){.duQxgw{float:left;width:41px}
+}.duQxgw{margin-bottom:10px}
+@media(max-width:768px){.duQxgw{float:left;width:41px}
+}
+.imcuxF{position:relative;margin-top:17px;margin-bottom:8.5px;padding-bottom:15px;text-align:left;color:white;font-size:20px;font-weight:600}
+.imcuxF::after{content:"";position:absolute;display:block;height:1px;width:20px;background-color:white;top:40px}
+.jjJkOp{padding:0;margin:0 0 8.5px;font-size:14px;text-align:left;color:white}
+.fZfcDq{list-style:none;display:block}
+.gaOUoF{padding:10px 0;display:flex;-webkit-box-pack:center;justify-content:center}
+.cUNzUo{padding:10px 0;color:white;font-size:13px;font-weight:400;text-decoration:none;line-height:18px;display:flex;-webkit-box-align:center;align-items:center}
+.cUNzUo:hover{color:white;text-decoration:none}
+.ctZSxi{width:22px;height:20px;margin-right:8px}
+.btJsFD{width:22px;height:20px;margin-right:8px}
+.hMmmeK{width:22px;height:20px;margin-right:8px}
+.zGvrg{width:22px;height:20px;margin-right:8px}
+.ejjCuB{width:22px;height:20px;margin-right:8px}
+.eyDSQc{width:22px;height:20px;margin-right:8px}
+.bJHwoi{text-align:center;margin-top:10px;padding-bottom:10px;color:white;font-size:14px}
+.iexggQ{display:inline-block}
+.gsJDya{margin-left:5px;margin-right:5px;margin-top:5px}
+.gsJDya{margin-left:5px;margin-right:5px;margin-top:5px}
+.jzxXqV{display:table;width:100%;text-align:center;max-width:65px;margin-left:auto;margin-right:auto;margin-top:10px}
+@media(max-width:768px){.jzxXqV{display:none}
+}.jzxXqV{display:table;width:100%;text-align:center;max-width:65px;margin-left:auto;margin-right:auto;margin-top:10px}
+@media(max-width:768px){.jzxXqV{display:none}
+}.gshHXn{width:100%;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;display:flex}
+.gshHXn>img{margin-left:5px;margin-right:5px;max-width:51px;float:left;width:100%}
+@media(min-width:768px){.gshHXn>img{display:none}
+}.gshHXn{width:100%;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;display:flex}
+.gshHXn>img{margin-left:5px;margin-right:5px;max-width:51px;float:left;width:100%}
+@media(min-width:768px){.gshHXn>img{display:none}
+}
+.xrttw{min-height:100px;padding:20px 0}
+.cynRGe{height:100%}
+.haPKPH{height:100%}
+.jApvwl{border-right:2px solid #bdbdbd;display:flex;flex-direction:row;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}
+.jApvwl:last-child{border-right:0}
+.bYdCGD{border-right:2px solid #bdbdbd;display:flex;flex-direction:row;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}
+@media(max-width:768px){.bYdCGD{visibility:hidden;height:10px;border-top:1px solid red}
+}.bYdCGD{border-right:2px solid #bdbdbd;display:flex;flex-direction:row;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}
+@media(max-width:768px){.bYdCGD{visibility:hidden;height:10px;border-top:1px solid red}
+}.lnfyst{border-right:2px solid #bdbdbd;display:flex;flex-direction:row;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}
+@media(max-width:768px){.lnfyst{border-bottom:1px solid #e0e0e0;padding-bottom:5px}
+}.lnfyst{border-right:2px solid #bdbdbd;display:flex;flex-direction:row;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}
+@media(max-width:768px){.lnfyst{border-bottom:1px solid #e0e0e0;padding-bottom:5px}
+}
+.dxKlUD{margin-right:20px;max-width:40px}
+.bLWkbc{font-size:14px;color:#333}
+.hqiKow{font-size:14px;color:#333;margin-bottom:7px}
+.dpdHAC{font-size:24px;font-weight:700;color:#333}
+.dpdHAC a,.dpdHAC a:hover{text-decoration:none;color:#333}
+.hccXzw{margin-right:15px}
+.hccXzw,.hccXzw:hover{color:#23a5b9}
+.jjJkOp li {padding: 5px 0px;}
+.jjJkOp a {color:#ffffff}
+.jjJkOp a:hover {color:#eee}
+</style>
+
+<div id="cookyGotItBtnBox" style="display: flex; visibility: visible; animation-duration: 0.5s; animation-delay: 5s; animation-name: fadeIn;" data-wow-duration="0.5s" data-wow-delay="5s" role="dialog" class="wow fadeIn cc-window cc-banner cc-type-info cc-theme-block cc-color-override--1961008818  animated">
+<span id="cookieconsent:desc" class="cc-message">This website uses cookies to ensure you get the best experience on our website. <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://www.phptravels.net/cookies-policy" rel="noopener noreferrer nofollow" target="_blank">Learn more</a></span>
+<div class="cc-compliance">
+<button aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss" id="cookyGotItBtn">Got it!</button></div></div>
+
+<script src="https://www.phptravels.net/themes/default/assets/js/scripts.js"></script>
+<script>
+    const cookyDisablePeriodInDays = 100;
+    function createCookie(cookieName,cookieValue,daysToExpire)
+    {
+        var date = new Date();
+        date.setTime(date.getTime()+(daysToExpire*24*60*60*1000));
+        document.cookie = cookieName + "=" + cookieValue + "; expires=" + date.toGMTString();
+    }
+    function accessCookie(cookieName)
+    {
+        var name = cookieName + "=";
+        var allCookieArray = document.cookie.split(';');
+        for(var i=0; i<allCookieArray.length; i++)
+        {
+            var temp = allCookieArray[i].trim();
+            if (temp.indexOf(name)==0)
+                return temp.substring(name.length,temp.length);
+        }
+        return "";
+    }
+    // If user accept cooky policy by clicking `Got It` button then do not show the button to the user.
+    const cookyGotItStatus = accessCookie("cookyGotItButton");
+    if (cookyGotItStatus != "" && cookyGotItStatus == "hide") {
+        $("#cookyGotItBtnBox").css("display", "none");
+    } else {
+        setTimeout(function () {
+            console.log('show');
+            $("#cookyGotItBtnBox").css("display", "flex");
+        }, 1000);
+    }
+    $("#cookyGotItBtn").click(function () {
+        createCookie("cookyGotItButton", "hide", cookyDisablePeriodInDays);
+        $("#cookyGotItBtnBox").css("display", "none");
+    });
+
+    // Travelport flight: start
+    // First, checks if it isn't implemented yet.
+    if (!String.prototype.format) {
+     String.prototype.format = function() {
+       var args = arguments;
+       return this.replace(/{(\d+)}/g, function(match, number) {
+         return typeof args[number] != 'undefined'
+         ? args[number]
+         : match
+         ;
+       });
+     };
+   }
+   $(function(){
+           var adult = parseInt($("[name='tadult']").val()); // Should be 1
+           var children = parseInt($("[name='tchildren']").val());
+           var infant = parseInt($("[name='tinfant']").val());
+           var totalPassenger = (adult + children + infant);
+           var triptype = 'oneway';
+           var arrivalDatetimePicker = $("[name='arrival']");
+           arrivalDatetimePicker.attr('disabled', 'disabled').css('background', '#d9d9d9');
+           $(".trip-check label, .iCheck-helper").on('click', function() {
+             triptype = $(this).parent().find("input").val();
+             if (triptype == 'oneway') {
+               arrivalDatetimePicker.attr('disabled', 'disabled').css('background', '#d9d9d9');
+               arrivalDatetimePicker.removeAttr('required');
+             } else {
+               arrivalDatetimePicker.removeAttr('disabled').css('background', '#F9F9F9');
+               arrivalDatetimePicker.attr('required', 'required');
+             }
+             arrivalDatetimePicker.val('');
+           });
+           
+           $(".widget-select2").select2({
+             placeholder: "Enter Location",
+             minimumInputLength: 3,
+             width: '100%',
+             maximumSelectionSize: 1,
+             ajax:{
+               url: 'https://www.phptravels.net/Suggestions/airports/tport',
+               dataType: 'json',
+               data: function(term, page) {
+                 return {
+                   q: term
+                 }
+               },
+               results: function(data, page) {
+                 return {
+                   results: data
+                 }
+               }
+             },
+             initSelection : function (element, callback) {
+               var elementText = $(element).val();
+               callback({"text": elementText, "id": elementText});
+             }
+           });
+
+           var nowTemp = new Date();
+           var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+           // Depature time
+           var departureTime = $('.departureTime').datepicker({
+             format: 'yyyy-mm-dd',
+             onRender: function(date) {
+               return date.valueOf() < now.valueOf() ? 'disabled' : '';
+             }
+           }).on('changeDate', function(e){
+             $(this).datepicker('hide');
+             if (triptype == 'round' || triptype == 'return') {
+               var newDate = new Date(e.date);
+               arrivalTime.setValue(newDate.setDate(newDate.getDate() + 1));
+               $('.arrivalTime').focus();
+             }
+           }).data('datepicker');
+
+         //  Arrival time
+         var arrivalTime = $('.arrivalTime').datepicker({
+           format: 'yyyy-mm-dd',
+           onRender: function(date) {
+             return date.valueOf() <= departureTime.date.valueOf() ? 'disabled' : '';
+           }
+         }).on('changeDate', function(){
+           $(this).datepicker('hide');
+         }).data('datepicker');
+
+           // Default fill up date
+           if($('.departureTime').length > 0){
+            if(departureTime.element.val()) {
+             departureTime.setValue(departureTime.element.val());
+           }
+         }
+         if($('.arrivalTime').length > 0) {
+           if(arrivalTime.element.val()) {
+             arrivalTime.setValue(arrivalTime.element.val());
+           }
+         }
+
+         $("[name='tadult']").on('change', function() { adult = parseInt($("[name='tadult']").val()); });
+         $("[name='tchildren']").on('change', function() { children = parseInt($("[name='tchildren']").val()); });
+         $("[name='tinfant']").on('change', function() { infant = parseInt($("[name='tinfant']").val()); });
+         $("#tsumPassenger").on('click', function() {
+           totalPassenger = (adult + children + infant);
+           $("[name='ttotalPassenger']").val(totalPassenger);
+         });
+
+         $("form[name='flightSearch']").on('submit', function(e) {
+           e.preventDefault();
+           var payload = {
+             triptype: triptype,
+             cabinclass: $('[name="cabinclass"]').val(),
+             passenger: {
+               total: totalPassenger,
+               adult: adult,
+               children: children,
+               infant: infant
+             },
+             origin: $(this).find("[name='origin']").val(),
+             destination: $(this).find("[name='destination']").val(),
+             departure: $(this).find("[name='departure']").val(),
+             arrival: $(this).find("[name='arrival']").val(),
+           };
+
+           $('.loader-wrapper').show();
+           $.post(base_url + 'flight/getLowFareFlights', payload, function(response) {
+             $('.loader-wrapper').hide();
+             $('#body-section').html(response.body);
+             window.history.pushState("", "", get_path('flight/search', payload));
+           });
+         });
+       });
+
+function get_path(req, payload)
+{
+ var return_hash = "{0}/{1}/{2}/{3}".format(req, payload.origin, payload.destination, payload.departure);
+
+ if (payload.arrival) {
+   return_hash = "{0}/{1}".format(return_hash, payload.arrival)
+ }
+ if (payload.cabinclass) {
+   return_hash = "{0}/{1}".format(return_hash, payload.cabinclass)
+ }
+ if (payload.passenger.adult) {
+   return_hash = "{0}/{1}Adult".format(return_hash, payload.passenger.adult)
+ }
+ if (payload.passenger.children) {
+   return_hash = "{0}/{1}Children".format(return_hash, payload.passenger.children)
+ }
+ if (payload.passenger.infant) {
+   return_hash = "{0}/{1}Infant".format(return_hash, payload.passenger.infant)
+ }
+
+ return base_url + return_hash;
+}
+   // Travelport flight: end
+
+   if (!String.prototype.format) {
+    String.prototype.format = function() {
+      var args = arguments;
+      return this.replace(/{(\d+)}/g, function(match, number) {
+        return typeof args[number] != 'undefined'
+        ? args[number]
+        : match
+        ;
+      });
+    };
+  }
+
+  $(function(){
+
+    var triptype = 'oneway';
+    var manualtriptype = $('input[name=triptype]:checked').val();
+
+    var arrivalDatetimePicker = $("[name='arrival']");
+    arrivalDatetimePicker.attr('disabled', 'disabled').css('background', '#d9d9d9');
+    $(".trip-check label, .iCheck-helper").on('click', function() {
+      manualtriptype = $(this).parent().find("input").val();
+      if (manualtriptype == 'oneway') {
+        arrivalDatetimePicker.attr('disabled', 'disabled').css('background', '#d9d9d9');
+        arrivalDatetimePicker.removeAttr('required');
+      } else {
+        arrivalDatetimePicker.removeAttr('disabled').css('background', '#F9F9F9');
+        arrivalDatetimePicker.attr('required', 'required');
+      }
+      arrivalDatetimePicker.val('');
+    });
+
+    var nowTemp = new Date();
+    var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+        // Depature time
+        var departureTime = $('.departureTime').datepicker({
+          format: 'yyyy-mm-dd',
+          onRender: function(date) {
+            return date.valueOf() < now.valueOf() ? 'disabled' : '';
+          }
+        }).on('changeDate', function(e){
+          $(this).datepicker('hide');
+          if (manualtriptype == 'round') {
+            var newDate = new Date(e.date);
+            arrivalTime.setValue(newDate.setDate(newDate.getDate() + 1));
+            $('.arrivalTime').focus();
+          }
+        }).data('datepicker');
+
+        // Arrival time
+        var arrivalTime = $('.arrivalTime').datepicker({
+          format: 'yyyy-mm-dd',
+          onRender: function(date) {
+            return date.valueOf() <= departureTime.date.valueOf() ? 'disabled' : '';
+          }
+        }).on('changeDate', function(){
+          $(this).datepicker('hide');
+        }).data('datepicker');
+
+        // Default fill up date
+        if(departureTime != undefined) {
+          if(departureTime.element.val()) {
+            departureTime.setValue(departureTime.element.val());
+          }
+        }
+        if(departureTime != undefined) {
+          if(arrivalTime.element.val()) {
+            arrivalTime.setValue(arrivalTime.element.val());
+          }
+        }
+        var madult = parseInt($("[name='madult']").val()); // Should be 1
+        var mchildren = parseInt($("[name='mchildren']").val());
+        var minfant = parseInt($("[name='minfant']").val());
+        var totalManualPassenger = (madult + mchildren + minfant);
+        $("[name='madult']").on('change', function() { madult = parseInt($(this).val()); });
+        $("[name='mchildren']").on('change', function() { mchildren = parseInt($(this).val()); });
+        $("[name='minfant']").on('change', function() { minfant = parseInt($(this).val()); });
+        $("#sumManualPassenger").on('click', function() {
+          totalManualPassenger = (madult + mchildren + minfant);
+          $("[name='totalManualPassenger']").val(totalManualPassenger);
+        });
+
+
+
+        // // iati origin
+        // $('input[name="iorigin"]').select2('val', 'HEHEHE');
+        // $('input[name="idestination"]').select2('val', 'HUHUHUHU');
+        var adult = parseInt($("[name='iadult']").val()); // Should be 1
+        var children = parseInt($("[name='ichildren']").val());
+        var infant = parseInt($("[name='iinfant']").val());
+        var xtotalManualPassenger = (adult + children + infant);
+        $("[name='iadult']").on('change', function() { adult = parseInt($(this).val()); });
+        $("[name='ichildren']").on('change', function() { children = parseInt($(this).val()); });
+        $("[name='iinfant']").on('change', function() { infant = parseInt($(this).val()); });
+        $("#isumPassenger").on('click', function() { 
+          var xtotalManualPassenger = (adult + children + infant);
+          $("[name='totalPassenger']").val(xtotalManualPassenger);
+            // console.log(xtotalManualPassenger);
+          });
+
+
+
+        
+        $('#location_from_code').val('{"code":null,"location":""}');
+        $('#location_to_code').val('{"code":null,"location":""}');
+        $('#location_from').select2(
+        {
+          placeholder: "Enter City Or Airport",
+          minimumInputLength: 3,
+          width:'100%', maximumSelectionSize: 1,
+          initSelection: function (element, callback) {
+            var data = {id: "1", text: ""};
+            callback(data);
+          },
+          ajax: {
+            url: "https://www.phptravels.net/admin/ajaxcalls/flightAjex",
+            dataType: 'json',
+            data: function (term, page) {
+              return {
+                        query: term, // search term
+
+                      };
+                    },
+                    results: function (data, page) {
+
+                      return {results: data};
+                    }
+                  }
+                }
+                );
+
+        $('#location_from').on("select2-selecting", function(e) {
+          $("#location_from_code").val(e.val);
+          console.log(e.val);
+        });
+
+
+
+
+        $('#location_to').select2(
+        {
+          placeholder: "Enter City Or Airport",
+          minimumInputLength: 3,
+          width:'100%', maximumSelectionSize: 1,
+          initSelection: function (element, callback) {
+            var data = {id: "1", text: ""};
+            callback(data);
+          },
+          ajax: {
+            url: "https://www.phptravels.net/admin/ajaxcalls/flightAjex",
+            dataType: 'json',
+            data: function (term, page) {
+              return {
+                        query: term, // search term
+
+                      };
+                    },
+                    results: function (data, page) {
+
+                      return {results: data};
+                    }
+                  }
+                }
+                );
+
+        $('#location_to').on("select2-selecting", function(e) {
+         $("#location_to_code").val(e.val);
+         console.log(e.val);
+       });
+
+
+        $("form[name='flightmanualSearch']").on('submit', function(e) {
+          e.preventDefault();
+          var payload = {
+            triptype: manualtriptype,
+            cabinclass: $('[name="cabinclass"]').val(),
+            passenger: {
+              total: totalManualPassenger,
+              adult: madult,
+              children: mchildren,
+              infant: minfant
+            },
+            origin: jQuery.parseJSON($(this).find("[name='origin']").val()).code,
+            destination: jQuery.parseJSON($(this).find("[name='destination']").val()).code,
+            departure: $(this).find("[name='departure']").val(),
+            arrival: $(this).find("[name='arrival']").val(),
+          };
+          $('.loader-wrapper').show();
+          window.location.href = get_manual_path('flights', payload);
+        });
+        function get_manual_path(req, payload)
+        {
+          var return_hash = "{0}/{1}/{2}/{3}".format(req, payload.origin, payload.destination, payload.departure);
+
+          if (payload.arrival) {
+            return_hash = "{0}/{1}".format(return_hash, payload.arrival)
+          }else{
+            return_hash = "{0}/{1}".format(return_hash, 0)
+
+          }
+          if (payload.triptype) {
+            return_hash = "{0}/{1}".format(return_hash, payload.triptype)
+          }
+          if (payload.cabinclass) {
+            return_hash = "{0}/{1}".format(return_hash, payload.cabinclass)
+          }
+          if (payload.passenger.adult) {
+            return_hash = "{0}/{1}".format(return_hash, payload.passenger.adult)
+          }
+          return_hash = "{0}/{1}".format(return_hash, payload.passenger.children);
+          return_hash = "{0}/{1}".format(return_hash, payload.passenger.infant);
+          return_hash = "{0}/{1}".format(return_hash, 0);
+          return_hash = "{0}/{1}".format(return_hash, 0);
+          return_hash = "{0}/{1}".format(return_hash, 0);
+
+            // alert(JSON.stringify(payload.passenger));
+        // alert(payload.passenger.children);
+        return base_url + return_hash;
+      }
+
+    });
+
+$(document).ready(function(){
+        // Safari 3.0+ "[object HTMLElementConstructor]"
+        var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0 || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
+        if(isSafari == true){
+          $(".bg-warning").css("padding-bottom", "82px !important");
+        }
+      });
+
+$(".car-startlocation").select2({
+  placeholder: "Search for an Item",
+  minimumInputLength: 3,
+  width: '100%',
+  maximumSelectionSize: 1,
+  ajax: {
+    url: 'https://www.phptravels.net/cartrawler/getLocations',
+    dataType: 'json',
+    type: "GET",
+    quietMillis: 50,
+    data: function (term) {
+      return {
+        term: term
+      };
+    },
+    results: function (data) {
+      return {
+        results: $.map(data.locations, function (item) {
+          return {
+            text: item.locationName,
+            code: item.locationCode,
+            id: item.locationName
+          }
+        })
+      };
+    }
+  }
+});
+$(".car-endlocation").select2({
+  placeholder: "Search for an Item",
+  minimumInputLength: 3,
+  width: '100%',
+  maximumSelectionSize: 1,
+  ajax: {
+    url: 'https://www.phptravels.net/cartrawler/getLocations',
+    dataType: 'json',
+    type: "GET",
+    quietMillis: 50,
+    data: function (term) {
+      return {
+        term: term
+      };
+    },
+    results: function (data) {
+      return {
+        results: $.map(data.locations, function (item) {
+          return {
+            text: item.locationName,
+            code: item.locationCode,
+            id: item.locationName
+          }
+        })
+      };
+    }
+  }
+});
+
+$(".car-startlocation").on("select2-selecting",function(e){
+  $("input[name='pickupLocationId']").val(e.object.code);
+  $("input[name='returnLocationId']").val(e.object.code);
+  $('.car-endlocation').select2('data', {
+    text: e.object.text,
+    id: e.object.text
+  });
+});
+
+var options = {
+  url: function(phrase) {
+   return "https://yasen.hotellook.com/autocomplete?lang=en-US&limit=10&term="+phrase;
+ },
+ categories:[{
+  listLocation: "cities"
+}],
+list: {
+  match: {
+    enabled: false
+  },
+  maxNumberOfElements: 10
+},
+getValue: "fullname",
+};
+$("#citiesInput").easyAutocomplete(options);
+
+var fmt = "dd/mm/yyyy";
+var baseURL = "https://www.phptravels.net/";
+
+// $(document).ready(function() {
+
+  /* Wish list global function */
+  $(".wishlistcheck").on("click",function(){
+    var id = $(this).prop('id');
+    var module = $(this).data('module');
+    var userid = "";
+    var action = "add";
+    var thisdiv = $(this);
+    if($(this).hasClass('fav')){
+      action = "remove";
+    }
+
+
+    $.post(baseURL+'account/wishlist/'+action,{module: module, itemid: id, loggedin: userid},function(resp){
+      var response = $.parseJSON(resp);
+      if(response.isloggedIn){
+
+        if(action == "remove"){
+          $("."+module+"wishsign"+id).html("+");
+        //$("."+module+"wishtext"+id).html("Add to Wishlist");
+        $("."+module+"wishtext"+id).tooltip('hide').attr('data-original-title', "Add to wishlist").tooltip('fixTitle').tooltip('show');
+        $("."+module+"wishsign"+id).removeClass("fav");
+        thisdiv.removeClass('fav');
+
+      }else{
+
+        thisdiv.addClass('fav');
+        $("."+module+"wishsign"+id).addClass("fav");
+        $("."+module+"wishsign"+id).html("-");
+        //$("."+module+"wishtext"+id).html("Remove From Wishlist");
+        $("."+module+"wishtext"+id).tooltip('hide').attr('data-original-title', "Remove from wishlist").tooltip('fixTitle').tooltip('show');
+
+      }
+
+    }else{
+      alert("Please Login to add to wishlist.");
+    }
+
+  });
+
+  });
+  /* End Wish list global function */
+
+
+  /* tours ajax categories loader */
+      $('#location').on('change',function(){ var location = $(this).val(); $.post(baseURL+'tours/tourajaxcalls/onChangeLocation',{location: location},function(resp){ var response = $.parseJSON(resp); console.log(response); if(response.hasResult){ $("#tourtype").html(response.optionsList); }else{ $("#tourtype").html(response.optionsList); } mySelectUpdate(); }) });
+  
+  /* cars ajax types loader */
+      var totalsVal=$("#cartotals").val();if(totalsVal=="1"){$(".showTotal").show()}else{$(".showTotal").hide()}
+    var pickupLocation=$('#pickuplocation').val();var dropoffLocation=$('#droplocation').val();$('#carlocations').on('change',function(){var location=$(this).val();$.post(baseURL+'cars/carajaxcalls/onChangeLocation',{location:location},function(resp){var response=$.parseJSON(resp);if(response.hasResult){$("#carlocations2").html(response.optionsList).select2({width:'100%',maximumSelectionSize:1})}})});$('#pickuplocation').on('change',function(){var location=$('#pickuplocation').val();var carid=$("#itemid").val();var pickupDate=$("#departcar").val();var dropoffDate=$("#returncar").val();$.post(baseURL+'cars/carajaxcalls/getDropoffLocations',{location:location,carid:carid,pickupDate:pickupDate,dropoffDate:dropoffDate},function(resp){var response=$.parseJSON(resp);console.log(response);if(response.hasResult){$(".showTotal").show();$(".totaldeposit").html(response.priceInfo.depositAmount);$(".totalTax").html(response.priceInfo.taxAmount);$(".grandTotal").html(response.priceInfo.grandTotal);$("#droplocation").html(response.optionsList).select2({width:'100%',maximumSelectionSize:1})}})});$('.carDates').blur(function(){setTimeout(function(){getCarPrice()},500)});$('#droplocation').on("change",(function(){getCarPrice()}));function getCarPrice(){var pickupLocation=$('#pickuplocation').val();var dropoffLocation=$('#droplocation').val();var carid=$("#itemid").val();var pickupDate=$("#departcar").val();var dropoffDate=$("#returncar").val();$.post(baseURL+'cars/carajaxcalls/getCarPriceAjax',{pickupLocation:pickupLocation,dropoffLocation:dropoffLocation,carid:carid,pickupDate:pickupDate,dropoffDate:dropoffDate},function(resp){var response=$.parseJSON(resp);console.log(response);$(".showTotal").show();$(".totaldeposit").html(response.depositAmount);$(".totalTax").html(response.taxAmount);$(".grandTotal").html(response.grandTotal)})}
+  
+  /* Datepicker */
+  /* disabling dates */
+  var nowTemp = new Date();
+  var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+  var checkin = $('.dpd1').datepicker({
+    format: fmt,
+    onRender: function(date) {
+      return date.valueOf() < now.valueOf() ? 'disabled' : '';
+    }
+  }).on('changeDate', function(ev) {
+    // if (ev.date.valueOf() > checkout.date.valueOf()) {
+      var newDate = new Date(ev.date);
+      newDate.setDate(newDate.getDate() + 1);
+      checkout.setValue(newDate);
+    // }
+    checkin.hide();
+    $('.dpd2')[0].focus();
+  }).data('datepicker');
+  var checkout = $('.dpd2').datepicker({
+    format: fmt,
+    onRender: function(date) {
+      return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+    }
+  }).on('changeDate', function(ev) {
+    var newDate = new Date(ev.date);
+    checkout.hide();
+
+  }).data('datepicker');
+
+  /* disabling dates for rooms search */
+  var nowTemprooms = new Date();
+  var nowrooms = new Date(nowTemprooms.getFullYear(), nowTemprooms.getMonth(), nowTemprooms.getDate(), 0, 0, 0, 0);
+  var checkinrooms = $('.dpd1rooms').datepicker({
+    format: fmt,
+    onRender: function(date) {
+      return date.valueOf() < now.valueOf() ? 'disabled' : '';
+    }
+  }).on('changeDate', function(ev) {
+    // if (ev.date.valueOf() > checkout.date.valueOf()) {
+      var newDaterooms = new Date(ev.date);
+      newDaterooms.setDate(newDaterooms.getDate() + 1);
+      checkoutrooms.setValue(newDaterooms);
+    // }
+    checkinrooms.hide();
+    $('.dpd2rooms')[0].focus();
+  }).data('datepicker');
+  var checkoutrooms = $('.dpd2rooms').datepicker({
+    format: fmt,
+    onRender: function(date) {
+      return date.valueOf() <= checkinrooms.date.valueOf() ? 'disabled' : '';
+    }
+  }).on('changeDate', function(ev) {
+    var newDaterooms = new Date(ev.date);
+    checkoutrooms.hide();
+
+  }).data('datepicker');
+
+  /* Expedia datepicker */
+    /* End Expedia Datepicker*/
+
+  /* Dohop datepicker */
+    /* End Dohop Datepicker*/
+
+      // Tours checkin - disabling Single date
+    var nowTemp4 = new Date();
+    var now4 = new Date(nowTemp4.getFullYear(), nowTemp4.getMonth(), nowTemp4.getDate(), 0, 0, 0, 0);
+    var checkin4 = $('.tchkin').datepicker({format: fmt, onRender: function(date) {
+      return date.valueOf() < now4.valueOf() ? 'disabled' : ''; } }).on('changeDate', function(ev) {
+        var tdate =new Date(ev.date);
+        $('.tchkin').datepicker('hide');
+      });
+              var nowTemp5 = new Date();
+      var now5 = new Date(nowTemp5.getFullYear(), nowTemp5.getMonth(), nowTemp5.getDate(), 0, 0, 0, 0);
+      var departcar = $('#departcar').datepicker({
+        format: fmt,
+        onRender: function(date) {
+          return date.valueOf() < now5.valueOf() ? 'disabled' : '';
+        }
+      }).on('changeDate', function(ev) {
+    //   if (ev.date.valueOf() > returncar.date.valueOf()) {
+      var newDate5 = new Date(ev.date)
+
+      newDate5.setDate(newDate5.getDate() + 0);
+
+      returncar.setValue(newDate5);
+    //  }
+    departcar.hide();
+    $('#returncar')[0].focus();
+  }).data('datepicker');
+      var returncar = $('#returncar').datepicker({
+        format: fmt,
+        onRender: function(date) {
+          return date.valueOf() <= departcar.date.valueOf() ? 'disabled' : '';
+        }
+      }).on('changeDate', function(ev) {
+        var cnewDate = new Date(ev.date);
+        returncar.hide();
+
+      }).data('datepicker');
+
+      var nowTemp52 = new Date();
+      var now52 = new Date(nowTemp52.getFullYear(), nowTemp52.getMonth(), nowTemp52.getDate(), 0, 0, 0, 0);
+      var departcar2 = $('#departcar2').datepicker({
+        format: fmt,
+        onRender: function(date) {
+          return date.valueOf() < now52.valueOf() ? 'disabled' : '';
+        }
+      }).on('changeDate', function(ev) {
+    //   if (ev.date.valueOf() > returncar.date.valueOf()) {
+      var newDate52 = new Date(ev.date)
+
+      newDate52.setDate(newDate52.getDate() + 0);
+
+      returncar2.setValue(newDate52);
+    //  }
+    departcar2.hide();
+    $('#returncar2')[0].focus();
+  }).data('datepicker');
+      var returncar2 = $('#returncar2').datepicker({
+        format: fmt,
+        onRender: function(date) {
+          return date.valueOf() <= departcar2.date.valueOf() ? 'disabled' : '';
+        }
+      }).on('changeDate', function(ev) {
+        var cnewDate2 = new Date(ev.date);
+        returncar2.hide();
+
+      }).data('datepicker');
+
+    
+
+
+
+    /* Newsletter subscription */
+    $(".sub_newsletter").on("click",function(){var e=$(".sub_email").val();$.post("https://www.phptravels.net/home/subscribe",{email:e},function(e){$(".subscriberesponse").html(e).fadeIn("slow"),setTimeout(function(){$(".subscriberesponse").fadeOut("slow")},2000)})});
+
+    /* dropdown on hover */
+    $("ul.nav li.dropdown").hover(function(){$(this).find(".dropdown-menu").stop(!0,!0).delay(200).fadeIn(200)},function(){$(this).find(".dropdown-menu").stop(!0,!0).delay(200).fadeOut(200)});
+
+// }); end: $(function(){});
+
+/* start change currency functionality */
+function change_currency(element){
+  var currency_id = $(element).data('code');
+  $("#loadingbg").css("display","block"),
+  $.post("https://www.phptravels.net/admin/ajaxcalls/changeCurrency",{ id: currency_id}, function() {
+    location.reload();
+  }
+  )};
+
+  /* map iframe modal */
+  function showMap(a,o){"modal"==o?($("#mapModal").modal("show"),$("#mapModal").on("shown.bs.modal",function(){$("#mapModal .mapContent").html('<iframe src="'+a+'" width="100%" height="450" frameborder="0" style="border:0"></iframe>')})):$("#"+o).html('<iframe src="'+a+'" width="100%" height="450" frameborder="0" style="border:0"></iframe>')}
+</script>
+
+
+
+</body></html>
